@@ -1,6 +1,6 @@
 # coding: utf-8
 
-# # Publications markdown generator for academicpages
+# # Publications markdown generator for vinbhaskara
 #
 # Takes a TSV of publications with metadata and converts them for use with [vinbhaskara.github.io](vinbhaskara.github.io). This is an interactive Jupyter notebook, with the core python code in publications.py. Run either from the `markdown_generator` folder after replacing `publications.tsv` with one that fits your format.
 #
