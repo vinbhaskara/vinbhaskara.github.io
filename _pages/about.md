@@ -19,6 +19,20 @@ This is the LaTex rendering of the Schrodinger equation:
 
 $$L(\theta|X) = f(X|\theta)$$
 
+```
+# These are lines of code without any language hinting
+
+def func(a, b):
+  return a+b
+```
+
+```python
+# These are lines of code WITH language hinting
+
+def func(a, b):
+  return a+b
+```
+
 
 A data-driven personal website
 ======
