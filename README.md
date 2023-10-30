@@ -14,7 +14,11 @@ I think I've got things running smoothly and fixed some major bugs, but feel fre
 1. Check status by going to the repository settings, in the "GitHub pages" section
 1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
 
-See more info at https://vinbhaskara.github.io/
+## Documentation for customizing the site
+
+Please check the documentation for Minimial-Mistakes Jekyll theme here: https://mmistakes.github.io/minimal-mistakes/docs/configuration/ 
+
+Most of them apply, considering that the documentation is for the latest release of Minimal-Mistakes and not the version used in this repository.
 
 ## To run locally (not on GitHub Pages, to serve on your own computer)
 
