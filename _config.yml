@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Home"
+title                    : "Vin Bhaskara"
 title_separator          : "-"
 name                     : &name "Vin Bhaskara"
-description              : &description "personal description"
+description              : &description "Machine Learning, University of Toronto"
 url                      : https://vinbhaskara.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "vinbhaskara/vinbhaskara.github.io"
