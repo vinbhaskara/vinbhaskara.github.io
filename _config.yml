@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Vin Bhaskara"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Vin Bhaskara"
 description              : &description "Machine Learning, University of Toronto"
