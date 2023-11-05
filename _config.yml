@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Vin Bhaskara"
   avatar           : "profile_pic.jpg"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Machine Learning @ University of Toronto"
   location         : "Montreal, Canada"
   employer         :
   pubmed           : 
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  googlescholar    : "https://scholar.google.com/citations?user=JBgGgnoAAAAJ&hl=en"
+  email            : "<firstname-dot-lastname>@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -109,13 +109,13 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : "vinbhaskara_"
   vine             :
   weibo            :
   xing             :
   youtube          :
   wikipedia        :
-  kaggle           : "replacethistwitterhandle"
+  kaggle           : "https://www.kaggle.com/bvineeth007"
 
 
 # Reading Files
