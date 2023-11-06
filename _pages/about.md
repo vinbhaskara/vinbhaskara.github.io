@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Biography
----
+===
 
 I'm a Research Engineer at Borealis AI in Montreal working on Foundation Models and LLMs for financial applications. Previously, I was at Samsung AI Centre in Toronto working with Dr. Alex Levinshtein and Prof. Allan Jepson on Computer Vision, specifically, Burst Photography, Neural Implicit Models, Image Enhancement and Synthesis. And before that, I worked on Malware Classification using machine learning for Norton AntiVirus at Symantec Corporation in Pune, India.
 
