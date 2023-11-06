@@ -20,10 +20,14 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 
 ## Education
 
-MSc Applied Computing, [Department of Computer Science](https://web.cs.toronto.edu/), [University of Toronto](https://www.utoronto.ca/) (2018-2020)  
-Grade: A+ (4.0/4.0), [Vector Institute Scholar](https://vectorinstitute.ai/2018/12/13/vector-awards-inaugural-scholarships-second-round-of-applications-to-open-in-2019/)
 
-B.Tech. Engineering Physics, [IIT Guwahati](https://www.iitg.ac.in/) (2012-2016)  
-[Institute Silver Medalist](https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf)
+MSc Applied Computing, [Department of Computer Science](https://web.cs.toronto.edu/), [University of Toronto](https://www.utoronto.ca/) (2018 - 2020)   
+Grade: A+ (4.0/4.0), [Vector Institute Scholar](https://vectorinstitute.ai/2018/12/13/vector-awards-inaugural-scholarships-second-round-of-applications-to-open-in-2019/) 
+
+
+B.Tech. Engineering Physics, [IIT Guwahati](https://www.iitg.ac.in/) (2012 - 2016)  
+Department Rank 1, [Institute Silver Medalist](https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf)
+
+
 
 ## Papers
