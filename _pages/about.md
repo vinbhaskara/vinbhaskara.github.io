@@ -18,4 +18,12 @@ I'm interested in fundamental research on deep learning for computer vision, and
 I graduated with a Master's from the Department of Computer Science at the University of Toronto in 2020 focusing on Deep Learning for Computer Vision. During this period, I received the Vector Institute Scholarship in Artificial Intelligence (VSAI) that was awarded to 66 graduate students across the province of Ontario, Canada. In 2016, I graduated from IIT Guwahati with a B.Tech. in Engineering Physics and received the Institute Silver Medal for the best academic performance in the department.
 -->
 
+## Education
+
+MSc Applied Computing, [Department of Computer Science](https://web.cs.toronto.edu/), [University of Toronto](https://www.utoronto.ca/) (2018-2020)  
+Grade: A+ (4.0/4.0), [Vector Institute Scholar](https://vectorinstitute.ai/2018/12/13/vector-awards-inaugural-scholarships-second-round-of-applications-to-open-in-2019/)
+
+B.Tech. Engineering Physics, [IIT Guwahati](https://www.iitg.ac.in/) (2012-2016)  
+[Institute Silver Medalist](https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf)
+
 ## Papers
