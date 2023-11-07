@@ -85,7 +85,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>&nbsp;</td>
       <td style="vertical-align : middle;">
           <b>Unsupervised Super-Resolution Training Data Construction</b>
-          <br>Haicheng Wang, Xinyu Sun, <span style="color:#3b7ea1"><b>Vineeth S. Bhaskara</b></span>, Stavros Tsogkas, Allan Jepson, Alex Levinshtein <br>
+          <br>Haicheng Wang, Xinyu Sun, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Stavros Tsogkas, Allan Jepson, Alex Levinshtein <br>
         <i>US Patent Application 17/512,312</i>
         <br>
         <p style="margin:0.5em;"></p>
@@ -95,6 +95,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/patent22-icon.png" style=" width:250px; height:auto; margin:0px;">
+        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -118,7 +119,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>&nbsp;</td>
       <td style="vertical-align : middle;">
           <b>GraN-GAN: Piecewise Gradient Normalization for Generative Adversarial Networks</b>
-          <br><span style="color:#3b7ea1"><b>Vineeth S. Bhaskara</b></span><sup style="font-size:140%;top: 0.15em;">*</sup>,
+          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span><sup style="font-size:140%;top: 0.15em;">*</sup>,
           Tristan Aumentado-Armstrong<sup style="font-size:140%;top: 0.15em;">*</sup>, Allan Jepson, Alex Levinshtein <br>
         <i>Winter Conference on Applications of Computer Vision (WACV 2022)</i>
         <br>
@@ -133,6 +134,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/wacv22-icon.png" style=" width:250px; height:auto; margin:0px;">
+        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -143,7 +145,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>&nbsp;</td>
       <td style="vertical-align : middle;">
           <b>Efficient Super-Resolution Using MobileNetV3</b>
-          <br>Haicheng Wang<sup style="font-size:140%;top: 0.15em;">*</sup>, <span style="color:#3b7ea1"><b>Vineeth S. Bhaskara</b></span><sup style="font-size:140%;top: 0.15em;">*</sup>, Alex Levinshtein<sup style="font-size:140%;top: 0.15em;">*</sup>, Stavros Tsogkas, Allan Jepson<br>
+          <br>Haicheng Wang<sup style="font-size:140%;top: 0.15em;">*</sup>, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span><sup style="font-size:140%;top: 0.15em;">*</sup>, Alex Levinshtein<sup style="font-size:140%;top: 0.15em;">*</sup>, Stavros Tsogkas, Allan Jepson<br>
         <i>European Conference on Computer Vision (ECCV 2020) Workshops</i>
         <br>
         <p style="margin:0.5em;"></p>
@@ -154,6 +156,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/eccvw20-icon.png" style=" width:250px; height:auto; margin:0px;">
+        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
