@@ -75,6 +75,32 @@
     }
   }
 
+  &--primary {
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: mix(#000, $primary-color, 20%);
+    }
+  }
+
+  &--secondary {
+    background-color: #6c757d;
+
+    &:hover {
+      background-color: mix(#000, #6c757d, 20%);
+    }
+  }
+
+  &--cite {
+    background-color: #ffc107;
+    color: #212529 !important;
+
+    &:hover {
+      background-color: mix(#000, #ffc107, 20%);
+      color: #fff !important;
+    }
+  }
+
   /* warning */
 
   &--warning {

@@ -94,12 +94,12 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <i>Winter Conference on Applications of Computer Vision (WACV 2022)</i>
         <br>
         <p style="margin:0.5em;"></p>
-        <a class="btn btn-primary" target="_blank" href="https://openaccess.thecvf.com/content/WACV2022/html/Bhaskara_GraN-GAN_Piecewise_Gradient_Normalization_for_Generative_Adversarial_Networks_WACV_2022_paper.html" role="button" style="text-decoration:none">Paper</a> 
-        <a class="btn btn-primary" target="_blank" href="https://arxiv.org/abs/2111.03162" role="button" style="text-decoration:none">Arxiv</a>
-        <a class="btn btn-secondary" target="_blank" href="files/wacv2022-poster.pdf" role="button" style="text-decoration:none">Poster</a>
-        <a class="btn btn-secondary" target="_blank" href="files/wacv2022-slides.pdf" role="button" style="text-decoration:none">Slides</a>
-        <a class="btn btn-secondary" target="_blank" href="https://www.youtube.com/watch?v=zC2q8B90DeA" role="button" style="text-decoration:none">Video</a>
-        <a class="btn btn-info" target="_blank" href="files/wacv2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <a class="btn btn--primary" target="_blank" href="https://openaccess.thecvf.com/content/WACV2022/html/Bhaskara_GraN-GAN_Piecewise_Gradient_Normalization_for_Generative_Adversarial_Networks_WACV_2022_paper.html" role="button" style="text-decoration:none">Paper</a> 
+        <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/2111.03162" role="button" style="text-decoration:none">Arxiv</a>
+        <a class="btn btn--secondary" target="_blank" href="files/wacv2022-poster.pdf" role="button" style="text-decoration:none">Poster</a>
+        <a class="btn btn--secondary" target="_blank" href="files/wacv2022-slides.pdf" role="button" style="text-decoration:none">Slides</a>
+        <a class="btn btn--secondary" target="_blank" href="https://www.youtube.com/watch?v=zC2q8B90DeA" role="button" style="text-decoration:none">Video</a>
+        <a class="btn btn--cite" target="_blank" href="files/wacv2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
