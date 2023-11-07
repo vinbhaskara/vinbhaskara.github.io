@@ -94,7 +94,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <img id="pub_img_generic" src="images/Papers/wacv22-icon.png" style=" width:250px; height:auto; margin:0px;">
+        <img id="pub_img_generic" src="images/Papers/patent22-icon.png" style=" width:250px; height:auto; margin:0px;">
       </td>
     </tr>
     <!-- End of Publication Row -->
