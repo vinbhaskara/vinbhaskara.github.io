@@ -1,0 +1,10 @@
+@article{bhaskara2017generalized,
+  title={Generalized concurrence measure for faithful quantification of multiparticle pure state entanglement using Lagrange’s identity and wedge product},
+  author={Bhaskara, Vineeth S and Panigrahi, Prasanta K},
+  journal={Quantum Information Processing},
+  volume={16},
+  number={5},
+  pages={118},
+  year={2017},
+  publisher={Springer}
+}

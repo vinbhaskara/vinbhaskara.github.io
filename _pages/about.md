@@ -125,7 +125,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
         <p style="margin:0.5em;"></p>
         <a class="btn btn--primary" target="_blank" href="https://openaccess.thecvf.com/content/WACV2022/html/Bhaskara_GraN-GAN_Piecewise_Gradient_Normalization_for_Generative_Adversarial_Networks_WACV_2022_paper.html" role="button" style="text-decoration:none">Paper</a> 
-        <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/2111.03162" role="button" style="text-decoration:none">Arxiv</a>
+        <a class="btn btn--secondary" target="_blank" href="https://arxiv.org/abs/2111.03162" role="button" style="text-decoration:none">Arxiv</a>
         <a class="btn btn--secondary" target="_blank" href="files/wacv2022-poster.pdf" role="button" style="text-decoration:none">Poster</a>
         <a class="btn btn--secondary" target="_blank" href="files/wacv2022-slides.pdf" role="button" style="text-decoration:none">Slides</a>
         <a class="btn btn--secondary" target="_blank" href="https://www.youtube.com/watch?v=zC2q8B90DeA" role="button" style="text-decoration:none">Video</a>
@@ -165,6 +165,57 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 
 
 ### Quantum Computing  
+
+<table id="publication-table">
+  <tbody>
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>May<br>2022</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Generalized Entanglement Measure for Continuous-Variable Systems</b>
+          <br>Nibedita Swain<sup style="font-size:140%;top: 0.15em;">*</sup>, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span><sup style="font-size:140%;top: 0.15em;">*</sup>, Prasanta K. Panigrahi <br>
+        <i>Physical Review A 105, 052441</i>
+        <br>
+        <p style="margin:0.5em;"></p>
+        <a class="btn btn--primary" target="_blank" href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.052441" role="button" style="text-decoration:none">Paper</a> 
+        <a class="btn btn--primary" target="_blank" href="files/pra2022-pdf.pdf" role="button" style="text-decoration:none">PDF</a>
+        <a class="btn btn--secondary" target="_blank" href="https://arxiv.org/abs/1706.01448v1" role="button" style="text-decoration:none">Arxiv</a>
+        <a class="btn btn--cite" target="_blank" href="files/pra2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+        <img id="pub_img_generic" src="images/Papers/pra22-icon.png" style=" width:250px; height:auto; margin:0px;">
+        <br>&nbsp;<br>
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>Mar<br>2017</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Generalized Entanglement Measure for Multiparticle Pure States in Arbitrary Dimensions</b>
+          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Prasanta K. Panigrahi<br>
+        <i>Quantum Information Processing, Volume 16, Article number: 118</i>
+        <br>
+        <p style="margin:0.5em;"></p>
+        <a class="btn btn--primary" target="_blank" href="https://link.springer.com/article/10.1007/s11128-017-1568-0" role="button" style="text-decoration:none">Paper</a> 
+        <a class="btn btn--primary" target="_blank" href="files/qinp2017-pdf.pdf" role="button" style="text-decoration:none">PDF</a>
+        <a class="btn btn--secondary" target="_blank" href="https://arxiv.org/abs/1607.00164" role="button" style="text-decoration:none">Arxiv</a>
+        <a class="btn btn--cite" target="_blank" href="files/qinp2017-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+        <img id="pub_img_generic" src="images/Papers/qinp2017-icon.png" style=" width:250px; height:auto; margin:0px;">
+        <br>&nbsp;<br>
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
+  </tbody>
+</table>
 
 
 ## Preprints
