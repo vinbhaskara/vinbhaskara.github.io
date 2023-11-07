@@ -1,0 +1,17 @@
+@InProceedings{10.1007/978-3-030-67070-2_5,
+author="Wang, Haicheng
+and Bhaskara, Vineeth
+and Levinshtein, Alex
+and Tsogkas, Stavros
+and Jepson, Allan",
+editor="Bartoli, Adrien
+and Fusiello, Andrea",
+title="Efficient Super-Resolution Using MobileNetV3",
+booktitle="Computer Vision -- ECCV 2020 Workshops",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="87--102",
+abstract="Deep learning methods for super-resolution (SR) have been dominating in terms of performance in recent years. Such methods can potentially improve the digital zoom capabilities of most modern mobile phones, but are not directly applicable on device, due to hardware constraints. In this work, we adapt MobileNetV3 blocks, shown to work well for classification, detection and segmentation, to the task of super-resolution. The proposed models with the modified MobileNetV3 block are shown to be efficient enough to run on modern mobile phones with an accuracy approaching that of the much heavier, state-of-the-art (SOTA) super-resolution approaches.",
+isbn="978-3-030-67070-2"
+}

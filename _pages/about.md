@@ -136,6 +136,27 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
     </tr>
     <!-- End of Publication Row -->
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>Jan<br>2021</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Efficient Super-Resolution Using MobileNetV3</b>
+          <br>Haicheng Wang<sup style="font-size:140%;top: 0.15em;">*</sup>, <span style="color:#3b7ea1"><b>Vineeth S. Bhaskara</b></span><sup style="font-size:140%;top: 0.15em;">*</sup>, Alex Levinshtein<sup style="font-size:140%;top: 0.15em;">*</sup>, Stavros Tsogkas, Allan Jepson<br>
+        <i>European Conference on Computer Vision (ECCV 2020) Workshops</i>
+        <br>
+        <p style="margin:0.5em;"></p>
+        <a class="btn btn--primary" target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-67070-2_5" role="button" style="text-decoration:none">Paper</a> 
+        <a class="btn btn--primary" target="_blank" href="files/eccvw20-pdf.pdf" role="button" style="text-decoration:none">PDF</a>
+        <a class="btn btn--cite" target="_blank" href="files/eccvw2020-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+        <img id="pub_img_generic" src="images/Papers/eccvw20-icon.png" style=" width:250px; height:auto; margin:0px;">
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
   </tbody>
 </table>
 
