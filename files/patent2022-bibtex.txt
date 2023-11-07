@@ -1,0 +1,8 @@
+@misc{levinshtein2022unsupervised,
+  title={Unsupervised super-resolution training data construction},
+  author={Levinshtein, Aleksai and Sun, Xinyu and Haicheng, WANG and Bhaskara, Vineeth Subrahmanya and Tsogkas, Stavros and Jepson, Allan},
+  year={2022},
+  month=may # "~5",
+  publisher={Google Patents},
+  note={US Patent App. 17/512,312}
+}

@@ -73,11 +73,40 @@ I graduated with a Master's from the Department of Computer Science at the Unive
   </tbody>
 </table>
 
+## Patents
+
+
+<table id="publication-table">
+  <tbody>
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>May<br>2022</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Unsupervised Super-Resolution Training Data Construction</b>
+          <br>Haicheng Wang, Xinyu Sun, <span style="color:#3b7ea1"><b>Vineeth S. Bhaskara</b></span>, Stavros Tsogkas, Allan Jepson, Alex Levinshtein <br>
+        <i>US Patent Application 17/512,312</i>
+        <br>
+        <p style="margin:0.5em;"></p>
+        <a class="btn btn--primary" target="_blank" href="https://patents.google.com/patent/US20220138500A1/en" role="button" style="text-decoration:none">Patent</a> 
+        <a class="btn btn--cite" target="_blank" href="files/patent2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+        <img id="pub_img_generic" src="images/Papers/wacv22-icon.png" style=" width:250px; height:auto; margin:0px;">
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
+  </tbody>
+</table>
+
 ## Publications
 
 (<sup style="font-size:140%;top: 0.15em;">*</sup> <i> denotes equal contribution</i>)
 
 
+### Machine Learning  
 
 
 <table id="publication-table">
@@ -109,6 +138,12 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     <!-- End of Publication Row -->
   </tbody>
 </table>
+
+
+### Quantum Computing  
+
+
+## Preprints
 
 
 
