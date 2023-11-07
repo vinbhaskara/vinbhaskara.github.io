@@ -76,6 +76,14 @@
   }
 
   &--primary {
+    background-color: #226cac;
+
+    &:hover {
+      background-color: mix(#000, #226cac, 20%);
+    }
+  }
+
+  &--secondary {
     background-color: $primary-color;
 
     &:hover {
@@ -83,21 +91,16 @@
     }
   }
 
-  &--secondary {
-    background-color: #6c757d;
-
-    &:hover {
-      background-color: mix(#000, #6c757d, 20%);
-    }
-  }
-
   &--cite {
-    background-color: #ffc107;
-    color: #212529 !important;
+    color: #226cac !important;
+    background-color: transparent;
+    border: 1px solid #226cac !important; /* override*/
+
 
     &:hover {
-      background-color: mix(#000, #ffc107, 20%);
+      background-color: mix(#000, $primary-color, 30%);
       color: #fff !important;
+      border: 1px solid #fff !important; /* override*/
     }
   }
 
