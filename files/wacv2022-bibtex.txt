@@ -1,0 +1,8 @@
+@InProceedings{Bhaskara_2022_WACV,
+    author    = {Bhaskara, Vineeth S. and Aumentado-Armstrong, Tristan and Jepson, Allan D. and Levinshtein, Alex},
+    title     = {GraN-GAN: Piecewise Gradient Normalization for Generative Adversarial Networks},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2022},
+    pages     = {3821-3830}
+}
