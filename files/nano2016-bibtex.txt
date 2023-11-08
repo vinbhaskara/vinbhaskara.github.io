@@ -1,0 +1,13 @@
+@article{HaapamakiFlanneryBappiAlMarufBhaskaraAlshehriYoonBajcsy+2016+392+408,
+url = {https://doi.org/10.1515/nanoph-2015-0026},
+title = {Mesoscale cavities in hollow-core waveguides for quantum optics with atomic ensembles},
+title = {},
+author = {C.M. Haapamaki and J. Flannery and G. Bappi and R. Al Maruf and S.V. Bhaskara and O. Alshehri and T. Yoon and M. Bajcsy},
+pages = {392--408},
+volume = {5},
+number = {3},
+journal = {Nanophotonics},
+doi = {doi:10.1515/nanoph-2015-0026},
+year = {2016},
+lastchecked = {2023-11-08}
+}

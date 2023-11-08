@@ -164,7 +164,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 </table>
 
 
-### Quantum Computing  
+### Quantum Information  
 
 <table id="publication-table">
   <tbody>
@@ -214,11 +214,100 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
     </tr>
     <!-- End of Publication Row -->
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>Mar<br>2017</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Implementing Bragg Mirrors in a Hollow-Core Photonic-Crystal Fiber</b>
+          <br>Jeremy Flannery, Golam Bappi, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Omar Alshehri, Michal Bajcsy<br>
+        <i>Optical Materials Express, Volume 7, Issue 4, pp. 1198-1210</i>
+        <br>
+        <p style="margin:0.5em;"></p>
+        <a class="btn btn--primary" target="_blank" href="https://opg.optica.org/ome/fulltext.cfm?uri=ome-7-4-1198&id=361548#" role="button" style="text-decoration:none">Paper</a> 
+        <a class="btn btn--cite" target="_blank" href="files/osa2017-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+        <img id="pub_img_generic" src="images/Papers/osa2017-icon.jpg" style=" width:250px; height:auto; margin:0px;">
+        <br>&nbsp;<br>
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>Sep<br>2016</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Mesoscale Cavities in Hollow-Core Waveguides for Quantum Optics with Atomic Ensembles</b>
+          <br>C.M. Haapamaki, J. Flannery, G. Bappi, R. Al Maruf, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, O. Alshehri, T. Yoon, M. Bajcsy<br>
+        <i>Nanophotonics, Volume 5, No. 3, pp. 392-408</i>
+        <br>
+        <p style="margin:0.5em;"></p>
+        <a class="btn btn--primary" target="_blank" href="https://www.degruyter.com/document/doi/10.1515/nanoph-2015-0026/html" role="button" style="text-decoration:none">Paper</a> 
+        <a class="btn btn--cite" target="_blank" href="files/nano2016-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+        <img id="pub_img_generic" src="images/Papers/nano2016-icon.jpg" style=" width:250px; height:auto; margin:0px;">
+        <br>&nbsp;<br>
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
   </tbody>
 </table>
 
 
 ## Preprints
 
+
+<table id="publication-table">
+  <tbody>
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>May<br>2019</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Exploiting Uncertainty of Loss Landscape for Stochastic Optimization</b>
+          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Sneha Desai<br>
+        <i>	arXiv:1905.13200 [cs.LG]</i>
+        <br>
+        <p style="margin:0.5em;"></p>
+        <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1905.13200" role="button" style="text-decoration:none">Arxiv</a>
+        <a class="btn btn--cite" target="_blank" href="files/arxiv-opt-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+        <img id="pub_img_generic" src="images/Papers/arxiv-opt-2019-icon.png" style=" width:250px; height:auto; margin:0px;">
+        <br>&nbsp;<br>
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>Jul<br>2018</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Emulating Malware Authors for Proactive Protection using GANs over File Behaviors</b>
+          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Debanjan Bhattacharyya<br>
+        <i>arXiv:1807.07525 [stat.ML]</i>
+        <br>
+        <p style="margin:0.5em;"></p>
+        <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1807.07525" role="button" style="text-decoration:none">Arxiv</a> 
+        <a class="btn btn--cite" target="_blank" href="files/arxiv-mal-2018-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+        <img id="pub_img_generic" src="images/Papers/arxiv-mal-2018-icon.jpg" style=" width:250px; height:auto; margin:0px;">
+        <br>&nbsp;<br>
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
+  </tbody>
+</table>
 
 

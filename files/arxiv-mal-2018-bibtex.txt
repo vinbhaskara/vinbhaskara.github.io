@@ -1,0 +1,8 @@
+@misc{bhaskara2018emulating,
+      title={Emulating malware authors for proactive protection using GANs over a distributed image visualization of dynamic file behavior}, 
+      author={Vineeth S. Bhaskara and Debanjan Bhattacharyya},
+      year={2018},
+      eprint={1807.07525},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}

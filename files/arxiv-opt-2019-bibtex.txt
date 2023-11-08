@@ -1,0 +1,8 @@
+@misc{bhaskara2019exploiting,
+      title={Exploiting Uncertainty of Loss Landscape for Stochastic Optimization}, 
+      author={Vineeth S. Bhaskara and Sneha Desai},
+      year={2019},
+      eprint={1905.13200},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
