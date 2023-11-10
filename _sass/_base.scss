@@ -141,6 +141,8 @@ td > code {
   padding-bottom: 0.1rem;
   font-size: $type-size-6;
   background: $code-background-color;
+  color: $code-color-vin;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
   border: 1px solid $lighter-gray;
   border-radius: $border-radius;
   box-shadow: $box-shadow;

@@ -9,6 +9,8 @@ div.highlighter-rouge, figure.highlight {
   border: 1px solid $border-color;
   border-radius: $border-radius;
   background-color: $code-background-color;
+  color: $code-color-vin;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
   box-shadow: $box-shadow;
 
   &:before {
