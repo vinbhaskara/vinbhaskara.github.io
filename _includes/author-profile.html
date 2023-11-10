@@ -124,6 +124,9 @@
       {% if author.confluence %}
         <li><a href="{{ author.confluence }}"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i>Confluence</a></li>
       {% endif %}
+      {% if author.strava %}
+        <li><a href="{{ author.strava }}"><i class="fab fa-fw fa-strava" aria-hidden="true"></i>Strava</a></li>
+      {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
