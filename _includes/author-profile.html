@@ -119,13 +119,13 @@
       <li><a href="https://www.kaggle.com/{{ author.kaggle }}" target="_blank"><span style="color: black;"><i class="fab fa-fw fa-kaggle" aria-hidden="true"></i></span>Kaggle</a></li>
       {% endif %}
       {% if author.goodreads %}
-        <li><a href="https://www.goodreads.com/{{ author.goodreads }}"><span style="color: black;"><i class="fab fa-fw fa-goodreads" aria-hidden="true"></i></span>Goodreads</a></li>
+        <li><a href="https://www.goodreads.com/{{ author.goodreads }}" target="_blank"><span style="color: black;"><i class="fab fa-fw fa-goodreads" aria-hidden="true"></i></span>Goodreads</a></li>
       {% endif %}
       {% if author.confluence %}
-        <li><a href="{{ author.confluence }}"><span style="color: black;"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i></span>Confluence</a></li>
+        <li><a href="{{ author.confluence }}" target="_blank"><span style="color: black;"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i></span>Confluence</a></li>
       {% endif %}
       {% if author.strava %}
-        <li><a href="{{ author.strava }}"><span style="color: black;"><i class="fab fa-fw fa-strava" aria-hidden="true"></i></span>Strava</a></li>
+        <li><a href="{{ author.strava }}" target="_blank"><span style="color: black;"><i class="fab fa-fw fa-strava" aria-hidden="true"></i></span>Strava</a></li>
       {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
