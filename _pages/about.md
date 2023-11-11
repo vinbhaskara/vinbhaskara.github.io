@@ -66,10 +66,10 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>Department Rank 1, <a href="https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf">Institute Silver Medalist</a></td>
       <td>&nbsp;</td>
     </tr>
-    <tr>
+    <!-- <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-    </tr>
+    </tr> -->
   </tbody>
 </table>
 
@@ -95,10 +95,18 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/patent22-icon.png" style=" width:250px; height:auto; margin:0px;">
-        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <!-- <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr> -->
+    <!-- End of Spacing Empty Publication Row -->
   </tbody>
 </table>
 
@@ -134,10 +142,18 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/wacv22-icon.png" style=" width:250px; height:auto; margin:0px;">
-        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
     <!-- Publication Row -->
     <tr>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>Jan<br>2021</b></td>
@@ -156,10 +172,18 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/eccvw20-icon.png" style=" width:250px; height:auto; margin:0px;">
-        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <!-- <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr> -->
+    <!-- End of Spacing Empty Publication Row -->
   </tbody>
 </table>
 
@@ -187,10 +211,18 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/pra22-icon.png" style=" width:250px; height:auto; margin:0px;">
-        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
     <!-- Publication Row -->
     <tr>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>Mar<br>2017</b></td>
@@ -210,10 +242,18 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/qinp2017-icon.png" style=" width:250px; height:auto; margin:0px;">
-        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
     <!-- Publication Row -->
     <tr>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>Mar<br>2017</b></td>
@@ -231,10 +271,18 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/osa2017-icon.jpg" style=" width:250px; height:auto; margin:0px;">
-        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
     <!-- Publication Row -->
     <tr>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>Sep<br>2016</b></td>
@@ -252,7 +300,6 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/nano2016-icon.jpg" style=" width:250px; height:auto; margin:0px;">
-        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -282,10 +329,18 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/arxiv-opt-2019-icon.png" style=" width:250px; height:auto; margin:0px;">
-        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
     <!-- Publication Row -->
     <tr>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>Jul<br>2018</b></td>
@@ -303,7 +358,6 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <img id="pub_img_generic" src="images/Papers/arxiv-mal-2018-icon.jpg" style=" width:250px; height:auto; margin:0px;">
-        <br>&nbsp;<br>
       </td>
     </tr>
     <!-- End of Publication Row -->
