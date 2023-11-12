@@ -6,18 +6,18 @@ tags:
   - MLOps
 ---
 
-GPU clusters with multiple compute nodes are becoming ubiquitous for training large deep learning models. [Slurm](https://slurm.schedmd.com/documentation.html) is a popular choice for job scheduling and management on such systems.
+GPU clusters with multiple compute nodes are ubiquitous for training large deep learning models. [Slurm](https://slurm.schedmd.com/documentation.html) is a popular choice for job scheduling and management on such systems.
 
-In this post, we'll set up a [Jupyter Notebook](https://jupyter.org/) server running on a Slurm compute node so that it is accessible from the local machine.
+In this post, we'll set up a [Jupyter Notebook](https://jupyter.org/) server running on a Slurm compute node that is accessible from a local machine.
 
 First, make sure that you can log into the Slurm head node. 
-Check by running SSH with the following command in the Terminal:
+Check by running SSH with the following command in the Terminal on your local machine:
 
 ```sh
 ssh -p <ssh_port> <slurm_username>@<slurm_head_node> -i <path_to_the_rsa_private_key_file>
 ```
 
-Next, we request compute resources using the Slurm command `srun` that spins up an interactive shell on a compute node with the resources requested:
+Once logged into the head node, compute resources can be requested using the Slurm command `srun`, that spins up an interactive shell on a compute node with the resources requested:
 
 ```sh
 srun --partition=<slurm_partition> --gres=gpu:1 --mem=50G --pty bash -l  
@@ -25,18 +25,18 @@ srun --partition=<slurm_partition> --gres=gpu:1 --mem=50G --pty bash -l
 
 Here, we requested a Slurm compute node with at least one GPU and 50 GB of memory (RAM). Once resources are allocated, the shell in the terminal session logs into the compute node.
 
-To establish a Jupyter Notebook server in the background that does not terminate with the Terminal shell session, use `tmux` or `screen`. Here we use `tmux` by creating a tab named `jupyter_tmux`:
+To establish a Jupyter Notebook server in the background that does not terminate with the Terminal shell session, use `tmux` or `screen`. Here we use `tmux` by creating a tab named `jupyter_tmux` on the allocated compute node:
 ```sh
 tmux new -s "jupyter_tmux"
 ```
 
-Now, launch a Jupyter Notebook server within the `tmux` session by:
+Now, launch a Jupyter Notebook server within the `tmux` session by running:
 ```sh
 jupyter notebook --no-browser --port <jupyter_port>
 ```
-Detach from the `tmux` session by pressing `Ctrl` and `b` keys at the same time, and then followed by `d`.
+Detach from the `tmux` session by pressing `Ctrl` and `b` keys at the same time, followed by `d`.
 
-Now that we have the Jupyter server running on a Slurm compute node, the next step is to forward the jupyter server port through SSH to the local computer via the Slurm head node.
+With the Jupyter server now running on a Slurm compute node, the next step is to forward it through SSH to the local computer via the Slurm head node.
 
 Open a new Terminal session on the local computer. Forward the Jupyter Server port from the compute node to the local machine's ports using SSH tunneling as follows:
 
@@ -45,7 +45,7 @@ Open a new Terminal session on the local computer. Forward the Jupyter Server po
 ssh -A -N -f -o "ProxyCommand ssh -W %h:%p -p <ssh_port> <slurm_username>@<slurm_head_node> -i <path_to_the_rsa_private_key_file>" -L localhost:<jupyter_port>:localhost:<jupyter_port> <slurm_username>@<slurm_compute_node> -i <path_to_the_rsa_private_key_file>
 ```
 
-That's it! Now you should be able to access the Jupyter Notebook server from the local machine by opening `http://localhost:<jupyter_port>/` on your browser!
+Voila! The Jupyter Notebook server should be accessible from the local machine at `http://localhost:<jupyter_port>/`!
 
 
 
