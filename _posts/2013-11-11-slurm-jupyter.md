@@ -36,7 +36,7 @@ jupyter notebook --no-browser --port <jupyter_port>
 ```
 Detach from the `tmux` session by pressing `Ctrl` and `b` keys at the same time, followed by `d`.
 
-With the Jupyter server running on a Slurm compute node, the next step is to forward it through SSH to the local computer via the Slurm head node.
+With the Jupyter server running on the Slurm compute node, the next step is to forward it through SSH to the local computer via the Slurm head node.
 
 Open a new Terminal session on the local computer. Forward the Jupyter Server port from the compute node to the local machine's ports using SSH tunneling as follows:
 
