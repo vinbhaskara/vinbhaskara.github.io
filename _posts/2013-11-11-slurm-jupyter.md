@@ -48,5 +48,24 @@ ssh -A -N -f -o "ProxyCommand ssh -W %h:%p -p <ssh_port> <slurm_username>@<slurm
 Voila! The Jupyter Notebook server should be accessible from the local machine at `http://localhost:<jupyter_port>/`!
 
 
+Citation
+---
+
+If you found this post helpful, please cite as:
+
+> Bhaskara, Vineeth S. (Nov 2023). Hosting Jupyter Notebooks on Slurm. https://vinbhaskara.github.io/posts/2013/11/slurm-jupyter/
+
+or,
+
+```json
+@article{bhaskara2023slurm,
+  title   = "Hosting Jupyter Notebooks on Slurm",
+  author  = "Bhaskara, Vineeth S.",
+  journal = "vinbhaskara.github.io",
+  year    = "2023",
+  month   = "Nov",
+  url     = "https://vinbhaskara.github.io/posts/2013/11/slurm-jupyter/"
+}
+```
 
 
