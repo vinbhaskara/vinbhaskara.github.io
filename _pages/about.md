@@ -112,8 +112,6 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 
 ## Publications
 
-(<sup style="font-size:140%;top: 0.15em;">*</sup> <i> denotes equal contribution</i>)
-
 
 ### Machine Learning  
 
@@ -305,6 +303,10 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     <!-- End of Publication Row -->
   </tbody>
 </table>
+
+
+(<sup style="font-size:140%;top: 0.15em;">*</sup> <i> denotes equal contribution</i>)
+
 
 
 ## Preprints
