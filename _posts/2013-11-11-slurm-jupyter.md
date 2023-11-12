@@ -23,7 +23,7 @@ Once logged into the head node, compute resources can be requested using the Slu
 srun --partition=<slurm_partition> --gres=gpu:1 --mem=50G --pty bash -l  
 ```
 
-Here, we requested a Slurm compute node with at least one GPU and 50 GB of memory (RAM). Once resources are allocated, the shell in the terminal session logs into the compute node.
+Here, we requested a Slurm compute node with at least one GPU and 50 GB of memory (RAM). Once resources are allocated, the shell in the Terminal session logs into the compute node.
 
 To establish a Jupyter Notebook server in the background that does not terminate with the Terminal shell session, use `tmux` or `screen`. Here we use `tmux` by creating a tab named `jupyter_tmux` on the allocated compute node:
 ```sh
