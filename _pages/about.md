@@ -301,6 +301,15 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
     </tr>
     <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
   </tbody>
 </table>
 
