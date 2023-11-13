@@ -55,7 +55,7 @@ Citation
 
 If you found this post helpful, please cite as:
 
-> Bhaskara, Vineeth S. (Nov 2023). Hosting Jupyter Notebooks on Slurm. https://vinbhaskara.github.io/posts/2013/11/slurm-jupyter/
+> Bhaskara, Vineeth S. (Nov 2023). Hosting Jupyter Notebooks on Slurm. https://vinbhaskara.github.io/posts/2023/11/slurm-jupyter/
 
 or,
 
@@ -66,7 +66,7 @@ or,
   journal = "vinbhaskara.github.io",
   year    = "2023",
   month   = "Nov",
-  url     = "https://vinbhaskara.github.io/posts/2013/11/slurm-jupyter/"
+  url     = "https://vinbhaskara.github.io/posts/2023/11/slurm-jupyter/"
 }
 ```
 
