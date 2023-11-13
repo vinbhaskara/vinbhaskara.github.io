@@ -1,9 +1,11 @@
 ---
 title: 'Hosting Jupyter Notebooks on Slurm'
-date: 2013-11-11
-permalink: /posts/2013/11/slurm-jupyter/
+date: 2023-11-11
+permalink: /posts/2023/11/slurm-jupyter/
 tags:
   - MLOps
+redirect_from: 
+  - /posts/2013/11/slurm-jupyter/ # to address a typo in the link shared on social media haha
 ---
 
 GPU clusters with multiple compute nodes are ubiquitous for training large deep learning models. [Slurm](https://slurm.schedmd.com/documentation.html) is a popular choice for job scheduling and management on such systems.
