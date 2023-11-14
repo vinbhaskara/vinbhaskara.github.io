@@ -4,13 +4,17 @@ date: 2023-11-11
 permalink: /posts/2023/11/slurm-jupyter/
 tags:
   - MLOps
+comments: true
 redirect_from: 
   - /posts/2013/11/slurm-jupyter/ # to address a typo in the link shared on social media haha
 ---
 
+
 GPU clusters with multiple compute nodes are ubiquitous for training large deep learning models. [Slurm](https://slurm.schedmd.com/documentation.html) is a popular choice for job scheduling and management on such systems.
 
 In this post, we'll set up a [Jupyter Notebook](https://jupyter.org/) server running on a Slurm compute node that is accessible from a local machine.
+
+{% include toc %}
 
 First, make sure that you can log into the Slurm head node. 
 Check by running SSH with the following command in the Terminal on your local machine:
