@@ -14,7 +14,7 @@ redirect_from:
 
 {% include toc %}
 
-A Slurm GPU cluster consists of one or more head (or login) nodes, and multiple compute nodes. Generally, the head nodes are lighter on compute resources (eg. no GPUs, low RAM, etc). It is a common practice by system admins to prevent users from logging into compute nodes directly from the head node bypassing Slurm resource allocation (see [PAM](https://slurm.schedmd.com/faq.html#pam)). 
+A Slurm GPU cluster consists of one or more head (or login) nodes and multiple compute nodes. Generally, the head nodes are lighter on compute resources (eg. no GPUs, low RAM, etc). It is a common practice by system admins to prevent users from logging into compute nodes directly from the head node bypassing Slurm resource allocation (see [PAM](https://slurm.schedmd.com/faq.html#pam)). 
 
 In this post, we'll set up a [Jupyter Notebook](https://jupyter.org/) server running on an allocated Slurm compute node such that it is accessible from a web browser on the local machine. 
 
@@ -31,7 +31,7 @@ ssh -p <ssh_port> <slurm_username>@<slurm_head_node> -i <path_to_the_rsa_private
 
 ### Request Slurm Compute
 
-Once logged into the head node, compute resources can be requested using the Slurm command `srun`, that spins up an interactive shell on a compute node with the resources requested:
+Once logged into the head node, compute resources can be requested using the Slurm command `srun`, which spins up an interactive shell on a compute node with the resources requested:
 
 ```sh
 srun --partition=<slurm_partition> --gres=gpu:1 --mem=50G --pty bash -l  
@@ -50,11 +50,11 @@ Now, launch a Jupyter Notebook server within the `tmux` session by running:
 ```sh
 jupyter notebook --no-browser --port <jupyter_port>
 ```
-Detach from the `tmux` session by pressing <code style="color: #0072be; background: #f4f2f9;">ctrl</code> and <code style="color: #0072be; background: #f4f2f9;">b</code> keys at the same time, then followed by <code style="color: #0072be; background: #f4f2f9;">d</code>.
+Detach from the `tmux` session by pressing <code style="color: #0072be; background: #f4f2f9;">ctrl</code> and <code style="color: #0072be; background: #f4f2f9;">b</code> keys at the same time, followed by <code style="color: #0072be; background: #f4f2f9;">d</code>.
 
 ### Forward Ports By SSH Tunneling
 
-With the Jupyter server running on the Slurm compute node, the next step is to forward the port <code style="color: #0072be; background: #f4f2f9;">&lt;jupyter_port&gt;</code> from the compute node to the local machine via a SSH tunnel through the head node.  
+With the Jupyter server running on the Slurm compute node, the next step is to forward the port <code style="color: #0072be; background: #f4f2f9;">&lt;jupyter_port&gt;</code> from the compute node to the local machine via an SSH tunnel through the head node.  
 Open a new Terminal session on the local computer and run:
 
 ```sh
