@@ -1,13 +1,18 @@
 ---
 permalink: /subscribe/
-title: "Subscribe to the Blog Posts"
+title: "Subscribe to the Blog!"
 author_profile: true
 redirect_from:
   - /mailing-list/
 ---
 
-Please leave your email below and I'll keep you posted of new blog posts.   
-Your email address will not be used for spamming or any other purposes, and you may unsubscribe at any time. 
+
+Please leave your email below and I'll keep you posted of future blog posts.  
+
+
+Your email address will not be used for spamming or any other commercial purposes, and you may unsubscribe at any time. 
+
+
 
 <div id="mc_embed_shell">
   
