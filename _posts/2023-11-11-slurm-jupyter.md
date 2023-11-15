@@ -16,7 +16,7 @@ redirect_from:
 
 A Slurm GPU cluster consists of one or more head (or login) nodes and multiple compute nodes. Generally, the head nodes are lighter on compute resources (eg. no GPUs, low RAM, etc). It is a common practice by system admins to prevent users from logging into compute nodes directly from the head node bypassing Slurm resource allocation (see [PAM](https://slurm.schedmd.com/faq.html#pam)). 
 
-In this post, we'll set up a [Jupyter Notebook](https://jupyter.org/) server running on an allocated Slurm compute node such that it is accessible from a web browser on the local machine. 
+In this post, we'll set up a [Jupyter Notebook](https://jupyter.org/) server on an allocated compute node without having to directly SSH to it from the head node. To access the server locally, we'll setup port-forwarding from the compute node to the local machine via an SSH tunnel through the head node.
 
 
 
@@ -67,32 +67,34 @@ Voila! The Jupyter Notebook server should be accessible from the local machine a
 
 ### References
 
-[1] SLURM [https://slurm.schedmd.com/](https://slurm.schedmd.com/)  
-[2] Jupyter [https://jupyter.org/](https://jupyter.org/)  
-[3] Tmux [https://github.com/tmux/tmux/wiki](https://github.com/tmux/tmux/wiki)  
-[4] GNU Screen [https://www.gnu.org/software/screen/](https://www.gnu.org/software/screen/)  
-[5] OpenSSH [https://www.openssh.com/](https://www.openssh.com/)  
+[1] Slurm, [https://slurm.schedmd.com/](https://slurm.schedmd.com/).    
+[2] Jupyter, [https://jupyter.org/](https://jupyter.org/).  
+[3] Tmux, [https://github.com/tmux/tmux/wiki](https://github.com/tmux/tmux/wiki).  
+[4] GNU Screen, [https://www.gnu.org/software/screen/](https://www.gnu.org/software/screen/).    
 
 
 ### Citation
 
 
-If you found this post helpful, please cite as:
+If you liked this article, consider subscribing to the blog's mailing list here: <a class="btn btn--warning" target="_blank" href="/subscribe/" role="button" style="text-decoration:none">Subscribe</a> 
 
-> Bhaskara, Vineeth S. (Nov 2023). Hosting Jupyter Notebooks on Slurm. https://vinbhaskara.github.io/posts/2023/11/slurm-jupyter/
+
+To cite this work, please use:
+
+> Bhaskara, Vin (Nov 2023). Hosting Jupyter Notebooks on Slurm. https://vinbhaskara.github.io/posts/2023/11/slurm-jupyter/
 
 or,
 
-```json
-@article{bhaskara2023slurm,
-  title   = "Hosting Jupyter Notebooks on Slurm",
-  author  = "Bhaskara, Vineeth S.",
-  journal = "vinbhaskara.github.io",
-  year    = "2023",
-  month   = "Nov",
-  url     = "https://vinbhaskara.github.io/posts/2023/11/slurm-jupyter/"
-}
-```
+> ```json
+> @article{bhaskara2023slurm,
+>   title   = "Hosting Jupyter Notebooks on Slurm",
+>   author  = "Bhaskara, Vin",
+>   journal = "vinbhaskara.github.io",
+>   year    = "2023",
+>   month   = "Nov",
+>   url     = "https://vinbhaskara.github.io/posts/2023/11/slurm-jupyter/"
+> }
+> ```
 
 
 
