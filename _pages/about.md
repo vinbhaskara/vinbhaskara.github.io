@@ -7,6 +7,8 @@ classes: wide
 redirect_from: 
   - /about/
   - /about.html
+header:
+  preview_card_image: profile_pic.jpg
 ---
 
 I'm a Research Engineer at [Borealis AI](https://www.borealisai.com/) Montreal working on Foundation Models and LLMs for Finance. 
