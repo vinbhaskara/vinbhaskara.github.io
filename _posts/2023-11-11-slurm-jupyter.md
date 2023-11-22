@@ -8,7 +8,7 @@ comments: true
 redirect_from: 
   - /posts/2013/11/slurm-jupyter/ # to address a typo in the link shared on social media haha
 header:
-  preview_card_image: 2023-11-11-slurm-jupyter-preview-card.jpg
+  preview_card_image: 2023-11-11-slurm-jupyter-intro-image.jpg
 ---
 
 <figure>
