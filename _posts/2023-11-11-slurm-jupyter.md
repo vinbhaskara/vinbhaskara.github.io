@@ -11,6 +11,14 @@ header:
   preview_card_image: 2023-11-11-slurm-jupyter-preview-card.jpg
 ---
 
+<figure>
+  <img src="./../../../../images/2023-11-11-slurm-jupyter-intro-image.jpg" alt="Photo generated with AI by Bing.">
+  <figcaption>
+    <span class="caption"></span>
+    <i class="photo-credit">Photo generated with AI by Microsoft Bing.</i>
+  </figcaption>
+</figure>
+
 
 [Slurm](https://slurm.schedmd.com/documentation.html) is a popular choice for job scheduling and management on GPU clusters with multiple compute nodes that are ubiquitous for training large deep learning models. 
 
