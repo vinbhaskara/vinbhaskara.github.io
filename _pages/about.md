@@ -18,7 +18,7 @@ Earlier, I was a Software Engineer developing Behavior-based  Malware Classifier
 
 I'm interested in fundamental research on deep learning, and applied AI for healthcare and medicine.
 
-<i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i> <code style="color: #000000; background: #ffffff;"><b>vin [dot] bhaskara [at] gmail [dot] com</b></code>
+<i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i> <code style="color: #000000; background: #ffffff;">vin [dot] bhaskara [at] gmail [dot] com</code>
 
 
 <!--
