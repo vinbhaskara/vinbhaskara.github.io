@@ -16,7 +16,8 @@ Earlier, I was a Software Engineer developing Behavior-based  Malware Classifier
 
 I'm interested in fundamental research on deep learning, and applied AI for healthcare and medicine.
 
-<i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i> <code style="color: #0072be; background: #f4f2f9;"><b>vin [dot] bhaskara [at] gmail [dot] com</b></code>
+<i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i> <code style="color: #000000; background: #ffffff;"><b>vin [dot] bhaskara [at] gmail [dot] com</b></code>
+
 
 <!--
 I graduated with a Master's from the Department of Computer Science at the University of Toronto in 2020 focusing on Deep Learning for Computer Vision. During this period, I received the Vector Institute Scholarship in Artificial Intelligence (VSAI) that was awarded to 66 graduate students across the province of Ontario, Canada. In 2016, I graduated from IIT Guwahati with a B.Tech. in Engineering Physics and received the Institute Silver Medal for the best academic performance in the department.
@@ -35,37 +36,37 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 <table>
   <tbody>
     <tr>
-      <td>MSc Applied Computing, <a href="https://web.cs.toronto.edu/">Department of Computer Science</a></td>
+      <td style="text-align: left">MSc Applied Computing, <a href="https://web.cs.toronto.edu/">Department of Computer Science</a></td>
       <td rowspan="4" style="text-align: center"><img src="./../images/uoft.png" width="70" height="70">&nbsp;<img src="./../images/vector.png" width="100" height="auto"></td>
       <td></td>
     </tr>
     <tr>
-      <td><a href="https://www.utoronto.ca/" >University of Toronto</a>, St. George</td>
+      <td style="text-align: left"><a href="https://www.utoronto.ca/" >University of Toronto</a>, St. George</td>
       <td>&nbsp;</td>
-      <td>2018 - 2020</td>
+      <td style="text-align: right">2018 - 2020</td>
     </tr>
     <tr>
-      <td>Grade: A+ (4.0/4.0), <a href="https://vectorinstitute.ai/2018/12/13/vector-awards-inaugural-scholarships-second-round-of-applications-to-open-in-2019/">Vector Institute Scholar</a></td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
+      <td style="text-align: left">Grade: A+ (4.0/4.0), <a href="https://vectorinstitute.ai/2018/12/13/vector-awards-inaugural-scholarships-second-round-of-applications-to-open-in-2019/">Vector Institute Scholar</a></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td>B.Tech. Engineering Physics</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">B.Tech. Engineering Physics</td>
       <td rowspan="4" style="text-align: center"><img src="./../images/iitg.png" width="70" height="70"></td>
       <td></td>
     </tr>
     <tr>
-      <td>Indian Institute of Technology Guwahati (<a href="https://www.iitg.ac.in/">IIT Guwahati</a>)</td>
+      <td style="text-align: left">Indian Institute of Technology Guwahati (<a href="https://www.iitg.ac.in/">IIT Guwahati</a>)</td>
       <td>&nbsp;</td>
-      <td>2012 - 2016</td>
+      <td style="text-align: right">2012 - 2016</td>
     </tr>
     <tr>
-      <td>Department Rank 1, <a href="https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf">Institute Silver Medalist</a></td>
+      <td style="text-align: left">Department Rank 1, <a href="https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf">Institute Silver Medalist</a></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
