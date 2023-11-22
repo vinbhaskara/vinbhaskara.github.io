@@ -124,6 +124,9 @@
       {% if author.confluence %}
         <li><a href="{{ author.confluence }}" target="_blank"><span style="color: black;"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i></span> Confluence</a></li>
       {% endif %}
+      {% if author.jira %}
+        <li><a href="{{ author.jira }}" target="_blank"><span style="color: black;"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i></span> JIRA</a></li>
+      {% endif %}
       {% if author.strava %}
         <li><a href="{{ author.strava }}" target="_blank"><span style="color: black;"><i class="fab fa-fw fa-strava" aria-hidden="true"></i></span> Strava</a></li>
       {% endif %}

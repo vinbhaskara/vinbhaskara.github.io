@@ -14,7 +14,7 @@ I'm a Research Engineer at [Borealis AI](https://www.borealisai.com/) Montreal w
 Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto) working with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on Computer Vision, specifically, Burst Photography, Neural Implicit Models, Image Enhancement and Synthesis.  
 Earlier, I was a Software Engineer developing Behavior-based  Malware Classifiers using Machine Learning for [Norton AntiVirus](https://us.norton.com/) at [Symantec Corporation](https://www.broadcom.com/products/cybersecurity) in Pune, India.
 
-I'm interested in fundamental research on deep learning for computer vision, and applied AI for healthcare and medicine.
+I'm interested in fundamental research on deep learning, and applied AI for healthcare and medicine.
 
 <i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i> <code style="color: #0072be; background: #f4f2f9;"><b>vin [dot] bhaskara [at] gmail [dot] com</b></code>
 
@@ -47,8 +47,10 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     <tr>
       <td>Grade: A+ (4.0/4.0), <a href="https://vectorinstitute.ai/2018/12/13/vector-awards-inaugural-scholarships-second-round-of-applications-to-open-in-2019/">Vector Institute Scholar</a></td>
       <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
+      <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
@@ -64,6 +66,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     </tr>
     <tr>
       <td>Department Rank 1, <a href="https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf">Institute Silver Medalist</a></td>
+      <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
     <!-- <tr>
