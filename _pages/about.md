@@ -39,7 +39,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
   <tbody>
     <tr>
       <td style="text-align: left">MSc Applied Computing, <a href="https://web.cs.toronto.edu/">Department of Computer Science</a></td>
-      <td rowspan="4" style="text-align: center"><img src="./../images/uoft.png" width="70" height="70">&nbsp;<img src="./../images/vector.png" width="100" height="auto"></td>
+      <td rowspan="4" style="text-align: center"><a href="https://www.utoronto.ca/"><img src="./../images/uoft.png" width="70" height="70"></a>&nbsp;<a href="https://vectorinstitute.ai/"><img src="./../images/vector.png" width="100" height="auto"></a></td>
       <td></td>
     </tr>
     <tr>
@@ -59,7 +59,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     </tr>
     <tr>
       <td style="text-align: left">B.Tech. Engineering Physics</td>
-      <td rowspan="4" style="text-align: center"><img src="./../images/iitg.png" width="70" height="70"></td>
+      <td rowspan="4" style="text-align: center"><a href="https://www.iitg.ac.in/"><img src="./../images/iitg.png" width="70" height="70"></a></td>
       <td></td>
     </tr>
     <tr>
