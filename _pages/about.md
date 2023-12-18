@@ -11,12 +11,12 @@ header:
   preview_card_image: profile_pic.jpg
 ---
 
-I'm a Research Engineer at [Borealis AI](https://www.borealisai.com/) Montreal working on Foundation Models and LLMs for Finance. 
+I'm a Research Engineer at [Borealis AI](https://www.borealisai.com/) Montreal working on foundation models and LLMs for finance. 
 
-Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto) working with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on Computer Vision, specifically, Burst Photography, Neural Implicit Models, Image Enhancement and Synthesis.  
-Earlier, I was a Software Engineer developing Behavior-based  Malware Classifiers using Machine Learning for [Norton AntiVirus](https://us.norton.com/) at [Symantec Corporation](https://www.broadcom.com/products/cybersecurity) in Pune, India.
+Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto) working with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
+Earlier, I was a Software Engineer developing behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/) at [Symantec Corporation](https://www.broadcom.com/products/cybersecurity) in Pune, India.
 
-I'm interested in fundamental research on deep learning, and applied AI for healthcare and medicine.
+I'm interested in fundamental research on generalization, calibration and robustness of deep neural networks, and applied AI for healthcare and medicine.
 
 <i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i> <code style="color: #000000; background: #ffffff;">vin [dot] bhaskara [at] gmail [dot] com</code>
 
