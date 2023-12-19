@@ -100,7 +100,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <img id="pub_img_generic" src="images/Papers/patent22-icon.jpg" style=" width:250px; height:auto; margin:0px;">
+        <a href="https://patents.google.com/patent/US20220138500A1/en"><img id="pub_img_generic" src="images/Papers/patent22-icon.jpg" style=" width:250px; height:auto; margin:0px;"></a>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -145,7 +145,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <img id="pub_img_generic" src="images/Papers/wacv22-icon.jpg" style=" width:250px; height:auto; margin:0px;">
+        <a href="https://openaccess.thecvf.com/content/WACV2022/html/Bhaskara_GraN-GAN_Piecewise_Gradient_Normalization_for_Generative_Adversarial_Networks_WACV_2022_paper.html"><img id="pub_img_generic" src="images/Papers/wacv22-icon.jpg" style=" width:250px; height:auto; margin:0px;"></a>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -175,7 +175,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <img id="pub_img_generic" src="images/Papers/eccvw20-icon.png" style=" width:250px; height:auto; margin:0px;">
+        <a href="https://link.springer.com/chapter/10.1007/978-3-030-67070-2_5"><img id="pub_img_generic" src="images/Papers/eccvw20-icon.png" style=" width:250px; height:auto; margin:0px;"></a>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -214,7 +214,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <img id="pub_img_generic" src="images/Papers/pra22-icon.jpg" style=" width:250px; height:auto; margin:0px;">
+        <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.052441"><img id="pub_img_generic" src="images/Papers/pra22-icon.jpg" style=" width:250px; height:auto; margin:0px;"></a>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -245,7 +245,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <img id="pub_img_generic" src="images/Papers/qinp2017-icon.png" style=" width:250px; height:auto; margin:0px;">
+        <a href="https://link.springer.com/article/10.1007/s11128-017-1568-0"><img id="pub_img_generic" src="images/Papers/qinp2017-icon.png" style=" width:250px; height:auto; margin:0px;"></a>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -274,7 +274,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <img id="pub_img_generic" src="images/Papers/osa2017-icon.jpg" style=" width:250px; height:auto; margin:0px;">
+        <a href="https://opg.optica.org/ome/fulltext.cfm?uri=ome-7-4-1198&id=361548#"><img id="pub_img_generic" src="images/Papers/osa2017-icon.jpg" style=" width:250px; height:auto; margin:0px;"></a>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -303,7 +303,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <img id="pub_img_generic" src="images/Papers/nano2016-icon.jpg" style=" width:250px; height:auto; margin:0px;">
+        <a href="https://www.degruyter.com/document/doi/10.1515/nanoph-2015-0026/html"><img id="pub_img_generic" src="images/Papers/nano2016-icon.jpg" style=" width:250px; height:auto; margin:0px;"></a>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -345,7 +345,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <img id="pub_img_generic" src="images/Papers/arxiv-opt-2019-icon.png" style=" width:250px; height:auto; margin:0px;">
+        <a href="https://arxiv.org/abs/1905.13200"><img id="pub_img_generic" src="images/Papers/arxiv-opt-2019-icon.png" style=" width:250px; height:auto; margin:0px;"></a>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -374,7 +374,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <img id="pub_img_generic" src="images/Papers/arxiv-mal-2018-icon.jpg" style=" width:250px; height:auto; margin:0px;">
+        <a href="https://arxiv.org/abs/1807.07525"><img id="pub_img_generic" src="images/Papers/arxiv-mal-2018-icon.jpg" style=" width:250px; height:auto; margin:0px;"></a>
       </td>
     </tr>
     <!-- End of Publication Row -->
