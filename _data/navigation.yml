@@ -1,7 +1,12 @@
 # main links links
 main:
+
   - title: "Blog"
     url: /year-archive/
 
+  - title: "Personal"
+    url: /personal/
+
   - title: "Subscribe"
     url: /subscribe/
+
