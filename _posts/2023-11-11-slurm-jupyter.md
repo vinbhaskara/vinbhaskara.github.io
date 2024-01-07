@@ -15,7 +15,7 @@ header:
   <img src="./../../../../images/2023-11-11-slurm-jupyter-intro-image.jpg" alt="Photo generated with AI by Bing.">
   <figcaption>
     <span class="caption"></span>
-    <i class="photo-credit">Photo generated with AI by Microsoft Bing.</i>
+    <!-- <i class="photo-credit">Photo generated with AI by Microsoft Bing.</i> -->
   </figcaption>
 </figure>
 
