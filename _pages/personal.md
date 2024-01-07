@@ -4,7 +4,7 @@ title: "Personal"
 author_profile: true
 ---
 
-Since the COVID-19 pandemic, I've been into long-distance running and it changed my life. Never before was I so active and it has been a miracle for my mental health. My first running race ever was the 2020 Lululemon Half-marathon in Toronto that I finished in 2:00:33 hrs. Here are all the races I've run since:
+Since the COVID-19 pandemic, I've been into long-distance running and it changed my life. Never before was I so active and it has been a miracle for my mental health. My first running race ever is the 2020 Lululemon Half-marathon in Toronto that I finished in 2:00:33 hrs. Here are all the races I've run since:
 
 2023 - [21k de Mtl Half-marathon](https://mtlmarathon.com/en/) (1:56:10)  
 2022 - [Chicago Marathon](https://www.chicagomarathon.com/) (3:58:45)  
@@ -22,6 +22,8 @@ My best 42.2 km marathon finish time to date is 3:56:59 hrs.
 
 If you'd like to follow my training or are a runner too, follow me on [Strava](https://www.strava.com/)!  
 <i class="fab fa-fw fa-strava" id="emailicon-high">:&nbsp;&nbsp;</i>[https://www.strava.com/athletes/51884474](https://www.strava.com/athletes/51884474)
+
+
 
 
 
