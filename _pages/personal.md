@@ -16,7 +16,7 @@ Since the COVID-19 pandemic, I've been into long-distance running and it changed
 2020 - [Lululemon Toronto Virtual Half-marathon](https://shop.lululemon.com/en-ca/story/10k-run) (2:00:33)  
 
 
-My best 42.2 km marathon finish time to date is 3:56:59 hrs.
+My best 42.2 km marathon finish time to date is 3:56:49 hrs.
 
 
 
