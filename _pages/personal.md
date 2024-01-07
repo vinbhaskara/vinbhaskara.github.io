@@ -21,6 +21,8 @@ My best 42.2 km marathon finish time to date is 3:56:59 hrs.
 
 
 If you'd like to follow my training or are a runner too, add me on [Strava](https://www.strava.com/)!  
+
+
 <i class="fab fa-fw fa-strava" id="emailicon-high">:&nbsp;&nbsp;</i>[https://www.strava.com/athletes/51884474](https://www.strava.com/athletes/51884474)
 
 
