@@ -59,7 +59,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     </tr>
     <tr>
       <td style="text-align: left">B.Tech. Engineering Physics</td>
-      <td rowspan="4" style="text-align: center"><a href="https://www.iitg.ac.in/"><img src="./../images/iitg.png" width="70" height="70"></a></td>
+      <td rowspan="4" style="text-align: center"><a href="https://www.iitg.ac.in/"><img src="./../images/iitg.png" width="70" height="70"></a>&nbsp;<a href="https://uwaterloo.ca/institute-for-quantum-computing/"><img src="./../images/iqc.png" width="100" height="auto"></a></td>
       <td></td>
     </tr>
     <tr>
@@ -68,7 +68,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td style="text-align: right">2012 - 2016</td>
     </tr>
     <tr>
-      <td style="text-align: left">Department Rank 1, <a href="https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf">Institute Silver Medalist</a></td>
+      <td style="text-align: left">Department Rank 1, <a href="https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf">Institute Silver Medalist</a>, IQC Research Visitor</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
