@@ -68,7 +68,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td style="text-align: right">2012 - 2016</td>
     </tr>
     <tr>
-      <td style="text-align: left">Department Rank 1, <a href="https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf">Institute Silver Medalist</a>, IQC Research Visitor</td>
+      <td style="text-align: left">Department Rank 1, <a href="https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf">Institute Silver Medalist</a>, <a href="https://uwaterloo.ca/institute-for-quantum-computing/sites/default/files/uploads/files/iqc0227_annualreport2016_eng_aoda.pdf">IQC Research Visitor</a></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
