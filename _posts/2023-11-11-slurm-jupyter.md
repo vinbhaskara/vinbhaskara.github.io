@@ -4,6 +4,7 @@ date: 2023-11-11
 permalink: /posts/2023/11/slurm-jupyter/
 tags:
   - MLOps
+  - 2023
 comments: true
 redirect_from: 
   - /posts/2013/11/slurm-jupyter/ # to address a typo in the link shared on social media haha

@@ -286,6 +286,23 @@
   }
 }
 
+.page__taxonomy-itemtwo {
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  padding: 2px 2px;
+  text-decoration: none;
+  color: #2979ab;
+  border: 1px solid #2979ab;
+  border-radius: $border-radius;
+
+  &:hover {
+    text-decoration: none;
+    color: $link-color-hover;
+    border: 1px solid $link-color-hover;
+  }
+}
+
 
 /*
    Comments
