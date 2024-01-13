@@ -11,7 +11,7 @@ header:
   preview_card_image: profile_pic.jpg
 ---
 
-I'm a Research Engineer at [Borealis AI](https://www.borealisai.com/) Montreal working on foundation models and LLMs for finance. 
+I'm a Research Engineer at [Borealis AI](https://www.borealisai.com/) Montreal working on foundation models and LLMs for finance. I have 6+ years of full-time work experience driving AI research and development for products in the industry.
 
 Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto) working with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
 Earlier, I was a Software Engineer developing behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/) at [Symantec Corporation](https://www.broadcom.com/products/cybersecurity) in Pune, India.
