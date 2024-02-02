@@ -15,7 +15,7 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-          <li class="masthead__menu-item"><a href=""><i class="fas fa-fw fa-adjust" aria-hidden="true" onclick="if(sessionStorage.getItem('theme') === 'dark'){sessionStorage.setItem('theme', 'light');document.querySelector('html').style.filter = 'invert(0%)';} else {sessionStorage.setItem('theme', 'dark');document.querySelector('html').style.filter = 'invert(100%)';} return false;"></i></a></li>
+          <li class="masthead__menu-item"><a id="myInverter" href="#" onclick="if(sessionStorage.getItem('theme') === 'dark'){sessionStorage.setItem('theme', 'light');document.querySelector('html').style.filter = 'invert(0%)';} else {sessionStorage.setItem('theme', 'dark');document.querySelector('html').style.filter = 'invert(100%)';} return false;"><i class="fas fa-fw fa-adjust" aria-hidden="true"></i></a></li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
