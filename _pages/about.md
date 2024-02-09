@@ -16,7 +16,7 @@ I'm a Research Engineer at [Borealis AI](https://www.borealisai.com/) Montreal w
 Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto) working with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
 Earlier, I was a Software Engineer developing behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/) at [Symantec Corporation](https://www.broadcom.com/products/cybersecurity) in Pune, India.
 
-I'm interested in fundamental research on the generalization, calibration and robustness of deep neural networks, and applied AI for healthcare and medicine.
+I'm currently interested in fundamental research on the generalization, calibration and robustness of deep neural networks, and applied AI for healthcare and medicine.
 
 To discuss collaborations and opportunities please reach out to me by email.    
 <code style="color: #000000; background: #ffffff;"><i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i>vin [dot] bhaskara [at] gmail [dot] com</code>
