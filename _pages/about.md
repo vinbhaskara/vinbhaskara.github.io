@@ -18,8 +18,8 @@ Earlier, I was a Software Engineer developing behavior-based  malware classifier
 
 I'm currently interested in fundamental research on the generalization, calibration and robustness of deep neural networks, and applied AI for healthcare and medicine.
 
-To discuss collaborations and opportunities please reach out to me by email.    
-<code style="color: #000000; background: #ffffff;"><i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i>vin [dot] bhaskara [at] gmail [dot] com</code>
+To discuss collaborations and opportunities please reach out to me by email:            
+<code style="color: #000000; background: #ffffff;"><i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i>vin [dot] bhaskara [at] gmail [dot] com</code>.
 
 
 <!--
