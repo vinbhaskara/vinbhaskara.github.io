@@ -1,7 +1,6 @@
 ---
 permalink: /
 title: "Home"
-excerpt: ""
 author_profile: true
 classes: wide
 redirect_from: 
