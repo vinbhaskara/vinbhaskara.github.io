@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Home"
 title_separator          : "-"
 name                     : &name "Vin Bhaskara"
-description              : &description "Machine Learning, University of Toronto"
+description              : &description "Vector Scholar in AI | Kaggle Expert | Machine Learning at University of Toronto"
 url                      : https://vinbhaskara.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "vinbhaskara/vinbhaskara.github.io"
@@ -83,7 +83,7 @@ analytics:
 author:
   name             : "Vin Bhaskara"
   avatar           : "profile_pic.jpg"
-  bio              : "Machine Learning, University of Toronto"
+  bio              : "Vector Scholar in AI | Kaggle Expert | Machine Learning at University of Toronto"
   location         : "Montreal, Canada"
   employer         :
   pubmed           : 
