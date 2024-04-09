@@ -48,7 +48,12 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td style="text-align: right">2018 - 2020</td>
     </tr>
     <tr>
-      <td style="text-align: left">Grade: A+ [4.0/4.0], <a href="https://vectorinstitute.ai/2018/12/13/vector-awards-inaugural-scholarships-second-round-of-applications-to-open-in-2019/">Vector Institute Scholar</a></td>
+      <td style="text-align: left">Grade: A+ [4.0/4.0], <a href="https://vectorinstitute.ai/2018/12/13/vector-awards-inaugural-scholarships-second-round-of-applications-to-open-in-2019/">Vector Scholar in AI</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Academic Supervisor: <a href="https://www.cs.toronto.edu/~rgrosse/">Prof. Roger Grosse</a></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
@@ -58,12 +63,12 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td style="text-align: left">B.Tech. Engineering Physics (Quantum Computing)</td>
+      <td style="text-align: left">B.Tech. Engineering Physics</td>
       <td rowspan="4" style="text-align: center"><a href="https://www.iitg.ac.in/"><img src="./../images/iitg.png" width="70" height="70"></a>&nbsp;<a href="https://uwaterloo.ca/institute-for-quantum-computing/"><img src="./../images/iqc.png" width="100" height="auto"></a></td>
       <td></td>
     </tr>
     <tr>
-      <td style="text-align: left">Indian Institute of Technology Guwahati [<a href="https://www.iitg.ac.in/">IIT Guwahati</a>]</td>
+      <td style="text-align: left">Indian Institute of Technology Guwahati (<a href="https://www.iitg.ac.in/">IIT Guwahati</a>)</td>
       <td>&nbsp;</td>
       <td style="text-align: right">2012 - 2016</td>
     </tr>
