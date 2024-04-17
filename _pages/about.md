@@ -18,7 +18,7 @@ Earlier, I was a Software Engineer developing behavior-based  malware classifier
 I'm currently interested in fundamental research on the generalization, calibration and robustness of deep neural networks, and applied AI for healthcare and medicine.
 
 To discuss collaborations and opportunities please reach out to me by email -             
-<code style="color: #000000; background: #ffffff;"><i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i>vin [dot] bhaskara [at] gmail [dot] com</code>.
+<code style="color: #000000; background: #ffffff;"><i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i>vin [dot] bhaskara [at] gmail [dot] com</code>
 
 
 <!--
@@ -334,6 +334,35 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 
 <table id="publication-table">
   <tbody>
+  <!-- Publication Row -->
+  <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>Apr<br>2020</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+      <b>Part-based Auxiliary Objectives with No Extra Labels for Robust Single-Shot Object Detection</b>
+          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Stavros Tsogkas, Kosta Derpanis, Alex Levinshtein<br>
+          <i>DOI: 10.13140/RG.2.2.10079.47521</i>
+          <br>
+          <p style="margin:0.5em;"></p>
+          <a class="btn btn--primary" target="_blank" href="https://dx.doi.org/10.13140/RG.2.2.10079.47521" role="button" style="text-decoration:none">Link</a> 
+          <a class="btn btn--cite" target="_blank" href="files/rg-objdet-2020-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+          <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+          <a href="https://dx.doi.org/10.13140/RG.2.2.10079.47521"><img id="pub_img_generic" src="images/Papers/bmvc_sub2020.jpg" style=" width:250px; height:auto; margin:0px;"></a>
+      </td>
+      </tr>
+  <!-- End of Publication Row -->
+      <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
     <!-- Publication Row -->
     <tr>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>May<br>2019</b></td>
@@ -354,6 +383,35 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
     </tr>
     <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
+  <!-- Publication Row -->
+  <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>Apr<br>2019</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Risk Prediction in the General Internal Medicine Ward at St. Michael's Hospital</b>
+          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Yingying Fu, Sindhu Gowda<br>
+          <i>DOI: 10.13140/RG.2.2.27695.55205</i>
+          <br>
+          <p style="margin:0.5em;"></p>
+          <a class="btn btn--primary" target="_blank" href="https://dx.doi.org/10.13140/RG.2.2.27695.55205" role="button" style="text-decoration:none">Link</a> 
+          <a class="btn btn--cite" target="_blank" href="files/rg-ml4h-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+          <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+          <a href="https://dx.doi.org/10.13140/RG.2.2.27695.55205"><img id="pub_img_generic" src="images/Papers/ml4h.png" style=" width:250px; height:auto; margin:0px;"></a>
+      </td>
+      </tr>
+  <!-- End of Publication Row -->
     <!-- Spacing Empty Publication Row -->
     <tr>
       <td>&nbsp;</td>

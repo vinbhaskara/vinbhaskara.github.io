@@ -1,0 +1,7 @@
+@misc{bhaskara2019ml4h,
+      title={Risk Prediction in the General Internal Medicine Ward at St. Michael's Hospital}, 
+      author={Vineeth Bhaskara and Yingying Fu and Sindhu Gowda},
+      year={2019},
+      month={04},
+      doi={10.13140/RG.2.2.27695.55205}
+}

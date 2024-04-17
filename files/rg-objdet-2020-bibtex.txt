@@ -1,0 +1,7 @@
+@misc{bhaskara2020objdet,
+      title={Part-based auxiliary objectives with no extra labels for robust single-shot object detection}, 
+      author={Vineeth Bhaskara and Stavros Tsogkas and Konstantinos Derpanis and Alex Levinshtein},
+      year={2020},
+      month={04},
+      doi={10.13140/RG.2.2.10079.47521}
+}
