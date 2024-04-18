@@ -346,6 +346,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
           <br>
           <p style="margin:0.5em;"></p>
           <a class="btn btn--primary" target="_blank" href="https://dx.doi.org/10.13140/RG.2.2.10079.47521" role="button" style="text-decoration:none">Link</a> 
+          <a class="btn btn--primary" target="_blank" href="files/BMVC2020_CenterNet.pdf" role="button" style="text-decoration:none">PDF</a>
           <a class="btn btn--cite" target="_blank" href="files/rg-objdet-2020-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
           <br>
       </td>
@@ -404,6 +405,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
           <br>
           <p style="margin:0.5em;"></p>
           <a class="btn btn--primary" target="_blank" href="https://dx.doi.org/10.13140/RG.2.2.27695.55205" role="button" style="text-decoration:none">Link</a> 
+          <a class="btn btn--primary" target="_blank" href="files/ML4H_GIM_paper.pdf" role="button" style="text-decoration:none">PDF</a>
           <a class="btn btn--cite" target="_blank" href="files/rg-ml4h-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
           <br>
       </td>
