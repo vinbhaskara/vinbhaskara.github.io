@@ -133,6 +133,9 @@
       {% if author.strava %}
         <li><a href="{{ author.strava }}" target="_blank"><span style="color: black;"><i class="fab fa-fw fa-strava" aria-hidden="true"></i></span> Strava</a></li>
       {% endif %}
+      {% if author.openreview %}
+      <li><a href="{{ author.openreview }}" target="_blank"><span style="color: black;"><i class="fab fa-fw fa-codepen" aria-hidden="true"></i></span> OpenReview</a></li>
+      {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
