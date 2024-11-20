@@ -17,7 +17,7 @@ Since the COVID-19 pandemic, I've been into long-distance running! It's had the 
 
 
 My best 42.2 km marathon finish time to date is 3:56:49 hrs.  
-I am planning to run my first (and likely the last!) 50 km ultra-marathon soon sometime in 2024! 
+I am planning to run my first (and likely the last!) 50 km ultra-marathon soon sometime in 2025! 
 
 
 If you are a fellow runner or if you'd like to follow my training, add me on Strava <i class="fab fa-fw fa-strava" id="emailicon-high">:&nbsp;&nbsp;</i>[https://www.strava.com/athletes/51884474](https://www.strava.com/athletes/51884474)!
