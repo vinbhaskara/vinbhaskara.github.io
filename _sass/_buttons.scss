@@ -114,6 +114,14 @@
     }
   }
 
+  &--cite2 {
+    background-color: $warning-color;
+
+    &:hover {
+      background-color: mix(#000, $warning-color, 20%);
+    }
+  }
+
   /* success */
 
   &--success {

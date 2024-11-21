@@ -102,7 +102,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
         <p style="margin:0.5em;"></p>
         <a class="btn btn--primary" target="_blank" href="https://patents.google.com/patent/US20220138500A1/en" role="button" style="text-decoration:none">Patent</a> 
-        <a class="btn btn--cite" target="_blank" href="files/patent2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <a class="btn btn--cite2" target="_blank" href="files/patent2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
@@ -147,7 +147,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <a class="btn btn--secondary" target="_blank" href="files/wacv2022-poster.pdf" role="button" style="text-decoration:none">Poster</a>
         <a class="btn btn--secondary" target="_blank" href="files/wacv2022-slides.pdf" role="button" style="text-decoration:none">Slides</a>
         <a class="btn btn--secondary" target="_blank" href="https://www.youtube.com/watch?v=zC2q8B90DeA" role="button" style="text-decoration:none">Video</a>
-        <a class="btn btn--cite" target="_blank" href="files/wacv2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <a class="btn btn--cite2" target="_blank" href="files/wacv2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
@@ -177,7 +177,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <p style="margin:0.5em;"></p>
         <a class="btn btn--primary" target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-67070-2_5" role="button" style="text-decoration:none">Paper</a> 
         <a class="btn btn--primary" target="_blank" href="files/eccvw20-pdf.pdf" role="button" style="text-decoration:none">PDF</a>
-        <a class="btn btn--cite" target="_blank" href="files/eccvw2020-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <a class="btn btn--cite2" target="_blank" href="files/eccvw2020-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
@@ -216,7 +216,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <a class="btn btn--primary" target="_blank" href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.052441" role="button" style="text-decoration:none">Paper</a> 
         <a class="btn btn--primary" target="_blank" href="files/pra2022-pdf.pdf" role="button" style="text-decoration:none">PDF</a>
         <a class="btn btn--secondary" target="_blank" href="https://arxiv.org/abs/1706.01448v1" role="button" style="text-decoration:none">Arxiv</a>
-        <a class="btn btn--cite" target="_blank" href="files/pra2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <a class="btn btn--cite2" target="_blank" href="files/pra2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
@@ -247,7 +247,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <a class="btn btn--primary" target="_blank" href="https://link.springer.com/article/10.1007/s11128-017-1568-0" role="button" style="text-decoration:none">Paper</a> 
         <a class="btn btn--primary" target="_blank" href="files/qinp2017-pdf.pdf" role="button" style="text-decoration:none">PDF</a>
         <a class="btn btn--secondary" target="_blank" href="https://arxiv.org/abs/1607.00164" role="button" style="text-decoration:none">Arxiv</a>
-        <a class="btn btn--cite" target="_blank" href="files/qinp2017-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <a class="btn btn--cite2" target="_blank" href="files/qinp2017-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
@@ -276,7 +276,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
         <p style="margin:0.5em;"></p>
         <a class="btn btn--primary" target="_blank" href="https://opg.optica.org/ome/fulltext.cfm?uri=ome-7-4-1198&id=361548#" role="button" style="text-decoration:none">Paper</a> 
-        <a class="btn btn--cite" target="_blank" href="files/osa2017-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <a class="btn btn--cite2" target="_blank" href="files/osa2017-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
@@ -305,7 +305,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
         <p style="margin:0.5em;"></p>
         <a class="btn btn--primary" target="_blank" href="https://www.degruyter.com/document/doi/10.1515/nanoph-2015-0026/html" role="button" style="text-decoration:none">Paper</a> 
-        <a class="btn btn--cite" target="_blank" href="files/nano2016-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <a class="btn btn--cite2" target="_blank" href="files/nano2016-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
@@ -348,7 +348,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
           <p style="margin:0.5em;"></p>
           <a class="btn btn--primary" target="_blank" href="https://dx.doi.org/10.13140/RG.2.2.10079.47521" role="button" style="text-decoration:none">Link</a> 
           <a class="btn btn--primary" target="_blank" href="files/BMVC2020_CenterNet.pdf" role="button" style="text-decoration:none">PDF</a>
-          <a class="btn btn--cite" target="_blank" href="files/rg-objdet-2020-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+          <a class="btn btn--cite2" target="_blank" href="files/rg-objdet-2020-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
           <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
@@ -377,7 +377,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
         <p style="margin:0.5em;"></p>
         <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1905.13200" role="button" style="text-decoration:none">Arxiv</a>
-        <a class="btn btn--cite" target="_blank" href="files/arxiv-opt-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <a class="btn btn--cite2" target="_blank" href="files/arxiv-opt-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
@@ -407,7 +407,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
           <p style="margin:0.5em;"></p>
           <a class="btn btn--primary" target="_blank" href="https://dx.doi.org/10.13140/RG.2.2.27695.55205" role="button" style="text-decoration:none">Link</a> 
           <a class="btn btn--primary" target="_blank" href="files/ML4H_GIM_paper.pdf" role="button" style="text-decoration:none">PDF</a>
-          <a class="btn btn--cite" target="_blank" href="files/rg-ml4h-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+          <a class="btn btn--cite2" target="_blank" href="files/rg-ml4h-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
           <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
@@ -436,7 +436,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
         <p style="margin:0.5em;"></p>
         <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1807.07525" role="button" style="text-decoration:none">Arxiv</a> 
-        <a class="btn btn--cite" target="_blank" href="files/arxiv-mal-2018-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <a class="btn btn--cite2" target="_blank" href="files/arxiv-mal-2018-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
