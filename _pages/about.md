@@ -15,7 +15,7 @@ I'm a Research Engineer at [Borealis AI](https://www.borealisai.com/) Montreal, 
 Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto) working with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
 Earlier, I was a Software Engineer developing behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/) at [Symantec Corporation](https://www.broadcom.com/products/cybersecurity) in Pune, India.
 
-Current Research Interests: Calibration and robustness of deep neural networks for sensitive applications in healthcare and finance.
+Current Research Interests: Calibration and robustness of deep neural networks for applications in healthcare and finance.
 
 
 For research collaborations please reach out to me by email -             
