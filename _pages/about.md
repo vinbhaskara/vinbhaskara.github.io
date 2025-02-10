@@ -13,7 +13,7 @@ header:
 I'm a Research Engineer at [Borealis AI](https://www.borealisai.com/) Montreal, working on Foundation Models and LLMs for capital markets and credit applications. I have 7 years of full-time work experience in applied AI. I also serve as an academic reviewer for CVPR/ICML, the leading conferences in Computer Vision/Machine Learning.
 
 Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto) working with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
-Earlier, I was a Software Engineer developing behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/) at [Symantec Corporation](https://www.broadcom.com/products/cybersecurity) in Pune, India.
+Earlier, I was a Software Engineer developing behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/) at [Broadcom Inc. (formerly Symantec)](https://www.broadcom.com/products/cybersecurity) in Pune, India.
 
 Current Research Interests: Calibration and robustness of deep neural networks for applications in healthcare and finance.
 
