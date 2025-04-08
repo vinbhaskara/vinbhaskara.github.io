@@ -18,8 +18,7 @@ Earlier, I was a Software Engineer developing behavior-based  malware classifier
 Current Research Interests: Calibration and robustness of deep neural networks for applications in healthcare and finance.
 
 
-For research collaborations please reach out to me by email -             
-<code style="color: #000000; background: #ffffff;"><i class="fas fa-envelope email-link" id="emailicon-high">&nbsp;:&nbsp;&nbsp;</i>vin [dot] bhaskara [at] gmail [dot] com</code>
+For research collaborations please reach out to me by email: <code style="color: #000000; background: #ffffff;">vin [dot] bhaskara [at] gmail [dot] com</code>
 
 
 <!--
