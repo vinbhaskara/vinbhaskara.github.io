@@ -38,7 +38,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 <table>
   <tbody>
     <tr>
-      <td style="text-align: left">M.Sc. Applied Computing (Computer Vision)</td>
+      <td style="text-align: left">M.Sc. Applied Computing (Deep Learning)</td>
       <td rowspan="4" style="text-align: center"><a href="https://www.utoronto.ca/"><img src="./../images/uoft.png" width="70" height="70"></a>&nbsp;<a href="https://vectorinstitute.ai/"><img src="./../images/vector.png" width="100" height="auto"></a></td>
       <td></td>
     </tr>
@@ -53,7 +53,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td style="text-align: left">Academic Supervisor: <a href="https://www.cs.toronto.edu/~rgrosse/">Prof. Roger Grosse</a></td>
+      <td style="text-align: left">Thesis: “Robust Single-Shot Object Detection for Computer Vision” </td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
