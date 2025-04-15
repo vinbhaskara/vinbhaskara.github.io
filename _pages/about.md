@@ -91,21 +91,21 @@ I graduated with a Master's from the Department of Computer Science at the Unive
   <tbody>
     <!-- Publication Row -->
     <tr>
-      <td style="text-align: left; align: left; vertical-align : middle;"><b>May<br>2022</b></td>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>Jan<br>2025</b></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td style="vertical-align : middle;">
           <b>Unsupervised Super-Resolution Training Data Construction</b>
           <br>Haicheng Wang, Xinyu Sun, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Stavros Tsogkas, Allan Jepson, Alex Levinshtein <br>
-        <i>US Patent Application 17/512,312</i>
+        <i>US Patent 12,210,587 (Granted)</i>
         <br>
         <p style="margin:0.5em;"></p>
-        <a class="btn btn--primary" target="_blank" href="https://patents.google.com/patent/US20220138500A1/en" role="button" style="text-decoration:none">Patent</a> 
+        <a class="btn btn--primary" target="_blank" href="https://patents.google.com/patent/US12210587B2/en" role="button" style="text-decoration:none">Patent</a> 
         <a class="btn btn--cite2" target="_blank" href="files/patent2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <a href="https://patents.google.com/patent/US20220138500A1/en"><img id="pub_img_generic" src="images/Papers/patent22-icon.jpg" style=" width:250px; height:auto; margin:0px;"></a>
+        <a href="https://patents.google.com/patent/US12210587B2/en"><img id="pub_img_generic" src="images/Papers/patent22-icon.jpg" style=" width:250px; height:auto; margin:0px;"></a>
       </td>
     </tr>
     <!-- End of Publication Row -->
