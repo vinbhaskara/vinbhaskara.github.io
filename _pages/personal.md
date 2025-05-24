@@ -22,6 +22,7 @@ I am planning to run my first (and likely the last!) 50 km ultra-marathon soon s
 
 If you are a fellow runner or if you'd like to follow my training, add me on Strava <i class="fab fa-fw fa-strava" id="emailicon-high">:&nbsp;&nbsp;</i>[https://www.strava.com/athletes/51884474](https://www.strava.com/athletes/51884474)!
 
+<iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/51884474/activity-summary/4aa40654fbab443f7e453cb1a02334471cf8e2a1'></iframe>
 
 <p align="center">
 <img src="./../images/running_pic1.jpg" width="551" height="auto">
