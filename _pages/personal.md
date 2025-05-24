@@ -24,6 +24,8 @@ If you are a fellow runner or if you'd like to follow my training, add me on Str
 
 <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/51884474/activity-summary/4aa40654fbab443f7e453cb1a02334471cf8e2a1'></iframe>
 
+
+
 <p align="center">
 <img src="./../images/running_pic1.jpg" width="551" height="auto">
 </p>
