@@ -10,7 +10,7 @@ header:
   preview_card_image: profile_pic.jpg
 ---
 
-I'm a Senior Research Engineer at [RBC Borealis](https://rbcborealis.com/) Montreal, working on Foundation Models and LLMs for Capital Markets and Credit Modeling. I have 7 years of full-time work experience in applied AI. I also serve as an academic reviewer for [CVPR](https://cvpr.thecvf.com/), [NeurIPS](https://neurips.cc/) and [ICML](https://icml.cc/), the leading conferences in Computer Vision and Machine Learning.
+I'm a Senior Applied Scientist at [Borealis AI](https://rbcborealis.com/) Montreal (RBC Research Institute), working on Foundation Models and LLMs for Capital Markets and Credit Modeling. I have 7 years of full-time work experience in applied AI. I also serve as an academic reviewer for [CVPR](https://cvpr.thecvf.com/), [NeurIPS](https://neurips.cc/) and [ICML](https://icml.cc/), the leading conferences in Computer Vision and Machine Learning.
 
 Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto) working with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
 Earlier, I was a Software Engineer developing behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/) at [Broadcom Inc. (formerly Symantec)](https://www.broadcom.com/products/cybersecurity) in Pune, India.
