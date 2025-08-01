@@ -12,13 +12,13 @@ header:
 
 I'm a Senior Applied Scientist at [Borealis AI](https://rbcborealis.com/) (RBC Research Institute) in Montreal, working on Foundation Models and LLMs for Capital Markets and Credit Modeling. I have 7 years of full-time work experience in applied AI. I also serve as an academic reviewer for [CVPR](https://cvpr.thecvf.com/), [NeurIPS](https://neurips.cc/) and [ICML](https://icml.cc/), the leading conferences in Computer Vision and Machine Learning.
 
-Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto) working with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
-Earlier, I was a Software Engineer developing behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/) at [Broadcom Inc. (formerly Symantec)](https://www.broadcom.com/products/cybersecurity) in Pune, India.
+Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto), where I worked with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
+Prior to that, I was a Software Engineer at [Broadcom Inc. (formerly Symantec)](https://www.broadcom.com/products/cybersecurity), where I developed behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/).
 
 Current Research Interests: Calibration and robustness of deep neural networks for applications in healthcare and finance.
 
 
-For research collaborations please reach out to me by email: <code style="color: #000000; background: #ffffff;">vin [dot] bhaskara [at] gmail [dot] com</code>.
+For research collaborations and mentorship requests, please reach out to me by email: <code style="color: #000000; background: #ffffff;">vin [dot] bhaskara [at] gmail [dot] com</code>.
 
 
 <!--
