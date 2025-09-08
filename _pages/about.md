@@ -53,7 +53,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td style="text-align: left">Thesis: “Robust Single-Shot Object Detection for Computer Vision”</td>
+      <td style="text-align: left">Research Topic: Robust Single-Shot Object Detection for Computer Vision</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
