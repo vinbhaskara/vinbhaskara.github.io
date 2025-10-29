@@ -17,7 +17,7 @@ Prior to that, I was a Software Engineer at [Broadcom Inc. (formerly Symantec)](
 
 I enjoy working on Kaggle Competitions that are related to problems in healthcare and medicine, and I rank as a [Kaggle Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% Globally, 5 Medals).
 
-For research collaborations and mentorship requests, please reach out to me by email: <code style="color: #000000; background: #ffffff;">vin [dot] bhaskara [at] gmail [dot] com</code>.
+For research collaborations and mentorship requests, please reach out to me by email: <code style="color: #000000; background: #ffffff;"><strong>vin [dot] bhaskara [at] gmail [dot] com</strong></code>.
 
 Current Research Interests: Calibration and robustness of deep neural networks for applications in healthcare and finance.
 
