@@ -15,11 +15,11 @@ I'm a Senior Applied Scientist at [Borealis AI](https://rbcborealis.com/) (RBC R
 Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto), where I worked with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
 Prior to that, I was a Software Engineer at [Broadcom Inc. (formerly Symantec)](https://www.broadcom.com/products/cybersecurity), where I developed behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/).
 
-I enjoy working on Kaggle Competitions that are related to problems in healthcare and medicine, and I rank as a [Kaggle Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% Globally, 5 Medals).
+I enjoy working on Kaggle Competitions related to healthcare and medicine, and I currently rank as a [Kaggle Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% Globally, 5 Medals). I built a custom Nvidia GeForce RTX 3090 Ti workstation for Kaggling -- check out my detailed spec here: [PC Part Picker](https://ca.pcpartpicker.com/user/vinbhaskara/saved/CVGC8d)!
 
-For research collaborations and mentorship requests, please reach out to me by email: <code style="color: #000000; background: #ffffff;"><strong>vin [dot] bhaskara [at] gmail [dot] com</strong></code>.
+For opportunities and mentorship requests, please reach out by email: <code style="color: #000000; background: #ffffff;"><strong>vin [dot] bhaskara [at] gmail [dot] com</strong></code>.
 
-Current Research Interests: Calibration and robustness of deep neural networks for applications in healthcare and finance.
+Current Research Interests: Calibration, uncertainty estimation, and robustness of large language models (LLMs) for risk-sensitive applications in healthcare and finance.
 
 
 
