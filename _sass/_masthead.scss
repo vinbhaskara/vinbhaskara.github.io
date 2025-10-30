@@ -2,6 +2,10 @@
    MASTHEAD
    ========================================================================== */
 
+.masthead__menu-item--lg > a {
+  font-weight: normal !important;
+}
+
 .masthead {
   position: relative;
   border-bottom: 1px solid $border-color;
