@@ -14,7 +14,7 @@ I'm a Senior Applied Scientist at [Borealis AI](https://rbcborealis.com/) (RBC R
 Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto), where I worked with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
 Prior to that, I was a Software Engineer at [Broadcom Inc.](https://www.broadcom.com/products/cybersecurity) (formerly Symantec), where I developed behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/).
 
-**Misc**: I'm into Kaggle Competitions related to healthcare and medicine, and I rank as a [Kaggle Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% Globally, 5 Medals). I custom built a Nvidia GeForce RTX 3090 Ti workstation in 2022 for this -- check out my detailed spec with benchmarks here: [PC Part Picker](https://ca.pcpartpicker.com/user/vinbhaskara/saved/CVGC8d)!
+**Misc**: I'm into Kaggle challenges related to healthcare and medicine and rank as a [Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% Globally, 5 Medals). I custom built a Nvidia GeForce RTX 3090 Ti workstation in 2022 for this -- check out its detailed specs with benchmarks here: [PC Part Picker](https://ca.pcpartpicker.com/user/vinbhaskara/saved/CVGC8d)!
 
 **Current Research Interests**: Calibration, uncertainty estimation, and robustness of large language models (LLMs) for risk-sensitive applications in healthcare and finance.
 
