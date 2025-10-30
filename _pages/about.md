@@ -16,13 +16,6 @@ Prior to that, I was a Software Engineer at [Broadcom Inc.](https://www.broadcom
 
 I enjoy working on Kaggle Competitions related to healthcare and medicine, and I rank as a [Kaggle Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% Globally, 5 Medals). I custom built a Nvidia GeForce RTX 3090 Ti workstation in 2022 for Kaggling -- check out my detailed spec with benchmarks here: [PC Part Picker](https://ca.pcpartpicker.com/user/vinbhaskara/saved/CVGC8d)!
 
-I am an avid long-distance runner and marathoner. I plan to run my first 50k ultra sometime soon. Follow me on Strava to track my running progress!
-<a style="display:inline-block;background-color:#FC5200;color:#fff;padding:5px 10px 5px 30px;font-size:11px;font-family:Helvetica, Arial, sans-serif;white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url('https://badges.strava.com/logo-strava-echelon.png')" href='https://strava.com/athletes/51884474' target="_clean">
-  Follow me on
-  <img src='https://badges.strava.com/logo-strava.png' alt='Strava' style='margin-left:2px;vertical-align:text-bottom' height=13 width=51 />
-</a>
-
-
 **Current Research Interests**: Calibration, uncertainty estimation, and robustness of large language models (LLMs) for risk-sensitive applications in healthcare and finance.
 
 **Contact**: For opportunities and mentorship requests, please reach out by email: <code style="color: #000000; background: #ffffff;"><strong>vin [dot] bhaskara [at] gmail [dot] com</strong></code>.
