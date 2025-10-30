@@ -21,14 +21,11 @@ My best 42.2 km marathon finish time to date is 3:56:49 hrs.
 I am planning to run my first (and likely the last!) 50 km ultra-marathon soon sometime in 2025! 
 
 
-If you are a fellow runner or if you'd like to follow my training, add me on Strava <i class="fab fa-fw fa-strava" id="emailicon-high">:&nbsp;&nbsp;</i>[https://www.strava.com/athletes/51884474](https://www.strava.com/athletes/51884474)!
-
+If you are a fellow runner or if you'd like to follow my training, add me on Strava!  
 <a style="display:inline-block;background-color:#FC5200;color:#fff;padding:5px 10px 5px 30px;font-size:11px;font-family:Helvetica, Arial, sans-serif;white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url('https://badges.strava.com/logo-strava-echelon.png')" href='https://strava.com/athletes/51884474' target="_clean">
   Follow me on
   <img src='https://badges.strava.com/logo-strava.png' alt='Strava' style='margin-left:2px;vertical-align:text-bottom' height=13 width=51 />
 </a>
-
-<iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/51884474/activity-summary/4aa40654fbab443f7e453cb1a02334471cf8e2a1'></iframe>
 
 <iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/51884474/latest-rides/4aa40654fbab443f7e453cb1a02334471cf8e2a1'></iframe>
 
