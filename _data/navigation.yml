@@ -1,6 +1,9 @@
 # main links links
 main:
 
+  - title: "Home"
+    url: /
+    
   - title: "Resume"
     url: /cv/Bhaskara_Vin_CV_Mtl.pdf
 

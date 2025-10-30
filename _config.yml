@@ -15,7 +15,7 @@ url                      : https://vinbhaskara.github.io # the base hostname & p
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "vinbhaskara/vinbhaskara.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : true # true, false (default)
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
@@ -66,9 +66,9 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person" # Person or Organization (defaults to Person)
+  name                   : "Vin Bhaskara" # If the user or organization name differs from the site's name
+  links                  : # An array of links to social media profiles
 
 
 # Analytics
@@ -76,7 +76,7 @@ analytics:
   provider               :  "google-gtag" #"google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :  "G-GV6EKKGJTE"
-    anonymize_ip         :  false # default
+    anonymize_ip         :  true # default
 
 
 # Site Author
