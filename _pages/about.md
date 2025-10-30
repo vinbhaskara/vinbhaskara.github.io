@@ -9,17 +9,12 @@ redirect_from:
 header:
   preview_card_image: profile_pic.jpg
 ---
-#### Bio  
+## Bio  
 I'm a Senior Applied Scientist at [Borealis AI](https://rbcborealis.com/) (RBC Research Institute) in Montreal, working on Foundation Models and LLMs for Capital Markets and Credit Modeling. I have 7 years of full-time work experience in applied AI and software engineering. I also serve as an academic reviewer for [NeurIPS](https://neurips.cc/), [CVPR](https://cvpr.thecvf.com/), [ICLR](https://iclr.cc/) and [ICML](https://icml.cc/).
 
 Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto), where I worked with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
 Prior to that, I was a Software Engineer at [Broadcom Inc.](https://www.broadcom.com/products/cybersecurity) (formerly Symantec), where I developed behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/).
 
-
-#### Current Research Interests  
-Calibration, uncertainty estimation, and robustness of large language models (LLMs) for risk-sensitive applications in healthcare and finance.
-
-#### Other Interests  
 I enjoy working on Kaggle Competitions related to healthcare and medicine, and I rank as a [Kaggle Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% Globally, 5 Medals). I custom built a Nvidia GeForce RTX 3090 Ti workstation in 2022 for Kaggling -- check out my detailed spec with benchmarks here: [PC Part Picker](https://ca.pcpartpicker.com/user/vinbhaskara/saved/CVGC8d)!
 
 I am an avid long-distance runner and marathoner. I plan to run my first 50k ultra sometime soon. Follow me on Strava to track my running progress!
@@ -28,8 +23,10 @@ I am an avid long-distance runner and marathoner. I plan to run my first 50k ult
   <img src='https://badges.strava.com/logo-strava.png' alt='Strava' style='margin-left:2px;vertical-align:text-bottom' height=13 width=51 />
 </a>
 
-#### Contact
-For opportunities and mentorship requests, please reach out by email: <code style="color: #000000; background: #ffffff;"><strong>vin [dot] bhaskara [at] gmail [dot] com</strong></code>.
+
+**Current Research Interests**: Calibration, uncertainty estimation, and robustness of large language models (LLMs) for risk-sensitive applications in healthcare and finance.
+
+**Contact**: For opportunities and mentorship requests, please reach out by email: <code style="color: #000000; background: #ffffff;"><strong>vin [dot] bhaskara [at] gmail [dot] com</strong></code>.
 
 
 
