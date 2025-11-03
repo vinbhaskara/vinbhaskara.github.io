@@ -43,7 +43,7 @@ header:
 
 <!-- I have 7 years of full-time work experience in applied AI and software engineering. I also serve as an academic reviewer for [NeurIPS](https://neurips.cc/), [CVPR](https://cvpr.thecvf.com/), [ICLR](https://iclr.cc/) and [ICML](https://icml.cc/). -->
 
-**Misc**: I enjoy Kaggle challenges in healthcare and medicine and I rank as a [Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% globally, 5 medals). I custom-built a Nvidia GeForce RTX 3090 Ti workstation for these projects -- check out its detailed specs and benchmarks on [PC Part Picker](https://ca.pcpartpicker.com/user/vinbhaskara/saved/CVGC8d)!
+**Misc**: I enjoy Kaggle challenges in healthcare and medicine, and I rank as a [Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% globally, 5 medals). I custom-built a Nvidia GeForce RTX 3090 Ti workstation for these projects -- check out its detailed specs and benchmarks on [PC Part Picker](https://ca.pcpartpicker.com/user/vinbhaskara/saved/CVGC8d)!
 
 **Current Research Interests**: Calibration, uncertainty estimation, and robustness of large language models (LLMs), particularly for risk-sensitive applications in healthcare and finance.
 
