@@ -9,16 +9,45 @@ redirect_from:
 header:
   preview_card_image: profile_pic.jpg
 --- 
-I'm a Senior Applied Scientist at [Borealis AI](https://rbcborealis.com/) (RBC Research Institute) in Montreal, working on Foundation Models and LLMs for Capital Markets and Credit Modeling in the AI Solutions group led by [Prof. Greg Mori](https://www.cs.sfu.ca/~mori/). I have 7 years of full-time work experience in applied AI and software engineering. I also serve as an academic reviewer for [NeurIPS](https://neurips.cc/), [CVPR](https://cvpr.thecvf.com/), [ICLR](https://iclr.cc/) and [ICML](https://icml.cc/).
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="5" style="vertical-align : left;">I’m a Senior Applied Scientist at <a href="https://rbcborealis.com/">Borealis AI</a> (RBC Research Institute) in Montreal, where I work on Foundation Models and LLMs for Capital Markets and Credit Modeling within the AI Solutions group led by <a href="https://www.cs.sfu.ca/~mori/">Prof. Greg Mori</a>.<br><br>Previously, I was a Research Engineer at <a href="https://research.samsung.com/aicenter_toronto">Samsung AI Center Toronto</a>, where I worked with <a href="http://www.cs.toronto.edu/~babalex/">Dr. Alex Levinshtein</a> and <a href="https://www.cs.toronto.edu/~jepson/">Prof. Allan Jepson</a> on computer vision research, focusing on burst photography, neural implicit representations, and image enhancement and synthesis. Before that, I was a Software Engineer at <a href="https://www.broadcom.com/products/cybersecurity">Broadcom Inc.</a>, where I developed behavior-based  malware classifiers for <a href="https://us.norton.com/">Norton AntiVirus</a> using machine learning.<br><br>I have over 7 years of full-time experience in applied AI and software engineering, and I serve as a reviewer for <a href="https://neurips.cc/">NeurIPS</a>, <a href="https://cvpr.thecvf.com/">CVPR</a>, <a href="https://iclr.cc/">ICLR</a>, and <a href="https://icml.cc/">ICML</a>.<br><br>
+      </td>
+      <td>&nbsp;&nbsp;&nbsp;</td>
+      <td rowspan="3" style="text-align: right"><a href="https://www.rbcborealis.com/"><img src="./../images/bai.png" width="600px" height="auto"></a><br><br><a href="https://research.samsung.com/aicenter_toronto"><img src="./../images/samsung_research.png" width="600px" height="auto"></a><br><br><a href="https://www.broadcom.com/products/cybersecurity"><img src="./../images/symc.png" width="600px" height="auto"></a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align : left;"></td>
+      <td>&nbsp;</td>
+      <td style="text-align: right"></td>
+    </tr>
+    <tr>
+      <td style="vertical-align : left;"></td>
+      <td>&nbsp;</td>
+      <td style="text-align: right"></td>
+    </tr>
+    <tr>
+      <td style="vertical-align : left;"></td>
+      <td>&nbsp;</td>
+      <td style="text-align: right"></td>
+    </tr>
+    <tr>
+      <td style="vertical-align : left;"></td>
+      <td>&nbsp;</td>
+      <td style="text-align: right"></td>
+    </tr>
+  </tbody>
+</table>
 
-Previously, I was a Research Engineer at [Samsung AI Center Toronto](https://research.samsung.com/aicenter_toronto), where I worked with [Dr. Alex Levinshtein](http://www.cs.toronto.edu/~babalex/) and [Prof. Allan Jepson](https://www.cs.toronto.edu/~jepson/) on computer vision, specifically, burst photography, neural implicit models, image enhancement and synthesis.  
-Prior to that, I was a Software Engineer at [Broadcom Inc.](https://www.broadcom.com/products/cybersecurity) (formerly Symantec), where I developed behavior-based  malware classifiers using machine learning for [Norton AntiVirus](https://us.norton.com/).
 
-**Misc**: I'm into Kaggle challenges related to healthcare and medicine and rank as a [Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% Globally, 5 Medals). I custom built a Nvidia GeForce RTX 3090 Ti workstation in 2022 for this -- check out its detailed specs with benchmarks here: [PC Part Picker](https://ca.pcpartpicker.com/user/vinbhaskara/saved/CVGC8d)!
+<!-- I have 7 years of full-time work experience in applied AI and software engineering. I also serve as an academic reviewer for [NeurIPS](https://neurips.cc/), [CVPR](https://cvpr.thecvf.com/), [ICLR](https://iclr.cc/) and [ICML](https://icml.cc/). -->
 
-**Current Research Interests**: Calibration, uncertainty estimation, and robustness of large language models (LLMs) for risk-sensitive applications in healthcare and finance.
+**Misc**: I enjoy Kaggle challenges in healthcare and medicine and I rank as a [Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% globally, 5 medals). I custom-built a Nvidia GeForce RTX 3090 Ti workstation for these projects -- check out its detailed specs and benchmarks on [PC Part Picker](https://ca.pcpartpicker.com/user/vinbhaskara/saved/CVGC8d)!
 
-**Contact**: For opportunities and mentorship requests, please reach out by email: <code style="color: #000000; background: #ffffff;"><strong>vin [dot] bhaskara [at] gmail [dot] com</strong></code>.
+**Current Research Interests**: Calibration, uncertainty estimation, and robustness of large language models (LLMs), particularly for risk-sensitive applications in healthcare and finance.
+
+**Contact**: For opportunities and mentorship inquiries, feel free to reach out at <code style="color: #000000; background: #ffffff;"><strong>vin [dot] bhaskara [at] gmail [dot] com</strong></code>.
 
 
 
