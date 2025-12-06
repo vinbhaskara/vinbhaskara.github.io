@@ -273,7 +273,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
         <p style="margin:0.5em;"></p>
         <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1905.13200" role="button" style="text-decoration:none">Arxiv</a>
-        <a class="btn btn--code2" target="_blank" href="https://github.com/vinbhaskara/AdamS" role="button" style="text-decoration:none">Code</a>
+        <a class="btn btn--success" target="_blank" href="https://github.com/vinbhaskara/AdamS" role="button" style="text-decoration:none">Code</a>
         <a class="btn btn--cite2" target="_blank" href="files/arxiv-opt-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
@@ -337,7 +337,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
         <p style="margin:0.5em;"></p>
         <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1807.07525" role="button" style="text-decoration:none">Arxiv</a> 
-        <a class="btn btn--code2" target="_blank" href="https://github.com/vinbhaskara/MalwareGAN" role="button" style="text-decoration:none">Code</a>
+        <a class="btn btn--success" target="_blank" href="https://github.com/vinbhaskara/MalwareGAN" role="button" style="text-decoration:none">Code</a>
         <a class="btn btn--cite2" target="_blank" href="files/arxiv-mal-2018-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
