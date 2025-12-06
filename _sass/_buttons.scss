@@ -84,10 +84,15 @@
   }
 
   &--code2 {
-    background-color: #b00fc8;
+    color: #fff !important;
+    background-color: #10B981;
+    border: 1px solid #10B981 !important; /* override*/
+
 
     &:hover {
-      background-color: mix(#000, #b00fc8, 20%);
+      background-color: mix(#000, #10B981, 30%);
+      color: #fff !important;
+      border: 1px solid #fff !important; /* override*/
     }
   }
 
