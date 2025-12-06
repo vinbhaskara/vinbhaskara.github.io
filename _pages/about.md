@@ -121,6 +121,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
   <tbody>
     <!-- Publication Row -->
     <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>1.&nbsp;&nbsp;&nbsp;</b></td>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>Jan<br>2025</b></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -151,8 +152,8 @@ I graduated with a Master's from the Department of Computer Science at the Unive
   </tbody>
 </table>
 
-## Publications
-
+## Publications  
+(<sup style="font-size:140%;top: 0.15em;">*</sup> <i> denotes equal contribution</i>)
 
 ### Machine Learning  
 
@@ -161,6 +162,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
   <tbody>
     <!-- Publication Row -->
     <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>6.&nbsp;&nbsp;&nbsp;</b></td>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>Jan<br>2022</b></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -191,10 +193,12 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <!-- End of Spacing Empty Publication Row -->
     <!-- Publication Row -->
     <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>5.&nbsp;&nbsp;&nbsp;</b></td>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>Jan<br>2021</b></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -211,6 +215,134 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       </td>
       <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
         <a href="https://link.springer.com/chapter/10.1007/978-3-030-67070-2_5"><img id="pub_img_generic" src="images/Papers/eccvw20-icon.png" style=" width:250px; height:auto; margin:0px;"></a>
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>4.&nbsp;&nbsp;&nbsp;</b></td>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>Apr<br>2020</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+      <b>Part-based Auxiliary Objectives with No Extra Labels for Robust Single-Shot Object Detection</b>
+          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Stavros Tsogkas, Kosta Derpanis, Alex Levinshtein<br>
+          <i>Preprint. DOI: 10.13140/RG.2.2.10079.47521</i>
+          <br>
+          <p style="margin:0.5em;"></p>
+          <a class="btn btn--primary" target="_blank" href="https://dx.doi.org/10.13140/RG.2.2.10079.47521" role="button" style="text-decoration:none">Link</a> 
+          <a class="btn btn--primary" target="_blank" href="files/BMVC2020_CenterNet.pdf" role="button" style="text-decoration:none">PDF</a>
+          <a class="btn btn--cite2" target="_blank" href="files/rg-objdet-2020-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+          <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+          <a href="https://dx.doi.org/10.13140/RG.2.2.10079.47521"><img id="pub_img_generic" src="images/Papers/bmvc_sub2020.jpg" style=" width:250px; height:auto; margin:0px;"></a>
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>3.&nbsp;&nbsp;&nbsp;</b></td>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>May<br>2019</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Exploiting Uncertainty of Loss Landscape for Stochastic Optimization</b>
+          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Sneha Desai<br>
+        <i>Preprint. arXiv:1905.13200 [cs.LG]</i>
+        <br>
+        <p style="margin:0.5em;"></p>
+        <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1905.13200" role="button" style="text-decoration:none">Arxiv</a>
+        <a class="btn btn--code2" target="_blank" href="https://github.com/vinbhaskara/AdamS" role="button" style="text-decoration:none">Code</a>
+        <a class="btn btn--cite2" target="_blank" href="files/arxiv-opt-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+        <a href="https://arxiv.org/abs/1905.13200"><img id="pub_img_generic" src="images/Papers/arxiv-opt-2019-icon.png" style=" width:250px; height:auto; margin:0px;"></a>
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>2.&nbsp;&nbsp;&nbsp;</b></td>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>Apr<br>2019</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Risk Prediction in the General Internal Medicine Ward at St. Michael's Hospital</b>
+          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Yingying Fu, Sindhu Gowda<br>
+          <i>Preprint. DOI: 10.13140/RG.2.2.27695.55205</i>
+          <br>
+          <p style="margin:0.5em;"></p>
+          <a class="btn btn--primary" target="_blank" href="https://dx.doi.org/10.13140/RG.2.2.27695.55205" role="button" style="text-decoration:none">Link</a> 
+          <a class="btn btn--primary" target="_blank" href="files/ML4H_GIM_paper.pdf" role="button" style="text-decoration:none">PDF</a>
+          <a class="btn btn--cite2" target="_blank" href="files/rg-ml4h-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+          <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+          <a href="https://dx.doi.org/10.13140/RG.2.2.27695.55205"><img id="pub_img_generic" src="images/Papers/ml4h.png" style=" width:250px; height:auto; margin:0px;"></a>
+      </td>
+    </tr>
+    <!-- End of Publication Row -->
+    <!-- Spacing Empty Publication Row -->
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- End of Spacing Empty Publication Row -->
+    <!-- Publication Row -->
+    <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>1.&nbsp;&nbsp;&nbsp;</b></td>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>Jul<br>2018</b></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td style="vertical-align : middle;">
+          <b>Emulating Malware Authors for Proactive Protection using GANs over File Behaviors</b>
+          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Debanjan Bhattacharyya<br>
+        <i>Preprint. arXiv:1807.07525 [stat.ML]</i>
+        <br>
+        <p style="margin:0.5em;"></p>
+        <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1807.07525" role="button" style="text-decoration:none">Arxiv</a> 
+        <a class="btn btn--code2" target="_blank" href="https://github.com/vinbhaskara/MalwareGAN" role="button" style="text-decoration:none">Code</a>
+        <a class="btn btn--cite2" target="_blank" href="files/arxiv-mal-2018-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+        <br>
+      </td>
+      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
+        <a href="https://arxiv.org/abs/1807.07525"><img id="pub_img_generic" src="images/Papers/arxiv-mal-2018-icon.jpg" style=" width:250px; height:auto; margin:0px;"></a>
       </td>
     </tr>
     <!-- End of Publication Row -->
@@ -233,6 +365,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
   <tbody>
     <!-- Publication Row -->
     <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>4.&nbsp;&nbsp;&nbsp;</b></td>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>May<br>2022</b></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -260,10 +393,12 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <!-- End of Spacing Empty Publication Row -->
     <!-- Publication Row -->
     <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>3.&nbsp;&nbsp;&nbsp;</b></td>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>Mar<br>2017</b></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -291,10 +426,12 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <!-- End of Spacing Empty Publication Row -->
     <!-- Publication Row -->
     <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>2.&nbsp;&nbsp;&nbsp;</b></td>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>Mar<br>2017</b></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -320,10 +457,12 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <!-- End of Spacing Empty Publication Row -->
     <!-- Publication Row -->
     <tr>
+      <td style="text-align: left; align: left; vertical-align : middle;"><b>1.&nbsp;&nbsp;&nbsp;</b></td>
       <td style="text-align: left; align: left; vertical-align : middle;"><b>Sep<br>2016</b></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -349,131 +488,14 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <!-- End of Spacing Empty Publication Row -->
   </tbody>
 </table>
 
 
-(<sup style="font-size:140%;top: 0.15em;">*</sup> <i> denotes equal contribution</i>)
 
 
-
-## Preprints
-
-
-<table id="publication-table">
-  <tbody>
-  <!-- Publication Row -->
-  <tr>
-      <td style="text-align: left; align: left; vertical-align : middle;"><b>Apr<br>2020</b></td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td style="vertical-align : middle;">
-      <b>Part-based Auxiliary Objectives with No Extra Labels for Robust Single-Shot Object Detection</b>
-          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Stavros Tsogkas, Kosta Derpanis, Alex Levinshtein<br>
-          <i>DOI: 10.13140/RG.2.2.10079.47521</i>
-          <br>
-          <p style="margin:0.5em;"></p>
-          <a class="btn btn--primary" target="_blank" href="https://dx.doi.org/10.13140/RG.2.2.10079.47521" role="button" style="text-decoration:none">Link</a> 
-          <a class="btn btn--primary" target="_blank" href="files/BMVC2020_CenterNet.pdf" role="button" style="text-decoration:none">PDF</a>
-          <a class="btn btn--cite2" target="_blank" href="files/rg-objdet-2020-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
-          <br>
-      </td>
-      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-          <a href="https://dx.doi.org/10.13140/RG.2.2.10079.47521"><img id="pub_img_generic" src="images/Papers/bmvc_sub2020.jpg" style=" width:250px; height:auto; margin:0px;"></a>
-      </td>
-      </tr>
-  <!-- End of Publication Row -->
-      <!-- Spacing Empty Publication Row -->
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <!-- End of Spacing Empty Publication Row -->
-    <!-- Publication Row -->
-    <tr>
-      <td style="text-align: left; align: left; vertical-align : middle;"><b>May<br>2019</b></td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td style="vertical-align : middle;">
-          <b>Exploiting Uncertainty of Loss Landscape for Stochastic Optimization</b>
-          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Sneha Desai<br>
-        <i>	arXiv:1905.13200 [cs.LG]</i>
-        <br>
-        <p style="margin:0.5em;"></p>
-        <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1905.13200" role="button" style="text-decoration:none">Arxiv</a>
-        <a class="btn btn--cite2" target="_blank" href="files/arxiv-opt-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
-        <br>
-      </td>
-      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <a href="https://arxiv.org/abs/1905.13200"><img id="pub_img_generic" src="images/Papers/arxiv-opt-2019-icon.png" style=" width:250px; height:auto; margin:0px;"></a>
-      </td>
-    </tr>
-    <!-- End of Publication Row -->
-    <!-- Spacing Empty Publication Row -->
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <!-- End of Spacing Empty Publication Row -->
-  <!-- Publication Row -->
-  <tr>
-      <td style="text-align: left; align: left; vertical-align : middle;"><b>Apr<br>2019</b></td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td style="vertical-align : middle;">
-          <b>Risk Prediction in the General Internal Medicine Ward at St. Michael's Hospital</b>
-          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Yingying Fu, Sindhu Gowda<br>
-          <i>DOI: 10.13140/RG.2.2.27695.55205</i>
-          <br>
-          <p style="margin:0.5em;"></p>
-          <a class="btn btn--primary" target="_blank" href="https://dx.doi.org/10.13140/RG.2.2.27695.55205" role="button" style="text-decoration:none">Link</a> 
-          <a class="btn btn--primary" target="_blank" href="files/ML4H_GIM_paper.pdf" role="button" style="text-decoration:none">PDF</a>
-          <a class="btn btn--cite2" target="_blank" href="files/rg-ml4h-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
-          <br>
-      </td>
-      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-          <a href="https://dx.doi.org/10.13140/RG.2.2.27695.55205"><img id="pub_img_generic" src="images/Papers/ml4h.png" style=" width:250px; height:auto; margin:0px;"></a>
-      </td>
-      </tr>
-  <!-- End of Publication Row -->
-    <!-- Spacing Empty Publication Row -->
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <!-- End of Spacing Empty Publication Row -->
-    <!-- Publication Row -->
-    <tr>
-      <td style="text-align: left; align: left; vertical-align : middle;"><b>Jul<br>2018</b></td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td style="vertical-align : middle;">
-          <b>Emulating Malware Authors for Proactive Protection using GANs over File Behaviors</b>
-          <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Debanjan Bhattacharyya<br>
-        <i>arXiv:1807.07525 [stat.ML]</i>
-        <br>
-        <p style="margin:0.5em;"></p>
-        <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1807.07525" role="button" style="text-decoration:none">Arxiv</a> 
-        <a class="btn btn--cite2" target="_blank" href="files/arxiv-mal-2018-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
-        <br>
-      </td>
-      <td id="gran_image_td" style="text-align: right; align: right; vertical-align : middle;">
-        <a href="https://arxiv.org/abs/1807.07525"><img id="pub_img_generic" src="images/Papers/arxiv-mal-2018-icon.jpg" style=" width:250px; height:auto; margin:0px;"></a>
-      </td>
-    </tr>
-    <!-- End of Publication Row -->
-  </tbody>
-</table>
 
 

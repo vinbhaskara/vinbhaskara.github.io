@@ -83,6 +83,14 @@
     }
   }
 
+  &--code2 {
+    background-color: #b00fc8;
+
+    &:hover {
+      background-color: mix(#000, #b00fc8, 20%);
+    }
+  }
+
   &--secondary {
     background-color: $primary-color;
 
