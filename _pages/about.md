@@ -273,7 +273,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
         <p style="margin:0.5em;"></p>
         <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1905.13200" role="button" style="text-decoration:none">Arxiv</a>
-        <a class="btn btn--code2" target="_blank" href="https://github.com/vinbhaskara/AdamS" role="button" style="text-decoration:none">Code</a>
+        <a class="btn btn--success" target="_blank" href="https://github.com/vinbhaskara/AdamS" role="button" style="text-decoration:none">Code</a>
         <a class="btn btn--cite2" target="_blank" href="files/arxiv-opt-2019-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
@@ -337,7 +337,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
         <br>
         <p style="margin:0.5em;"></p>
         <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1807.07525" role="button" style="text-decoration:none">Arxiv</a> 
-        <a class="btn btn--code2" target="_blank" href="https://github.com/vinbhaskara/MalwareGAN" role="button" style="text-decoration:none">Code</a>
+        <a class="btn btn--success" target="_blank" href="https://github.com/vinbhaskara/MalwareGAN" role="button" style="text-decoration:none"><svg aria-hidden="true" focusable="false" class="octicon octicon-code hide-sm" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom;"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path></svg> Code</a>
         <a class="btn btn--cite2" target="_blank" href="files/arxiv-mal-2018-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
         <br>
       </td>
