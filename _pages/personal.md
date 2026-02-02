@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 <div class="notice--success">
-<strong>NEWS:</strong> I will be running my first 50 km ultra-marathon at the [Niagara Ultra](https://www.niagaraultra.ca/) event in June 2026! :))
+<strong>NEWS:</strong><br> I will be running my first 50 km ultra-marathon at the <a href="https://www.niagaraultra.ca/">Niagara Ultra</a> event in June 2026! :))
 </div>
 
 Since the COVID-19 pandemic, I've been into long-distance running! It's had the greatest influence on my mental health and social life. My first race was the 2020 Lululemon Half-marathon in Toronto which I completed in 2:00:33 hrs. Here are all the races in reverse chronological order I've run since! :-)  
