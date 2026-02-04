@@ -4,7 +4,7 @@ title: "Personal"
 author_profile: true
 ---
 
-<div class="news-flash">
+<div style="font-size: 0.8em;" class="news-flash">
   <div class="news-header">
     <strong class="news-badge">
       <span class="star">★</span> NEWS
