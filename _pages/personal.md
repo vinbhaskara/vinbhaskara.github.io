@@ -57,7 +57,7 @@ If you are a fellow runner or if you'd like to follow my training, add me on Str
 
 
 
-#### Private: Some Links to Useful Documents and Notes
+### Private: Some Links to Useful Documents and Notes
 *The PDFs are private and password-protected!* 
 1. Coding Questions Refresher: [pdf](https://drive.google.com/file/d/1ToH7OCpQJ2zo4gNj3LC8dvfI-IbY_Vxv/view?usp=drive_link)
 
