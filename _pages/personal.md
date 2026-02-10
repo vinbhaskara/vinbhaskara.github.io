@@ -57,4 +57,7 @@ If you are a fellow runner or if you'd like to follow my training, add me on Str
 
 
 
+### Private: Some Links to Useful Documents and Notes
+*The PDFs are private and password-protected!* 
+1. Coding Questions Refresher: [pdf](./../files/neetcode150_coding_practise-protected-shared.pdf)  
 
