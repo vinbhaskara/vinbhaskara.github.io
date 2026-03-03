@@ -55,22 +55,17 @@ $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
 $body-color                 : #fff;
-// $background-color           : #fff;
-$background-color: #ffffff;
+$background-color           : #ffffff;
 $code-background-color      : #f9f2f4; // #f4f2f9;
 $code-background-color-dark : #f9f2f4; // #f4f2f9;
 $code-color-vin             : #be0000;
-// $text-color                 : $dark-gray;
-$text-color: #222831;
-// $border-color               : $lighter-gray;
-$border-color: mix(#fff, #393e46, 75%);
+$text-color                 : #222831;
+$border-color               : mix(#fff, #393e46, 75%);
 
-// $primary-color              : #7a8288;
-$primary-color: #0092ca;
+$primary-color              : #0092ca;
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
-// $info-color                 : #52adc8;
 $info-color                 : #2979ab;
 
 /* brands */
@@ -98,13 +93,10 @@ $xing-color                 : #006567;
 
 /* links */
 $link-color                 : $info-color;
-// $link-color: #393e46;
 $link-color-hover           : mix(#000, $link-color, 25%);
 $link-color-visited         : mix(#fff, $link-color, 25%);
-// $masthead-link-color        : $primary-color;
-// $masthead-link-color-hover  : mix(#000, $primary-color, 25%);
-$masthead-link-color: $text-color;
-$masthead-link-color-hover: $text-color;
+$masthead-link-color        : $text-color;
+$masthead-link-color-hover  : $text-color;
 
 
 /*
@@ -129,10 +121,6 @@ $x-large                    : 1280px !default;
 /*
    Grid
    ========================================================================== */
-
-// $right-sidebar-width-narrow : 0px;
-// $right-sidebar-width        : 0px;
-// $right-sidebar-width-wide   : 0px;
 
 $right-sidebar-width-narrow: 200px !default;
 $right-sidebar-width: 300px !default;

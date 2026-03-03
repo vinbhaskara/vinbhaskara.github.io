@@ -16,14 +16,20 @@ gem "github-pages", group: :jekyll_plugins
 
 # gem "jekyll"
 
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
+gem "wdm", "~> 0.2.0" if Gem.win_platform?
+
+# Windows/JRuby lack a system timezone database; tzinfo-data provides it.
+# The `platforms` constraint means this is ignored on Linux (including GitHub Pages).
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
-  gem 'hawkins'
 end
+
+# Dev-only: hawkins live-reload (not supported on GitHub Pages)
+gem 'hawkins', group: :development
 
 gem "webrick", "~> 1.8"
