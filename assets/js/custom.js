@@ -85,7 +85,7 @@
   $(document).on('click', '.sidebar__top a', function (e) {
     e.preventDefault();
     e.stopPropagation();
-    $('html, body').animate({ scrollTop: 0 }, 550, 'swing');
+    $('html, body').stop(true).animate({ scrollTop: 0 }, 250, 'swing');
   });
 
   /* -------------------------------------------------------------------------

@@ -4,11 +4,11 @@ main:
   - title: "CV"
     url: /cv/Bhaskara_Vin_CV_Mtl.pdf
 
-  - title: "Blog"
-    url: /year-archive/
-
   - title: "Personal"
     url: /personal/
+
+  - title: "Blog"
+    url: /year-archive/
 
   - title: "Subscribe"
     url: /subscribe/
