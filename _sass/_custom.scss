@@ -1,3 +1,62 @@
+/* ==========================================================================
+   SUPPRESS INTRO ANIMATIONS ON INTERNAL NAVIGATION
+   When JS detects referrer is same host, .no-intro is added to <html>.
+   ========================================================================== */
+.no-intro,
+.no-intro .masthead,
+.no-intro #main,
+.no-intro #site-nav,
+.no-intro .page__footer {
+  animation: none !important;
+  animation-delay: 0s !important;
+}
+
+/* ==========================================================================
+   READING PROGRESS BAR
+   ========================================================================== */
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(to right, #2e4a80, #2563a8);
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
+
+/* ==========================================================================
+   BLOG POST ENHANCEMENTS
+   ========================================================================== */
+
+/* Slightly wider line-height and refined spacing for post body */
+.page__content {
+  > p { line-height: 1.75; }
+
+  /* Inline code: pair with neutral #f4f4f8 background from variables */
+  p > code,
+  li > code,
+  td > code {
+    font-size: 0.83em;
+    padding: 0.15em 0.45em;
+  }
+
+  /* Block code: tighter top margin when following a paragraph */
+  p + div.highlighter-rouge,
+  p + figure.highlight {
+    margin-top: -0.25em;
+  }
+}
+
+/* Post date/meta line — muted color so title stays dominant */
+.page__meta {
+  color: #6c757d;
+  font-size: 0.82em;
+}
+
+/* ==========================================================================
+   NEWS FLASH CONTAINER
+   ========================================================================== */
 /* NEWS FLASH CONTAINER */
 .news-flash {
   border: 2px solid #ffcc00;

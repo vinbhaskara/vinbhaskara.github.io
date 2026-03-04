@@ -13,10 +13,29 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  // Suppress intro animations when navigating within the site (not a fresh external load)
+  try {
+    if (new URL(document.referrer).host === location.host) {
+      document.documentElement.classList.add('no-intro');
+    }
+  } catch(e) {}
 </script>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+
+<!-- MathJax v3: LaTeX rendering for blog posts -->
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
 
 <script>
   let theme = sessionStorage.getItem('theme');

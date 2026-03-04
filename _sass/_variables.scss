@@ -56,17 +56,17 @@ $lighter-gray               : mix(#fff, $gray, 90%);
 
 $body-color                 : #fff;
 $background-color           : #ffffff;
-$code-background-color      : #f9f2f4; // #f4f2f9;
-$code-background-color-dark : #f9f2f4; // #f4f2f9;
+$code-background-color      : #f4f4f8; // neutral lavender-gray, no pink tinge
+$code-background-color-dark : #f4f4f8;
 $code-color-vin             : #be0000;
 $text-color                 : #222831;
 $border-color               : mix(#fff, #393e46, 75%);
 
-$primary-color              : #0092ca;
+$primary-color              : #2e4a80; // deep professional navy (replaces bright cyan)
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
-$info-color                 : #2979ab;
+$info-color                 : #2563a8; // refined mid-blue for links
 
 /* brands */
 $behance-color              : #1769FF;
