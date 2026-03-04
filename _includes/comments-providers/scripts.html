@@ -3,6 +3,7 @@
 {% case site.comments.provider %}
 {% when "disqus" %}
   {% include /comments-providers/disqus.html %}
+  <script id="dsq-count-scr" src="//{{ site.comments.disqus.shortname }}.disqus.com/count.js" async></script>
 {% when "discourse" %}
   {% include /comments-providers/discourse.html %}
 {% when "facebook" %}

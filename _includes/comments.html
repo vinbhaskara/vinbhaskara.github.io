@@ -5,6 +5,7 @@
   {% case site.comments.provider %}
   {% when "disqus" %}
     <h4 class="page__comments-title">{{ comments_label }}</h4>
+    <a href="{{ page.url | absolute_url }}#disqus_thread" class="page__comments-count"></a>
     <section id="disqus_thread"></section>
   {% when "facebook" %}
     <h4 class="page__comments-title">{{ comments_label }}</h4>
