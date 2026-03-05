@@ -5,8 +5,17 @@
    ========================================================================== */
 @media (min-width: 768px) {
   html {
-    zoom: 0.85;
+    zoom: 0.90;
   }
+}
+
+/* ==========================================================================
+   SIDEBAR LINKS BUTTON — keep "pressed" color tied to .open class, not :focus
+   ========================================================================== */
+.author__urls-wrapper button.open {
+  color: #fff !important;
+  background-color: $gray !important;
+  border-color: $gray !important;
 }
 
 /* ==========================================================================

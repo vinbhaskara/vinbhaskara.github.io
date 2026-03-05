@@ -12,12 +12,28 @@
   var $bar = $('<div id="reading-progress"></div>');
   $('body').prepend($bar);
 
+  // function updateProgress() {
+  //   var scrollTop = $(window).scrollTop();
+  //   var docH = $(document).height() - $(window).height();
+  //   var pct = docH > 0 ? (scrollTop / docH) * 100 : 0;
+  //   $bar.css('width', Math.min(pct, 100) + '%');
+  // }
   function updateProgress() {
+    // Get the computed zoom value of the <html> element
+    var zoomValue = window.getComputedStyle(document.documentElement).getPropertyValue('zoom');
+    
+    // Default to 1 if zoom is not set or not supported
+    var zoomFactor = (zoomValue && !isNaN(zoomValue)) ? parseFloat(zoomValue) : 1;
+
     var scrollTop = $(window).scrollTop();
-    var docH = $(document).height() - $(window).height();
+    
+    // Adjust document height by the dynamic zoom factor
+    var docH = ($(document).height() * zoomFactor) - $(window).height();
+    
     var pct = docH > 0 ? (scrollTop / docH) * 100 : 0;
     $bar.css('width', Math.min(pct, 100) + '%');
   }
+
 
   $(window).on('scroll.progress', updateProgress);
   updateProgress();
