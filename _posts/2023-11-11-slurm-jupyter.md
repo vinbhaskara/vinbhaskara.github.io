@@ -93,18 +93,18 @@ If you liked this article, consider subscribing to the blog's mailing list here:
 
 To cite this work, please use:
 
-<div class="citation-block">Bhaskara, Vin (Nov 2023). Hosting Jupyter Notebooks on Slurm. https://vinbhaskara.github.io/posts/2023/11/slurm-jupyter/</div>
+<pre class="citation-block">Bhaskara, Vin (Nov 2023). Hosting Jupyter Notebooks on Slurm. https://vinbhaskara.github.io/posts/2023/11/slurm-jupyter/</pre>
 
 or,
 
-<div class="citation-block">@article{bhaskara2023slurm,
+<pre class="citation-block">@article{bhaskara2023slurm,
   title   = "Hosting Jupyter Notebooks on Slurm",
   author  = "Bhaskara, Vin",
   journal = "vinbhaskara.github.io",
   year    = "2023",
   month   = "Nov",
   url     = "https://vinbhaskara.github.io/posts/2023/11/slurm-jupyter/"
-}</div>
+}</pre>
 
 
 
