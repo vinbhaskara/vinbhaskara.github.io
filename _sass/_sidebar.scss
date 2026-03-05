@@ -85,16 +85,17 @@
 
   @include breakpoint($large) {
     display: block;
-    width: auto;
+    width: 100%;
     height: auto;
+    text-align: center;
   }
 
   img {
-    max-width: 175px;
-    border-radius: 50%;
+    max-width: 155px;
+    border-radius: 6px;
 
     @include breakpoint($large) {
-      padding: 5px;
+      padding: 4px;
       border: 1px solid $border-color;
     }
   }
