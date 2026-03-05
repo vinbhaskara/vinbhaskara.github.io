@@ -32,8 +32,8 @@
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(112deg, transparent 18%, rgba(100, 180, 255, 0.18) 28%, rgba(160, 220, 255, 0.26) 32%, transparent 42%),
-      linear-gradient(108deg, transparent 58%, rgba(170, 145, 255, 0.14) 66%, rgba(190, 210, 255, 0.20) 70%, transparent 78%);
+      linear-gradient(112deg, transparent 18%, rgba(100, 180, 255, 0.12) 28%, rgba(160, 220, 255, 0.17) 32%, transparent 42%),
+      linear-gradient(108deg, transparent 58%, rgba(170, 145, 255, 0.09) 66%, rgba(190, 210, 255, 0.13) 70%, transparent 78%);
     pointer-events: none;
   }
 
@@ -45,7 +45,7 @@
     right: 18%;
     width: 90px;
     height: 60px;
-    background: radial-gradient(ellipse at center, rgba(140, 190, 255, 0.36) 0%, rgba(180, 160, 255, 0.18) 50%, transparent 75%);
+    background: radial-gradient(ellipse at center, rgba(140, 190, 255, 0.24) 0%, rgba(180, 160, 255, 0.12) 50%, transparent 75%);
     filter: blur(6px);
     pointer-events: none;
   }
