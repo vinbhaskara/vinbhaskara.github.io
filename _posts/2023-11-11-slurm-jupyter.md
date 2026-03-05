@@ -2,7 +2,7 @@
 title: 'Hosting Jupyter Notebooks on Slurm'
 date: 2023-11-11
 permalink: /posts/2023/11/slurm-jupyter/
-layout: single # - just a placeholder
+layout: single #   just a placeholder
 tags:
   - MLOps
   - 2023
