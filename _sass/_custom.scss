@@ -1,4 +1,15 @@
 /* ==========================================================================
+   GLOBAL SCALE — replicates 85% browser zoom (desktop only)
+   zoom scales everything: fonts, images, layout, padding, sidebar, margins.
+   Restricted to >= 768px so mobile layout is unaffected.
+   ========================================================================== */
+@media (min-width: 768px) {
+  html {
+    zoom: 0.85;
+  }
+}
+
+/* ==========================================================================
    SUPPRESS INTRO ANIMATIONS ON INTERNAL NAVIGATION
    When JS detects referrer is same host, .no-intro is added to <html>.
    ========================================================================== */
@@ -31,7 +42,7 @@
 
 /* Slightly wider line-height and refined spacing for post body */
 .page__content {
-  > p { line-height: 1.75; }
+  > p { line-height: 1.55; margin-bottom: 0.875em; }
 
   /* Inline code: pair with neutral #f4f4f8 background from variables */
   p > code,
