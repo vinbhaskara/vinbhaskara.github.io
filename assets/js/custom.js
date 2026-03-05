@@ -19,17 +19,18 @@
   //   $bar.css('width', Math.min(pct, 100) + '%');
   // }
   function updateProgress() {
-    // Get the computed zoom value of the <html> element
     var zoomValue = window.getComputedStyle(document.documentElement).getPropertyValue('zoom');
-    
-    // Default to 1 if zoom is not set or not supported
-    var zoomFactor = (zoomValue && !isNaN(zoomValue)) ? parseFloat(zoomValue) : 1;
+    var zoomFactor = (zoomValue && !isNaN(parseFloat(zoomValue))) ? parseFloat(zoomValue) : 1;
 
-    var scrollTop = $(window).scrollTop();
-    
-    // Adjust document height by the dynamic zoom factor
-    var docH = ($(document).height() * zoomFactor) - $(window).height();
-    
+    // zoom < 1: scrollTop is in the compressed zoomed coordinate space while
+    //           scrollHeight is unscaled → multiply docHeight by zoom to match.
+    // zoom >= 1: both scrollTop and scrollHeight are in the same coordinate space
+    //            → standard formula, no correction needed.
+    var scrollTop = Math.ceil($(window).scrollTop());
+    var docH = zoomFactor < 1
+      ? ($(document).height() * zoomFactor) - $(window).height()
+      : $(document).height() - $(window).height();
+
     var pct = docH > 0 ? (scrollTop / docH) * 100 : 0;
     $bar.css('width', Math.min(pct, 100) + '%');
   }
