@@ -19,8 +19,7 @@
     var sw = window.screen.width;
     var zoom = sw < 768  ? null    // mobile — no zoom
              : sw < 1600 ? '0.9'  // laptop / MacBook Air
-             : sw < 1920 ? '1.0'  // large laptop / external monitor
-             :             '1.1'; // 27"+ desktop and above
+             :             '1.0'; // large monitors and above
     if (zoom !== null) {
       document.documentElement.style.zoom = zoom;
     }
