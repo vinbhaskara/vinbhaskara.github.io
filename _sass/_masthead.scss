@@ -9,6 +9,7 @@
 .masthead {
   position: sticky;
   top: 0;
+  overflow: hidden;
   border-bottom: 1px solid rgba(0, 146, 202, 0.12);
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.93) 0%, rgba(0, 146, 202, 0.04) 60%, rgba(0, 90, 150, 0.06) 100%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
@@ -19,6 +20,30 @@
           animation-delay: 0.15s;
   z-index: 100;
   transition: box-shadow 0.25s ease;
+
+  // Diagonal glassy streaks — Silverlight-style light bands
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(112deg, transparent 18%, rgba(100, 180, 255, 0.18) 28%, rgba(160, 220, 255, 0.26) 32%, transparent 42%),
+      linear-gradient(108deg, transparent 58%, rgba(170, 145, 255, 0.14) 66%, rgba(190, 210, 255, 0.20) 70%, transparent 78%);
+    pointer-events: none;
+  }
+
+  // Soft radial glow spot — upper right, like a light source behind glass
+  &::after {
+    content: '';
+    position: absolute;
+    top: -18px;
+    right: 18%;
+    width: 90px;
+    height: 60px;
+    background: radial-gradient(ellipse at center, rgba(140, 190, 255, 0.36) 0%, rgba(180, 160, 255, 0.18) 50%, transparent 75%);
+    filter: blur(6px);
+    pointer-events: none;
+  }
 
   &.scrolled {
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
