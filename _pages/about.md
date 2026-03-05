@@ -152,10 +152,12 @@ I graduated with a Master's from the Department of Computer Science at the Unive
   </tbody>
 </table>
 
-## Publications  
-(<sup style="font-size:140%;top: 0.15em;">*</sup> <i> denotes equal contribution</i>)
+## Publications
+<span style="font-size:0.85em; color:#666;">(<sup style="font-size:140%;top: 0.15em;">*</sup> <i> denotes equal contribution</i>)</span>
 
-### Machine Learning  
+<div style="margin-top:-1em;"></div>
+
+### Machine Learning
 
 
 <table id="publication-table">
