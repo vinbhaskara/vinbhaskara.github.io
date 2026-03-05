@@ -10,10 +10,15 @@
   position: sticky;
   top: 0;
   overflow: hidden;
-  border-bottom: 1px solid rgba(0, 146, 202, 0.12);
+  border-bottom: 1px solid rgba(0, 146, 202, 0.18);
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.93) 0%, rgba(0, 146, 202, 0.04) 60%, rgba(0, 90, 150, 0.06) 100%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
           backdrop-filter: blur(12px) saturate(180%);
+  // Inset top highlight = bright glass rim; layered shadows = depth + ambient lift
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),
+    0 2px 8px rgba(0, 0, 0, 0.07),
+    0 6px 24px rgba(0, 80, 160, 0.06);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -46,7 +51,10 @@
   }
 
   &.scrolled {
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.75),
+      0 4px 16px rgba(0, 0, 0, 0.12),
+      0 8px 32px rgba(0, 80, 160, 0.09);
   }
 
   &__inner-wrap {
