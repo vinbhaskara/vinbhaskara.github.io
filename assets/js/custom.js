@@ -7,6 +7,26 @@
   'use strict';
 
   /* -------------------------------------------------------------------------
+     Screen-resolution-based zoom
+     CSS media queries use viewport width, which shrinks when the user manually
+     browser-zooms, causing the wrong breakpoint to fire. window.screen.width
+     always reflects the actual physical screen resolution regardless of browser
+     zoom, giving a stable, user-zoom-independent baseline.
+     CSS zoom rules above serve as an instant visual approximation; this
+     overrides them with the correct value once the script runs.
+  -------------------------------------------------------------------------  */
+  (function () {
+    var sw = window.screen.width;
+    var zoom = sw < 768  ? null    // mobile — no zoom
+             : sw < 1600 ? '0.9'  // laptop / MacBook Air
+             : sw < 1920 ? '1.0'  // large laptop / external monitor
+             :             '1.1'; // 27"+ desktop and above
+    if (zoom !== null) {
+      document.documentElement.style.zoom = zoom;
+    }
+  }());
+
+  /* -------------------------------------------------------------------------
      Reading Progress Bar
   -------------------------------------------------------------------------  */
   var $bar = $('<div id="reading-progress"></div>');
