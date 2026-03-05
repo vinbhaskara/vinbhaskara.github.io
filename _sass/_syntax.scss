@@ -39,6 +39,35 @@ div.highlighter-rouge, figure.highlight {
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 
+/* Line-number table injected by custom.js */
+table.code-linenos {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: $monospace;
+  font-size: $type-size-syntax;
+  line-height: 1.8;
+
+  td.lineno {
+    width: 2.5em;
+    min-width: 2.5em;
+    padding-right: 0.75em;
+    text-align: right;
+    color: #bbb;
+    user-select: none;
+    -webkit-user-select: none;
+    border-right: 1px solid #e0e0e0;
+    vertical-align: top;
+    cursor: default;
+  }
+
+  td.code-line {
+    padding-left: 1em;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    vertical-align: top;
+  }
+}
+
 
 /*
    Solarized Light

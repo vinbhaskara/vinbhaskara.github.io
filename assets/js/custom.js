@@ -78,6 +78,40 @@
   }
 
   /* -------------------------------------------------------------------------
+     Code block line numbers + word wrap
+     Replaces <pre> content with a two-column table: line number | code line.
+     The code column uses pre-wrap so long lines wrap instead of scroll.
+  -------------------------------------------------------------------------  */
+  document.querySelectorAll('div.highlighter-rouge pre, figure.highlight pre').forEach(function (pre) {
+    var code = pre.querySelector('code');
+    if (!code) return;
+
+    var lines = code.innerHTML.split('\n');
+    if (lines[lines.length - 1] === '') lines.pop();
+
+    var table = document.createElement('table');
+    table.className = 'code-linenos';
+    var tbody = document.createElement('tbody');
+
+    lines.forEach(function (line, i) {
+      var tr = document.createElement('tr');
+      var tdNum = document.createElement('td');
+      tdNum.className = 'lineno';
+      tdNum.textContent = String(i + 1);
+      var tdCode = document.createElement('td');
+      tdCode.className = 'code-line';
+      tdCode.innerHTML = line;
+      tr.appendChild(tdNum);
+      tr.appendChild(tdCode);
+      tbody.appendChild(tr);
+    });
+
+    table.appendChild(tbody);
+    pre.parentNode.insertBefore(table, pre);
+    pre.style.display = 'none';
+  });
+
+  /* -------------------------------------------------------------------------
      Back-to-top button — always scrolls to absolute top.
      Overrides jQuery smoothScroll which reports wrong document position for
      sticky #site-nav (offset().top = currentScrollTop, not 0).
