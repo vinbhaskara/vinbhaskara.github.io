@@ -15,6 +15,7 @@
   height: auto;
   /* sticky footer fix end */
   margin-top: 3em;
+  overflow: hidden;
   color: #fff;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -24,6 +25,30 @@
   -webkit-backdrop-filter: blur(14px) saturate(160%);
           backdrop-filter: blur(14px) saturate(160%);
   border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+  // Diagonal glassy streaks — mirrors the masthead treatment
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(112deg, transparent 12%, rgba(255, 255, 255, 0.08) 22%, rgba(180, 225, 255, 0.14) 27%, transparent 37%),
+      linear-gradient(108deg, transparent 62%, rgba(200, 180, 255, 0.10) 70%, rgba(210, 235, 255, 0.13) 74%, transparent 83%);
+    pointer-events: none;
+  }
+
+  // Soft radial glow — lower left corner, echoing masthead's upper right
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 22%;
+    width: 90px;
+    height: 60px;
+    background: radial-gradient(ellipse at center, rgba(160, 210, 255, 0.30) 0%, rgba(180, 160, 255, 0.14) 50%, transparent 75%);
+    filter: blur(6px);
+    pointer-events: none;
+  }
 
   footer {
     @include clearfix;
