@@ -1,12 +1,33 @@
 /* ==========================================================================
-   GLOBAL SCALE — replicates 85% browser zoom (desktop only)
-   zoom scales everything: fonts, images, layout, padding, sidebar, margins.
-   Restricted to >= 768px so mobile layout is unaffected.
+   RESPONSIVE GLOBAL SCALE
+   Uses CSS zoom to uniformly scale fonts, images, layout, and spacing.
+   Calibrated per viewport width:
+     < 768px   — mobile, no zoom
+     768–1599  — laptop / MacBook Air 13", compact feel
+     1600–1919 — large laptop / external monitor, natural scale
+     1920–2559 — 27"+ desktop, scale up
+     2560+     — 32"+ / 4K, scale up further
    ========================================================================== */
 @media (min-width: 768px) {
-  html {
-    zoom: 0.90;
-  }
+  html { zoom: 0.90; }
+}
+@media (min-width: 1600px) {
+  html { zoom: 1.0; }
+}
+@media (min-width: 1920px) {
+  html { zoom: 1.1; }
+}
+@media (min-width: 2560px) {
+  html { zoom: 1.25; }
+}
+
+/* Widen the content column on large screens to use more of the viewport.
+   The default $x-large cap (1280px) is too narrow above 1920px. */
+@media (min-width: 1920px) {
+  #main { max-width: 1440px; }
+}
+@media (min-width: 2560px) {
+  #main { max-width: 1600px; }
 }
 
 /* ==========================================================================
