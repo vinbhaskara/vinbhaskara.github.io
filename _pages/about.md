@@ -171,7 +171,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a href="https://openaccess.thecvf.com/content/WACV2022/html/Bhaskara_GraN-GAN_Piecewise_Gradient_Normalization_for_Generative_Adversarial_Networks_WACV_2022_paper.html"><img src="images/Papers/wacv22-icon.jpg" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <div class="pub-arrow"></div>
-    <div class="pub-summary">Summary</div>
+    <div class="pub-summary">We introduce Gradient Normalization (GraN), an input-dependent normalization for GAN discriminators that strictly enforces a piecewise K-Lipschitz constraint by dividing the network's output by its own input gradient norm. Unlike spectral normalization, GraN acts on the full network rather than layer-by-layer, avoiding gradient attenuation from loose compositional bounds. Unlike gradient penalties, it's a hard constraint, not a soft one on sampled points. We show improved image generation quality (FID, KID, IS) across multiple datasets and loss functions, and reveal that tuning the Lipschitz constant K (usually left at 1) interacts with Adam's epsilon on loss plateaus, yielding further gains.</div>
   </div>
 
   <div class="pub-card">
