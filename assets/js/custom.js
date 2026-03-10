@@ -159,6 +159,20 @@
   });
 
   /* -------------------------------------------------------------------------
+     Publication card expand / collapse
+     Clicking the card toggles the .expanded class (shows .pub-summary).
+     Clicks on links, buttons, and images stop propagation so they still work.
+  -------------------------------------------------------------------------  */
+  document.querySelectorAll('.pub-card').forEach(function (card) {
+    card.querySelectorAll('a, button, img').forEach(function (el) {
+      el.addEventListener('click', function (e) { e.stopPropagation(); });
+    });
+    card.addEventListener('click', function () {
+      card.classList.toggle('expanded');
+    });
+  });
+
+  /* -------------------------------------------------------------------------
      Keyboard shortcut: press 'd' to toggle dark mode
   -------------------------------------------------------------------------  */
   $(document).on('keydown', function (e) {
