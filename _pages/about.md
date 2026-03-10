@@ -135,7 +135,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a href="https://patents.google.com/patent/US12210587B2/en"><img src="images/Papers/patent22-icon.jpg" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <div class="pub-arrow"></div>
-    <div class="pub-summary">Summary</div>
+    <div class="pub-summary">We propose a multi-stage unsupervised pipeline for constructing super-resolution training data that avoids the domain gap between synthetically downsampled images used during training and real low-resolution images encountered at test time. Given a real low-resolution image, a first model (blind SR with deep image prior) generates an initial high-resolution estimate by jointly estimating the unknown blur kernel, then a second model (CycleGAN-based domain adaptation) refines this estimate using an unpaired dataset of real high-resolution images to produce natural-looking pseudo-ground-truth, with a low-frequency content preservation loss to maintain structural fidelity. The resulting paired dataset of real low-resolution inputs and synthetic high-resolution targets is used to train a final supervised super-resolution network, eliminating the need for paired training data and ensuring that the network sees real low-resolution images during training — not synthetic ones. Since no fixed degradation kernel (e.g., bicubic) is assumed, the method generalizes to real-world images with unknown and varying degradations.</div>
   </div>
 </div>
 
@@ -192,7 +192,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a href="https://link.springer.com/chapter/10.1007/978-3-030-67070-2_5"><img src="images/Papers/eccvw20-icon.png" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <div class="pub-arrow"></div>
-    <div class="pub-summary">Summary</div>
+    <div class="pub-summary">We adapt MobileNetV3 blocks — originally designed for classification, detection, and segmentation — to build an efficient 4× single-image super-resolution network suitable for on-device mobile deployment. Our model approaches the PSNR of heavy state-of-the-art SR methods like ESRGAN and RCAN while being 40–1000× more efficient in FLOPs and 30–1000× smaller in parameters. We also present an extremely lite variant (18K params, 2.6G FLOPs) capable of generating a 12MP image in ~1.4s on a mobile phone, making real-world deployment feasible at the cost of a barely perceptible ~0.5–1 dB PSNR drop.</div>
   </div>
 
   <div class="pub-card">
@@ -213,7 +213,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a href="https://dx.doi.org/10.13140/RG.2.2.10079.47521"><img src="images/Papers/bmvc_sub2020.jpg" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <div class="pub-arrow"></div>
-    <div class="pub-summary">Summary</div>
+    <div class="pub-summary">We introduce annotation-free, part-based auxiliary objectives to improve single-stage object detection, applied on top of CenterNet. Specifically, we add two self-supervised tasks derived purely from existing bounding box labels: class-agnostic corner keypoint heatmaps and pixel-wise vector fields that cast votes for object part directions. We also fix a train-test discrepancy in CenterNet's regression head by predicting edge offsets within a 3×3 window around centers, making the detector robust to single-pixel center localization errors. Together, these yield ~2.6–3.9 AP improvements on MS COCO test-dev across backbones, with our best model hitting 39.4 AP at 31 FPS (DLA34) and fastest at 32.2 AP at 71 FPS (ResNet-18).</div>
   </div>
 
   <div class="pub-card">
@@ -234,7 +234,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a href="https://arxiv.org/abs/1905.13200"><img src="images/Papers/arxiv-opt-2019-icon.png" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <div class="pub-arrow"></div>
-    <div class="pub-summary">Summary</div>
+    <div class="pub-summary">We introduce novel variants of momentum for stochastic optimization that use the gradient of the mini-batch loss variance to quantify uncertainty in the loss landscape. We apply this "variance-gradient" in two ways: as a bias (MomentumUCB) that steers updates toward regions where the loss landscape's features conform across mini-batches, improving generalization; and as a stochastic exploration signal (MomentumS) that randomly injects noise along high-variance directions, yielding an unbiased full-gradient estimate. We also introduce a model-agnostic stochastic regularizer through the update rule itself, establish a connection between the variance-gradient and REINFORCE with baseline, and incorporate these into Adam variants that show faster convergence on MNIST and CIFAR-10.</div>
   </div>
 
   <div class="pub-card">
@@ -255,7 +255,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a href="https://dx.doi.org/10.13140/RG.2.2.27695.55205"><img src="images/Papers/ml4h.png" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <div class="pub-arrow"></div>
-    <div class="pub-summary">Summary</div>
+    <div class="pub-summary">We build an early warning system to predict critical care outcomes (ICU transfer, palliative care, death) for General Internal Medicine patients using only the first 24 hours of admission data from St. Michael's Hospital. We explore feed-forward and recurrent architectures, and propose a data-driven regularization technique that uses ICD-10 diagnosis codes as intermediate training labels to improve patient representations without requiring them at inference time. We also incorporate positional embeddings to disentangle temporal from feature information, and show that ensembling diverse model families yields the best overall performance (~0.82 AUC-ROC), with neural models generalizing substantially better than XGBoost despite similar test AUC, and performance analysis stratified by gender, length of stay, and diagnosis codes revealing where each model excels.</div>
   </div>
 
   <div class="pub-card">
@@ -276,7 +276,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a href="https://arxiv.org/abs/1807.07525"><img src="images/Papers/arxiv-mal-2018-icon.jpg" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <div class="pub-arrow"></div>
-    <div class="pub-summary">Summary</div>
+    <div class="pub-summary">We propose a reversible method for encoding dynamic file behavior (API call sequences) into RGB images using the Fourier transform, where API call ngram tf-idfs are mapped to amplitudes in frequency space and first-invocation order to phase, producing distributed image textures that are visually distinctive across software categories and fully decodable back to the original sequence information. We train a WGAN-GP on these malware behavior images to act as a malware author emulator, generating synthetic malware behaviors that can be used to proactively test and harden ML-based threat detection before zero-day attacks appear in the wild. We also propose perceptual hash-based "smart definitions" over these images as a replacement for cryptographic hashes, offering meaningful similarity metrics that generalize across malware variants, and validate that even a simple XGBoost classifier over raw image pixels achieves 0.97 AUC for malware detection on our dataset.</div>
   </div>
 </div>
 
@@ -303,7 +303,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.052441"><img src="images/Papers/pra22-icon.jpg" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <div class="pub-arrow"></div>
-    <div class="pub-summary">Summary</div>
+    <div class="pub-summary">We extend the wedge product and Lagrange-Brahmagupta identity framework (previously proposed for discrete-variable systems by Bhaskara et al.) to construct a family of faithful entanglement measures for general pure and mixed continuous-variable (CV) states across arbitrary bipartitions and degrees of freedom. The resulting generalized entanglement measure (GEM) provides necessary and sufficient conditions for separability — unlike prior CV criteria (Simon, Duan et al., Hillery-Zubairy) which are only necessary for general non-Gaussian states — and for pure CV states is computationally simpler than von Neumann entropy as it avoids diagonalization of the infinite-dimensional reduced density matrix, requiring only integrals over the wave function. We validate the measure on Gaussian states, pair-coherent states, non-Gaussian CV Bell states, and superpositions of squeezed states, recovering known results, and establish equivalences to the Hilbert-Schmidt distance and von Neumann entropy as entanglement measures.</div>
   </div>
 
   <div class="pub-card">
@@ -325,7 +325,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a href="https://link.springer.com/article/10.1007/s11128-017-1568-0"><img src="images/Papers/qinp2017-icon.png" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <div class="pub-arrow"></div>
-    <div class="pub-summary">Summary</div>
+    <div class="pub-summary">We present a new framework based on the wedge product and the generalized Lagrange's (Brahmagupta–Fibonacci) identity to extend concurrence as a faithful entanglement measure to multiparticle pure states in arbitrary dimensions. The key geometric insight is that separability across any bipartition is equivalent to the post-measurement vectors being parallel, captured by vanishing wedge products, and the entanglement measure corresponds to the area of the complex parallelotope formed by these vectors. Applying Lagrange's identity converts the O(m²) wedge product norm computation into the O(m) expression E²<sub>M</sub> = 2(1 − tr(ρ<sub>M</sub>²)), yielding necessary and sufficient separability conditions across arbitrary bipartitions. The resulting measure coincides with the I-concurrence of Rungta et al. (derived independently via a universal inverter superoperator), but our geometric derivation exposes the underlying structure and naturally extends to the continuous-variable case addressed in subsequent work.</div>
   </div>
 
   <div class="pub-card">
@@ -345,7 +345,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a href="https://opg.optica.org/ome/fulltext.cfm?uri=ome-7-4-1198&id=361548#"><img src="images/Papers/osa2017-icon.jpg" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <div class="pub-arrow"></div>
-    <div class="pub-summary">Summary</div>
+    <div class="pub-summary">We propose and numerically simulate two methods for implementing Bragg gratings in hollow-core photonic-crystal fibers (HCPCFs) that crucially leave the hollow core unobstructed, enabling continued loading of atoms for quantum optics experiments. The first method coats the inner hollow-core wall with photoresist followed by UV interference lithography, while the second selectively fills photonic-crystal cladding holes with UV-curable epoxy. Numerical simulations predict that the hollow-core coating approach can achieve reflectivities >99.99% with only ~300 Bragg periods (~100 µm penetration depth), compared to ~10<sup>5</sup> periods (~5 cm) needed if modulating only the silica material itself. The hole-filling method achieves lower reflectivity (~99.8%) due to weaker effective index contrast, but relies on selective injection techniques that have already been experimentally demonstrated, making it more immediately practical.</div>
   </div>
 
   <div class="pub-card">
@@ -365,7 +365,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a href="https://www.degruyter.com/document/doi/10.1515/nanoph-2015-0026/html"><img src="images/Papers/nano2016-icon.jpg" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <div class="pub-arrow"></div>
-    <div class="pub-summary">Summary</div>
+    <div class="pub-summary">We review and propose approaches for incorporating Bragg gratings, mirrors, and Fabry–Pérot cavities into hollow-core photonic-crystal (HCPC) fibers and hollow-core ARROW waveguides without obstructing their cores, enabling loading of atomic ensembles for enhanced light–matter interactions. We analyze two Bragg grating methods for HCPC fibers (hollow-core wall coating and selective photonic-crystal hole filling with photosensitive polymers), gratings etched into ARROW cladding layers, and photonic-crystal membrane metasurfaces as compact broadband mirrors — showing that the membrane approach can reach near-unity reflectivity sufficient for both the strong-coupling and high-cooperativity cavity QED regimes with cesium atoms in ~1–4 cm fiber cavities. We propose applications of these "mesoscale" cavities (effective lengths from hundreds of microns to centimeters, transverse confinement at the micron scale) including single-photon transistors and superradiant lasers, and discuss on-chip integration pathways for both ARROW and fiber-based platforms.</div>
   </div>
 </div>
 
