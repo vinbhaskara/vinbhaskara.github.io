@@ -168,6 +168,7 @@
       el.addEventListener('click', function (e) { e.stopPropagation(); });
     });
     card.addEventListener('click', function () {
+      if (window.getSelection && window.getSelection().toString().length > 0) return;
       card.classList.toggle('expanded');
     });
   });
