@@ -114,68 +114,6 @@ I graduated with a Master's from the Department of Computer Science at the Unive
   </tbody>
 </table>
 
-## Patents
-
-
-<div class="pub-list">
-  <div class="pub-card">
-    <div class="pub-num"><b>3.&nbsp;&nbsp;&nbsp;</b></div>
-    <div class="pub-date"><b>Mar<br>2026</b></div>
-    <div class="pub-content">
-      <b>Systems, Methods, and Techniques for Performing Retrieval Augmented Generation (RAG) with a Diverse-Retrieval Method</b>
-      <br>Lorne Schell, and <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span> (Borealis AI) <br>
-      <i>US Patent Application No. 19/575161 (Filed Mar 23, 2026)</i>
-      <br>
-      <p style="margin:0.5em;"></p>
-      <!-- <a class="btn btn--primary" target="_blank" href="" role="button" style="text-decoration:none">Patent</a> -->
-      <!-- <a class="btn btn--cite2" target="_blank" href="" role="button" style="text-decoration:none">Cite</a> -->
-      <br>
-    </div>
-    <div class="pub-img">
-      <a><img src="images/rag_diverse_retrieval_patent_v4.svg" style="width:250px; height:auto; margin:0px;"></a>
-    </div>
-    <!-- <div class="pub-arrow"></div> -->
-    <!-- <div class="pub-summary">Patent-pending.</div> -->
-  </div>
-  <div class="pub-card">
-    <div class="pub-num"><b>2.&nbsp;&nbsp;&nbsp;</b></div>
-    <div class="pub-date"><b>Mar<br>2025</b></div>
-    <div class="pub-content">
-      <b>Generating Credit Capacity Estimates</b>
-      <br>S. H. Hajimirsadeghi, M. O. Ahmed, E. J. Smith, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, <i>et al.</i> (Borealis AI) <br>
-      <i>US Patent Application No. 19/091539 (Filed Mar 17, 2025)</i>
-      <br>
-      <p style="margin:0.5em;"></p>
-      <!-- <a class="btn btn--primary" target="_blank" href="" role="button" style="text-decoration:none">Patent</a> -->
-      <!-- <a class="btn btn--cite2" target="_blank" href="" role="button" style="text-decoration:none">Cite</a> -->
-      <br>
-    </div>
-    <div class="pub-img">
-      <a><img src="images/credit_capacity_patent_v5.svg" style="width:250px; height:auto; margin:0px;"></a>
-    </div>
-    <!-- <div class="pub-arrow"></div> -->
-    <!-- <div class="pub-summary">Patent-pending.</div> -->
-  </div>
-  <div class="pub-card">
-    <div class="pub-num"><b>1.&nbsp;&nbsp;&nbsp;</b></div>
-    <div class="pub-date"><b>Jan<br>2025</b></div>
-    <div class="pub-content">
-      <b>Unsupervised Super-Resolution Training Data Construction</b>
-      <br>Haicheng Wang, Xinyu Sun, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Stavros Tsogkas, Allan Jepson, Alex Levinshtein (Samsung AI Center) <br>
-      <i>US Patent 12,210,587 (<b>Granted</b>)</i>
-      <br>
-      <p style="margin:0.5em;"></p>
-      <a class="btn btn--primary" target="_blank" href="https://patents.google.com/patent/US12210587B2/en" role="button" style="text-decoration:none">Patent</a>
-      <a class="btn btn--cite2" target="_blank" href="files/patent2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
-      <br>
-    </div>
-    <div class="pub-img">
-      <a href="https://patents.google.com/patent/US12210587B2/en"><img src="images/Papers/patent22-icon.jpg" style="width:250px; height:auto; margin:0px;"></a>
-    </div>
-    <div class="pub-arrow"></div>
-    <div class="pub-summary">We propose a multi-stage unsupervised pipeline for constructing super-resolution training data that avoids the domain gap between synthetically downsampled images used during training and real low-resolution images encountered at test time. Given a real low-resolution image, a first model (blind SR with deep image prior) generates an initial high-resolution estimate by jointly estimating the unknown blur kernel, then a second model (CycleGAN-based domain adaptation) refines this estimate using an unpaired dataset of real high-resolution images to produce natural-looking pseudo-ground-truth, with a low-frequency content preservation loss to maintain structural fidelity. The resulting paired dataset of real low-resolution inputs and synthetic high-resolution targets is used to train a final supervised super-resolution network, eliminating the need for paired training data and ensuring that the network sees real low-resolution images during training — not synthetic ones. Since no fixed degradation kernel (e.g., bicubic) is assumed, the method generalizes to real-world images with unknown and varying degradations.</div>
-  </div>
-</div>
 
 ## Publications
 <span style="font-size:0.85em; color:#666;">(<sup style="font-size:140%;top: 0.15em;">*</sup> <i> denotes equal contribution</i>)</span>
@@ -404,6 +342,70 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     </div>
     <div class="pub-arrow"></div>
     <div class="pub-summary">We review and propose approaches for incorporating Bragg gratings, mirrors, and Fabry–Pérot cavities into hollow-core photonic-crystal (HCPC) fibers and hollow-core ARROW waveguides without obstructing their cores, enabling loading of atomic ensembles for enhanced light–matter interactions. We analyze two Bragg grating methods for HCPC fibers (hollow-core wall coating and selective photonic-crystal hole filling with photosensitive polymers), gratings etched into ARROW cladding layers, and photonic-crystal membrane metasurfaces as compact broadband mirrors — showing that the membrane approach can reach near-unity reflectivity sufficient for both the strong-coupling and high-cooperativity cavity QED regimes with cesium atoms in ~1–4 cm fiber cavities. We propose applications of these "mesoscale" cavities (effective lengths from hundreds of microns to centimeters, transverse confinement at the micron scale) including single-photon transistors and superradiant lasers, and discuss on-chip integration pathways for both ARROW and fiber-based platforms.</div>
+  </div>
+</div>
+
+
+## Patents
+
+
+<div class="pub-list">
+  <div class="pub-card">
+    <div class="pub-num"><b>3.&nbsp;&nbsp;&nbsp;</b></div>
+    <div class="pub-date"><b>Mar<br>2026</b></div>
+    <div class="pub-content">
+      <b>Systems, Methods, and Techniques for Performing Retrieval Augmented Generation (RAG) with a Diverse-Retrieval Method</b>
+      <br>Lorne Schell, and <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span> (Borealis AI) <br>
+      <i>US Patent Application No. 19/575161 (Filed Mar 23, 2026)</i>
+      <br>
+      <p style="margin:0.5em;"></p>
+      <!-- <a class="btn btn--primary" target="_blank" href="" role="button" style="text-decoration:none">Patent</a> -->
+      <!-- <a class="btn btn--cite2" target="_blank" href="" role="button" style="text-decoration:none">Cite</a> -->
+      <br>
+    </div>
+    <div class="pub-img">
+      <a><img src="images/rag_diverse_retrieval_patent_v4.svg" style="width:250px; height:auto; margin:0px;"></a>
+    </div>
+    <!-- <div class="pub-arrow"></div> -->
+    <!-- <div class="pub-summary">Patent-pending.</div> -->
+  </div>
+  <div class="pub-card">
+    <div class="pub-num"><b>2.&nbsp;&nbsp;&nbsp;</b></div>
+    <div class="pub-date"><b>Mar<br>2025</b></div>
+    <div class="pub-content">
+      <b>Generating Credit Capacity Estimates</b>
+      <br>S. H. Hajimirsadeghi, M. O. Ahmed, E. J. Smith, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, <i>et al.</i> (Borealis AI) <br>
+      <i>US Patent Application No. 19/091539 (Filed Mar 17, 2025)</i>
+      <br>
+      <p style="margin:0.5em;"></p>
+      <!-- <a class="btn btn--primary" target="_blank" href="" role="button" style="text-decoration:none">Patent</a> -->
+      <!-- <a class="btn btn--cite2" target="_blank" href="" role="button" style="text-decoration:none">Cite</a> -->
+      <br>
+    </div>
+    <div class="pub-img">
+      <a><img src="images/credit_capacity_patent_v5.svg" style="width:250px; height:auto; margin:0px;"></a>
+    </div>
+    <!-- <div class="pub-arrow"></div> -->
+    <!-- <div class="pub-summary">Patent-pending.</div> -->
+  </div>
+  <div class="pub-card">
+    <div class="pub-num"><b>1.&nbsp;&nbsp;&nbsp;</b></div>
+    <div class="pub-date"><b>Jan<br>2025</b></div>
+    <div class="pub-content">
+      <b>Unsupervised Super-Resolution Training Data Construction</b>
+      <br>Haicheng Wang, Xinyu Sun, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Stavros Tsogkas, Allan Jepson, Alex Levinshtein (Samsung AI Center) <br>
+      <i>US Patent 12,210,587 (<b>Granted</b>)</i>
+      <br>
+      <p style="margin:0.5em;"></p>
+      <a class="btn btn--primary" target="_blank" href="https://patents.google.com/patent/US12210587B2/en" role="button" style="text-decoration:none">Patent</a>
+      <a class="btn btn--cite2" target="_blank" href="files/patent2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+      <br>
+    </div>
+    <div class="pub-img">
+      <a href="https://patents.google.com/patent/US12210587B2/en"><img src="images/Papers/patent22-icon.jpg" style="width:250px; height:auto; margin:0px;"></a>
+    </div>
+    <div class="pub-arrow"></div>
+    <div class="pub-summary">We propose a multi-stage unsupervised pipeline for constructing super-resolution training data that avoids the domain gap between synthetically downsampled images used during training and real low-resolution images encountered at test time. Given a real low-resolution image, a first model (blind SR with deep image prior) generates an initial high-resolution estimate by jointly estimating the unknown blur kernel, then a second model (CycleGAN-based domain adaptation) refines this estimate using an unpaired dataset of real high-resolution images to produce natural-looking pseudo-ground-truth, with a low-frequency content preservation loss to maintain structural fidelity. The resulting paired dataset of real low-resolution inputs and synthetic high-resolution targets is used to train a final supervised super-resolution network, eliminating the need for paired training data and ensuring that the network sees real low-resolution images during training — not synthetic ones. Since no fixed degradation kernel (e.g., bicubic) is assumed, the method generalizes to real-world images with unknown and varying degradations.</div>
   </div>
 </div>
 
