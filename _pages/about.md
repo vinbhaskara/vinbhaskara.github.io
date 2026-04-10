@@ -394,7 +394,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     <div class="pub-content">
       <b>Unsupervised Super-Resolution Training Data Construction</b>
       <br>Haicheng Wang, Xinyu Sun, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Stavros Tsogkas, Allan Jepson, Alex Levinshtein (Samsung AI Center) <br>
-      <i>US Patent 12,210,587 (<b>Granted</b>)</i>
+      <i>US Patent 12,210,587 (<b>Granted Jan 28, 2025</b>)</i>
       <br>
       <p style="margin:0.5em;"></p>
       <a class="btn btn--primary" target="_blank" href="https://patents.google.com/patent/US12210587B2/en" role="button" style="text-decoration:none">Patent</a>
