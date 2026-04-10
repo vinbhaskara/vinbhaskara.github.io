@@ -119,6 +119,25 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 
 <div class="pub-list">
   <div class="pub-card">
+    <div class="pub-num"><b>3.&nbsp;&nbsp;&nbsp;</b></div>
+    <div class="pub-date"><b>Mar<br>2026</b></div>
+    <div class="pub-content">
+      <b>Systems, Methods, and Techniques for Performing Retrieval Augmented Generation (RAG) with a Diverse-Retrieval Method</b>
+      <br>Lorne Schell, and <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span> (Borealis AI) <br>
+      <i>US Patent Application No. 19/575161 (Filed Mar 23, 2026)</i>
+      <br>
+      <p style="margin:0.5em;"></p>
+      <!-- <a class="btn btn--primary" target="_blank" href="" role="button" style="text-decoration:none">Patent</a> -->
+      <!-- <a class="btn btn--cite2" target="_blank" href="" role="button" style="text-decoration:none">Cite</a> -->
+      <br>
+    </div>
+    <div class="pub-img">
+      <a><img src="images/rag_diverse_retrieval_patent_v4.svg" style="width:250px; height:auto; margin:0px;"></a>
+    </div>
+    <!-- <div class="pub-arrow"></div> -->
+    <!-- <div class="pub-summary">Patent-pending.</div> -->
+  </div>
+  <div class="pub-card">
     <div class="pub-num"><b>2.&nbsp;&nbsp;&nbsp;</b></div>
     <div class="pub-date"><b>Mar<br>2025</b></div>
     <div class="pub-content">
@@ -132,19 +151,18 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <br>
     </div>
     <div class="pub-img">
-      <a><img src="images/credit_capacity_patent_thumbnail_v2.svg" style="width:250px; height:auto; margin:0px;"></a>
+      <a><img src="images/credit_capacity_patent_v5.svg" style="width:250px; height:auto; margin:0px;"></a>
     </div>
     <!-- <div class="pub-arrow"></div> -->
     <!-- <div class="pub-summary">Patent-pending.</div> -->
   </div>
-
   <div class="pub-card">
     <div class="pub-num"><b>1.&nbsp;&nbsp;&nbsp;</b></div>
     <div class="pub-date"><b>Jan<br>2025</b></div>
     <div class="pub-content">
       <b>Unsupervised Super-Resolution Training Data Construction</b>
       <br>Haicheng Wang, Xinyu Sun, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Stavros Tsogkas, Allan Jepson, Alex Levinshtein (Samsung AI Center) <br>
-      <i>US Patent 12,210,587 (Granted)</i>
+      <i>US Patent 12,210,587 (<b>Granted</b>)</i>
       <br>
       <p style="margin:0.5em;"></p>
       <a class="btn btn--primary" target="_blank" href="https://patents.google.com/patent/US12210587B2/en" role="button" style="text-decoration:none">Patent</a>
