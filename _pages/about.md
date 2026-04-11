@@ -40,7 +40,7 @@ header:
   </tbody>
 </table>
 <!-- I have 8 years of full-time work experience in applied AI and software engineering. I also serve as an academic reviewer for [NeurIPS](https://neurips.cc/), [CVPR](https://cvpr.thecvf.com/), [ICLR](https://iclr.cc/) and [ICML](https://icml.cc/). -->
-<div style="font-size: 0.8em; margin-top: 0.4em; margin-bottom: 1em;" class="news-flash">
+<div style="font-size: 0.8em; margin-top: 0.9em; margin-bottom: 1.6em;" class="news-flash">
   <div class="news-header">
     <strong class="news-badge">
       <span class="star">★</span> NEWS
