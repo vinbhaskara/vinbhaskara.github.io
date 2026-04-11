@@ -356,7 +356,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     <div class="pub-content">
       <b>Systems, Methods, and Techniques for Performing Retrieval Augmented Generation (RAG) with a Diverse-Retrieval Method</b>
       <br>Lorne Schell, and <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span> (Borealis AI) <br>
-      <i>US Patent Application No. 19/575161 (Filed Mar 23, 2026)</i>
+      <i>US Patent Application No. 19/575,161 (Filed Mar 23, 2026)</i>
       <br>
       <p style="margin:0.5em;"></p>
       <!-- <a class="btn btn--primary" target="_blank" href="" role="button" style="text-decoration:none">Patent</a> -->
@@ -375,7 +375,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     <div class="pub-content">
       <b>Generating Credit Capacity Estimates</b>
       <br>S. H. Hajimirsadeghi, M. O. Ahmed, E. J. Smith, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, <i>et al.</i> (Borealis AI) <br>
-      <i>US Patent Application No. 19/091539 (Filed Mar 17, 2025)</i>
+      <i>US Patent Application No. 19/091,539 (Filed Mar 17, 2025)</i>
       <br>
       <p style="margin:0.5em;"></p>
       <!-- <a class="btn btn--primary" target="_blank" href="" role="button" style="text-decoration:none">Patent</a> -->
