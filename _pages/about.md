@@ -43,6 +43,18 @@ header:
 
 <!-- I have 8 years of full-time work experience in applied AI and software engineering. I also serve as an academic reviewer for [NeurIPS](https://neurips.cc/), [CVPR](https://cvpr.thecvf.com/), [ICLR](https://iclr.cc/) and [ICML](https://icml.cc/). -->
 
+<div style="font-size: 0.8em;" class="news-flash">
+  <div class="news-header">
+    <strong class="news-badge">
+      <span class="star">★</span> NEWS
+    </strong>
+  </div>
+
+  <ul class="news-list">
+    <li><strong>Mar 2026</strong> – Patent filed for our Fast, Robust, Diverse RAG Sampling Method (US App. No. 19/575,161) with Lorne Schell at Borealis AI 🎉</li>
+  </ul>
+</div>
+
 **Misc**: I enjoy Kaggle challenges in healthcare and medicine, and I rank as a [Competitions Expert](https://www.kaggle.com/bvineeth007) (Top 5% globally, 5 medals). I custom-built a Nvidia GeForce RTX 3090 Ti workstation for these projects -- check out its detailed specs and benchmarks on [PC Part Picker](https://ca.pcpartpicker.com/b/gmrrxr)!
 
 **Current Research Interests**: Calibration, uncertainty estimation, and robustness of large language models (LLMs), particularly for risk-sensitive applications in healthcare and finance.
