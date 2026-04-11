@@ -138,7 +138,10 @@
       {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
-{% endif %}
+      {% endif %}
+      {% if author.rss %}
+      <li><a href="{{ author.rss }}" target="_blank"><span style="color: black;"><i class="fa fa-fw fa-rss-square" aria-hidden="true" style="color: black;"></i></span> RSS</a></li>
+      {% endif %}
     </ul>
   </div>
 </div>

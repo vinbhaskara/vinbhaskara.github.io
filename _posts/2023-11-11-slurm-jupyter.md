@@ -90,6 +90,8 @@ Voila! The Jupyter Notebook server should be accessible from the local machine a
 
 If you liked this article, consider subscribing to the blog's mailing list here: <a class="btn btn--warning" target="_blank" href="/subscribe/" role="button" style="text-decoration:none">Subscribe</a> 
 
+<a href="feed://vinbhaskara.github.io/feed.xml"><i class="fas fa-rss" style="font-size: 1.6em; vertical-align: middle; color: #f26522;"></i> RSS feed</a>
+
 
 To cite this work, please use:
 

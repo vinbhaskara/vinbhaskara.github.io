@@ -10,7 +10,7 @@ redirect_from:
 Please leave your email below and I'll keep you posted of future blog posts.  
 
 
-Your email address will not be used for spamming or any other commercial purposes, and you may unsubscribe at any time. 
+Your email address will not be used for spamming or any other commercial purposes, and you may unsubscribe at any time.
 
 
 
@@ -39,4 +39,9 @@ Your email address will not be used for spamming or any other commercial purpose
 </form>
 </div>
 </div>
+
+<br>
+<br>
+
+Or subscribe via  <a href="feed://vinbhaskara.github.io/feed.xml"><i class="fas fa-rss" style="font-size: 1.6em; vertical-align: middle; color: #f26522;"></i> RSS feed</a>.
 
