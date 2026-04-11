@@ -48,7 +48,7 @@ header:
   </div>
 
   <ul class="news-list">
-    <li><strong>Mar 2026</strong> – Patent filed for our Fast, Robust, Diverse Retrieval Method for RAG (<i>US App. No. 19/575,161</i>) at Borealis AI  🎉</li>
+    <li><strong>Mar 2026</strong> – <a href="#patent-rag-diverse-retrieval">Patent filed</a> for our Fast, Robust, Diverse Retrieval Method for RAG (<i>US App. No. 19/575,161</i>) at Borealis AI  🎉</li>
   </ul>
 </div>
 
@@ -359,7 +359,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 
 
 <div class="pub-list">
-  <div class="pub-card">
+  <div class="pub-card" id="patent-rag-diverse-retrieval">
     <div class="pub-num"><b>3.&nbsp;&nbsp;&nbsp;</b></div>
     <div class="pub-date"><b>Mar<br>2026</b></div>
     <div class="pub-content">
