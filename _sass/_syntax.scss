@@ -42,6 +42,7 @@ div.highlighter-rouge, figure.highlight {
 /* Line-number table injected by custom.js */
 table.code-linenos {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   font-family: $monospace;
   font-size: $type-size-syntax;
