@@ -68,12 +68,7 @@
   /* -------------------------------------------------------------------------
      Dark mode toggle
   -------------------------------------------------------------------------  */
-  $(document).on('click', '#theme-toggle', function () {
-    var current = document.documentElement.getAttribute('data-theme') || 'light';
-    var next = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    sessionStorage.setItem('theme', next);
-  });
+  /* Dark mode toggle — handled by inline onclick in masthead.html */
 
   /* -------------------------------------------------------------------------
      Scroll-reveal via IntersectionObserver
@@ -223,7 +218,7 @@
     /* ignore if inside input/textarea */
     if ($(e.target).is('input, textarea, [contenteditable]')) return;
     if (e.key === 'd' || e.key === 'D') {
-      $('#theme-toggle').trigger('click');
+      $('#myInverter').trigger('click');
     }
   });
 

@@ -16,7 +16,7 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-          <li class="masthead__menu-item"><a id="myInverter" href="#" aria-label="Toggle dark mode" onclick="if(sessionStorage.getItem('theme') === 'dark'){sessionStorage.setItem('theme', 'light');document.querySelector('html').style.filter = 'invert(0%)';} else {sessionStorage.setItem('theme', 'dark');document.querySelector('html').style.filter = 'invert(100%)';} return false;"><span style="color: black;"><i class="fas fa-fw fa-adjust" style="color: #000000;" aria-hidden="true"></i></span></a></li>
+          <li class="masthead__menu-item"><a id="myInverter" href="#" aria-label="Toggle dark mode" title="Press 'd' to toggle dark mode" onclick="if(sessionStorage.getItem('theme') === 'dark'){sessionStorage.setItem('theme', 'light');document.querySelector('html').style.filter = 'invert(0%)';} else {sessionStorage.setItem('theme', 'dark');document.querySelector('html').style.filter = 'invert(100%) hue-rotate(180deg)';} return false;"><span style="color: black;"><i class="fas fa-fw fa-adjust" style="color: #000000;" aria-hidden="true"></i></span></a></li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
