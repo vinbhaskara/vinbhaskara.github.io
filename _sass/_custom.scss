@@ -8,7 +8,14 @@
      1920–2559 — 27"+ desktop, scale up
      2560+     — 32"+ / 4K, scale up further
    ========================================================================== */
-html { font-size: 17.5px; }
+html {
+  font-size: 17.5px;
+  font-optical-sizing: auto;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+h1, h2, h3 { letter-spacing: -0.025em; }
+h4, h5, h6 { letter-spacing: -0.01em; }
 
 @media (min-width: 768px) {
   html { zoom: 0.90; }
