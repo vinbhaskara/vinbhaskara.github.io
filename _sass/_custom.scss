@@ -62,6 +62,50 @@ h4, h5, h6 { letter-spacing: -0.01em; }
 }
 
 /* ==========================================================================
+   COPY BUTTON ON CODE BLOCKS
+   ========================================================================== */
+div.highlighter-rouge,
+figure.highlight {
+  .copy-btn {
+    position: absolute;
+    top: 0.35em;
+    right: 2.4em; /* clears the ::before code icon */
+    padding: 0.18em 0.65em;
+    font-family: $sans-serif;
+    font-size: 0.68em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #777;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    line-height: 1.6;
+
+    &:hover {
+      color: $primary-color;
+      border-color: rgba(46, 74, 128, 0.35);
+      background: #fff;
+    }
+
+    &.copied {
+      color: #2e7d32;
+      border-color: rgba(46, 125, 50, 0.35);
+      background: #fff;
+    }
+  }
+}
+
+/* ==========================================================================
+   NAV UNDERLINE COLOR FIX
+   ========================================================================== */
+.greedy-nav .visible-links a::before {
+  background: $primary-color;
+  height: 2px;
+}
+
+/* ==========================================================================
    SIDEBAR LINKS BUTTON — keep "pressed" color tied to .open class, not :focus
    ========================================================================== */
 .author__urls-wrapper button.open {

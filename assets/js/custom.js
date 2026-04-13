@@ -148,6 +148,49 @@
   });
 
   /* -------------------------------------------------------------------------
+     Copy button on code blocks
+     Injects a pill button into each code block; copies raw text from the
+     hidden <pre><code> element (still in DOM after line-number injection).
+  -------------------------------------------------------------------------  */
+  document.querySelectorAll('div.highlighter-rouge, figure.highlight').forEach(function (block) {
+    var code = block.querySelector('pre code');
+    if (!code) return;
+
+    var btn = document.createElement('button');
+    btn.className = 'copy-btn';
+    btn.textContent = 'Copy';
+    btn.setAttribute('aria-label', 'Copy code to clipboard');
+
+    btn.addEventListener('click', function () {
+      var text = code.innerText || code.textContent;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, fallback);
+      } else {
+        fallback();
+      }
+      function done() {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function () {
+          btn.textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      }
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.cssText = 'position:fixed;opacity:0;pointer-events:none';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); done(); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+    });
+
+    block.appendChild(btn);
+  });
+
+  /* -------------------------------------------------------------------------
      Back-to-top button — always scrolls to absolute top.
      Overrides jQuery smoothScroll which reports wrong document position for
      sticky #site-nav (offset().top = currentScrollTop, not 0).
