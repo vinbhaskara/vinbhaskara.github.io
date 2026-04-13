@@ -10,36 +10,16 @@ redirect_from:
 header:
   preview_card_image: profile_pic.jpg
 --- 
-<table>
-  <tbody>
-    <tr>
-      <td rowspan="5" style="vertical-align : left;">I’m a Senior Research Engineer at <a href="https://rbcborealis.com/">Borealis AI</a> (RBC Research Institute) in Montreal, where I work on Foundation Models and LLMs for Capital Markets and Credit Modeling within the AI Solutions group led by <a href="https://www.cs.sfu.ca/~mori/">Prof. Greg Mori</a>.<br><br>Previously, I was a Research Engineer at <a href="https://research.samsung.com/aicenter_toronto">Samsung AI Center Toronto</a>, where I worked with <a href="http://www.cs.toronto.edu/~babalex/">Dr. Alex Levinshtein</a> and <a href="https://www.cs.toronto.edu/~jepson/">Prof. Allan Jepson</a> on computer vision research, focusing on burst photography, neural implicit representations, and image enhancement and synthesis. Before that, I was a Software Engineer at <a href="https://www.broadcom.com/products/cybersecurity">Broadcom Inc.</a>, where I developed behavior-based  malware classifiers for <a href="https://us.norton.com/">Norton AntiVirus</a> using machine learning.<br><br>I have over 8 years of full-time experience in applied AI and software engineering, and I serve as a reviewer for <a href="https://neurips.cc/">NeurIPS</a>, <a href="https://cvpr.thecvf.com/">CVPR</a>, <a href="https://iclr.cc/">ICLR</a>, and <a href="https://icml.cc/">ICML</a>.
-      </td>
-      <td>&nbsp;&nbsp;&nbsp;</td>
-      <td rowspan="3" style="text-align: right"><a href="https://www.rbcborealis.com/"><img src="./../images/bai.png" width="600px" height="auto" loading="lazy"></a><br><br><a href="https://research.samsung.com/aicenter_toronto"><img src="./../images/samsung_research.png" width="600px" height="auto" loading="lazy"></a><br><br><a href="https://www.broadcom.com/products/cybersecurity"><img src="./../images/symc.png" width="600px" height="auto" loading="lazy"></a></td>
-    </tr>
-    <tr>
-      <td style="vertical-align : left;"></td>
-      <td>&nbsp;</td>
-      <td style="text-align: right"></td>
-    </tr>
-    <tr>
-      <td style="vertical-align : left;"></td>
-      <td>&nbsp;</td>
-      <td style="text-align: right"></td>
-    </tr>
-    <tr>
-      <td style="vertical-align : left;"></td>
-      <td>&nbsp;</td>
-      <td style="text-align: right"></td>
-    </tr>
-    <tr>
-      <td style="vertical-align : left;"></td>
-      <td>&nbsp;</td>
-      <td style="text-align: right"></td>
-    </tr>
-  </tbody>
-</table>
+<div class="bio-flex">
+  <div class="bio-text">
+    I’m a Senior Research Engineer at <a href="https://rbcborealis.com/">Borealis AI</a> (RBC Research Institute) in Montreal, where I work on Foundation Models and LLMs for Capital Markets and Credit Modeling within the AI Solutions group led by <a href="https://www.cs.sfu.ca/~mori/">Prof. Greg Mori</a>.<br><br>Previously, I was a Research Engineer at <a href="https://research.samsung.com/aicenter_toronto">Samsung AI Center Toronto</a>, where I worked with <a href="http://www.cs.toronto.edu/~babalex/">Dr. Alex Levinshtein</a> and <a href="https://www.cs.toronto.edu/~jepson/">Prof. Allan Jepson</a> on computer vision research, focusing on burst photography, neural implicit representations, and image enhancement and synthesis. Before that, I was a Software Engineer at <a href="https://www.broadcom.com/products/cybersecurity">Broadcom Inc.</a>, where I developed behavior-based malware classifiers for <a href="https://us.norton.com/">Norton AntiVirus</a> using machine learning.<br><br>I have over 8 years of full-time experience in applied AI and software engineering, and I serve as a reviewer for <a href="https://neurips.cc/">NeurIPS</a>, <a href="https://cvpr.thecvf.com/">CVPR</a>, <a href="https://iclr.cc/">ICLR</a>, and <a href="https://icml.cc/">ICML</a>.
+  </div>
+  <div class="bio-logos">
+    <a href="https://www.rbcborealis.com/"><img src="./../images/bai.png" alt="Borealis AI" loading="lazy"></a>
+    <a href="https://research.samsung.com/aicenter_toronto"><img src="./../images/samsung_research.png" alt="Samsung AI Center Toronto" loading="lazy"></a>
+    <a href="https://www.broadcom.com/products/cybersecurity"><img src="./../images/symc.png" alt="Broadcom / Norton" loading="lazy"></a>
+  </div>
+</div>
 <!-- I have 8 years of full-time work experience in applied AI and software engineering. I also serve as an academic reviewer for [NeurIPS](https://neurips.cc/), [CVPR](https://cvpr.thecvf.com/), [ICLR](https://iclr.cc/) and [ICML](https://icml.cc/). -->
 <div style="font-size: 0.85em; margin-top: 1.2em; margin-bottom: 1.6em;" class="news-flash">
   <div class="news-header">
@@ -149,7 +129,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <a class="btn btn--secondary" target="_blank" href="files/wacv2022-poster.pdf" role="button" style="text-decoration:none">Poster</a>
       <a class="btn btn--secondary" target="_blank" href="files/wacv2022-slides.pdf" role="button" style="text-decoration:none">Slides</a>
       <a class="btn btn--secondary" target="_blank" href="https://www.youtube.com/watch?v=zC2q8B90DeA" role="button" style="text-decoration:none">Video</a>
-      <span class="btn btn--code2" style="cursor:pointer; position:relative; display:inline-block;" onclick="window.open('mailto:vin.bhaskara@gmail.com?subject=Reg%20Code%20for%20WACV%202022%20paper')" onmouseenter="this.querySelector('.wacv-tooltip').style.visibility='visible';this.querySelector('.wacv-tooltip').style.opacity='1'" onmouseleave="this.querySelector('.wacv-tooltip').style.visibility='hidden';this.querySelector('.wacv-tooltip').style.opacity='0'"><svg aria-hidden="true" focusable="false" class="octicon octicon-code hide-sm" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom;"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path></svg>&nbsp;&nbsp;Code: ✉️<span class="wacv-tooltip" style="visibility:hidden; opacity:0; transition:opacity 0.2s; position:absolute; bottom:130%; left:50%; transform:translateX(-50%); background:#333; color:#fff; padding:6px 10px; border-radius:4px; white-space:nowrap; font-size:0.8em; z-index:1000; pointer-events:none;">Please email vin.bhaskara@gmail.com for the code.</span></span>
+      <span class="btn btn--code2" style="cursor:pointer; position:relative; display:inline-block;" onclick="window.open('mailto:vin.bhaskara@gmail.com?subject=Reg%20Code%20for%20WACV%202022%20paper')" onmouseenter="this.querySelector('.wacv-tooltip').style.visibility='visible';this.querySelector('.wacv-tooltip').style.opacity='1'" onmouseleave="this.querySelector('.wacv-tooltip').style.visibility='hidden';this.querySelector('.wacv-tooltip').style.opacity='0'"><svg aria-hidden="true" focusable="false" class="octicon octicon-code hide-sm" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom;"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path></svg>&nbsp;&nbsp;Code<span class="wacv-tooltip" style="visibility:hidden; opacity:0; transition:opacity 0.2s; position:absolute; bottom:130%; left:50%; transform:translateX(-50%); background:#333; color:#fff; padding:6px 10px; border-radius:4px; white-space:nowrap; font-size:0.8em; z-index:1000; pointer-events:none;">Please email vin.bhaskara@gmail.com for the code.</span></span>
       <a class="btn btn--cite2" target="_blank" href="files/wacv2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
       <br>
     </div>

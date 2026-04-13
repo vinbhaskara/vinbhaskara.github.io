@@ -62,6 +62,58 @@ h4, h5, h6 { letter-spacing: -0.01em; }
 }
 
 /* ==========================================================================
+   BIO FLEXBOX LAYOUT (replaces table)
+   ========================================================================== */
+.bio-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75em;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+
+  .bio-text {
+    width: calc(100% - 145px - 0.75em);
+    flex-shrink: 0;
+    font-size: 0.888888em;
+    line-height: 1.5;
+  }
+
+  .bio-logos {
+    width: 145px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5em;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+/* Mobile: stack vertically, logos stay same absolute size */
+@media (max-width: 767px) {
+  .bio-flex {
+    flex-direction: column;
+    gap: 1.5em;
+
+    .bio-text {
+      width: 100%;
+    }
+
+    .bio-logos {
+      width: 140px;
+      align-self: flex-start;
+      align-items: flex-end;
+    }
+  }
+}
+
+/* ==========================================================================
    COPY BUTTON ON CODE BLOCKS
    ========================================================================== */
 div.highlighter-rouge,
@@ -146,9 +198,9 @@ figure.highlight {
    BLOG POST ENHANCEMENTS
    ========================================================================== */
 
-/* Slightly wider line-height and refined spacing for post body */
+/* Refined spacing for post body */
 .page__content {
-  > p { line-height: 1.55; margin-bottom: 0.875em; }
+  > p { line-height: 1.5; margin-bottom: 0.875em; }
 
   /* Inline code: pair with neutral #f4f4f8 background from variables */
   p > code,
@@ -363,11 +415,43 @@ figure.highlight {
 
 /* ANIMATIONS */
 /* ==========================================================================
-   PILL-SHAPED BUTTONS — Apple-style rounded
+   PILL-SHAPED BUTTONS — Apple-style rounded, 3D glassy
    ========================================================================== */
 .btn,
 .author__urls-wrapper button {
   border-radius: 999px;
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.08) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.38),
+    inset 0 -1px 0 rgba(0,0,0,0.10),
+    0 2px 5px rgba(0,0,0,0.18),
+    0 1px 2px rgba(0,0,0,0.10);
+  border: 1px solid rgba(0,0,0,0.14) !important;
+  transition: box-shadow 0.15s ease, transform 0.12s ease, background-color 0.15s ease;
+
+  &:hover {
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.38),
+      inset 0 -1px 0 rgba(0,0,0,0.10),
+      0 4px 10px rgba(0,0,0,0.20),
+      0 2px 4px rgba(0,0,0,0.12);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    box-shadow:
+      inset 0 2px 4px rgba(0,0,0,0.18),
+      0 1px 1px rgba(0,0,0,0.08);
+    transform: translateY(0px);
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.06) 0%, rgba(255,255,255,0.10) 100%);
+  }
+}
+
+/* Outline/transparent variants — no gradient overlay, keep border */
+.btn--cite,
+.btn--inverse,
+.btn--light-outline {
+  background-image: none;
 }
 
 /* ==========================================================================
