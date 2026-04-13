@@ -8,6 +8,8 @@
      1920–2559 — 27"+ desktop, scale up
      2560+     — 32"+ / 4K, scale up further
    ========================================================================== */
+html { font-size: 17.5px; }
+
 @media (min-width: 768px) {
   html { zoom: 0.90; }
 }
