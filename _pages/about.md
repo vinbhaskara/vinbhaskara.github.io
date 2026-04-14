@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Bio"
-seo_title: "Vin Bhaskara - Homepage & Blog"
+seo_title: "Homepage & Blog - Vin Bhaskara"
 description: "Senior Research Engineer at Borealis AI working on Foundation Models and LLMs. Vector Scholar, IIT Silver Medalist, Kaggle Competitions Expert, and academic reviewer for NeurIPS, CVPR, ICLR, and ICML."
 author_profile: true
 classes: wide
