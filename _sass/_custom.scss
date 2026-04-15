@@ -306,7 +306,7 @@ figure.highlight {
   background: rgba(255, 255, 255, 0.60);
   border: none;
   box-shadow: 0 5px 18px -4px rgba(0, 0, 0, 0.07);
-  backdrop-filter: blur(10px) saturate(150%);
+  // backdrop-filter: blur(10px) saturate(150%);
   transition: box-shadow 0.25s ease, background 0.2s ease;
 
   &:hover,
@@ -388,7 +388,7 @@ figure.highlight {
     margin-top: 0.3em;
     border-color: rgba(100, 140, 200, 0.22);
     background: rgba(240, 245, 255, 0.55);
-    backdrop-filter: blur(8px) saturate(150%);
+    // backdrop-filter: blur(8px) saturate(150%);
   }
 }
 
