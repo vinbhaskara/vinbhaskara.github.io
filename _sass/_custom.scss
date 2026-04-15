@@ -28,8 +28,8 @@ h4, h5, h6 { letter-spacing: -0.01em; }
       linear-gradient(112deg, transparent 18%, rgba(100, 180, 255, 0.05) 28%, rgba(160, 220, 255, 0.08) 32%, transparent 42%),
       linear-gradient(108deg, transparent 58%, rgba(170, 145, 255, 0.04) 66%, rgba(190, 210, 255, 0.06) 70%, transparent 78%),
       linear-gradient(160deg, rgba(255, 255, 255, 0.96) 0%, rgba(0, 146, 202, 0.02) 60%, rgba(0, 90, 150, 0.03) 100%);
-    -webkit-backdrop-filter: blur(10px) saturate(140%);
-            backdrop-filter: blur(10px) saturate(140%);
+    // -webkit-backdrop-filter: blur(10px) saturate(140%);
+    //         backdrop-filter: blur(10px) saturate(140%);
     border-radius: 12px;
     border: 1px solid rgba(46, 74, 128, 0.07);
     box-shadow:
