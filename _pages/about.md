@@ -38,7 +38,7 @@ header:
 
 **Current Research Interests**: Calibration, uncertainty estimation, and robustness of large language models (LLMs), particularly for risk-sensitive applications in healthcare and finance.
 
-**Contact**: For opportunities and mentorship inquiries, feel free to reach out at <code style="color: #000000; background: #ffffff;">vin [dot] bhaskara [at] gmail [dot] com</code> or <code style="color: #000000; background: #ffffff;">bhaskara [at] cs [dot] toronto [dot] edu</code>.
+**Contact**: Reach out at <code style="color: #000000; background: #ffffff;">vin [dot] bhaskara [at] gmail [dot] com</code> or <code style="color: #000000; background: #ffffff;">bhaskara [at] cs [dot] toronto [dot] edu</code>.
 
 
 
