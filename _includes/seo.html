@@ -37,6 +37,7 @@
   {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
 {% endif %}
 
+<meta name="author" content="{{ site.name }}">
 <meta property="og:locale" content="{{ site.locale | default: "en" }}">
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:title" content="{{ page.title | default: site.name | markdownify | strip_html | strip_newlines | escape_once }}">
@@ -72,9 +73,9 @@
     {% endif %}
   {% endif %}
 
-  {% if seo_author_twitter %}
+  <!-- {% if seo_author_twitter %}
     <meta name="twitter:creator" content="@{{ seo_author_twitter }}">
-  {% endif %}
+  {% endif %} -->
 {% endif %}
 
 {% if site.facebook %}
@@ -107,26 +108,68 @@
   <link rel="next" href="{{ paginator.next_page_path | prepend: seo_url }}">
 {% endif %}
 
-{% if site.og_image %}
+{% if page.url == '/' or page.url == '/index.html' %}
   <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vin Bhaskara",
+    "givenName": "Vin",
+    "familyName": "Bhaskara",
+    "jobTitle": "Senior Research Engineer",
+    "url": "https://vinbhaskara.github.io",
+    "image": "https://vinbhaskara.github.io/images/profile_pic.jpg",
+    "worksFor": {
       "@type": "Organization",
-      "url": {{ seo_url | jsonify }},
-      "logo": {{ site.og_image | prepend: "/images/" | prepend: base_path | jsonify }}
-    }
+      "name": "Borealis AI",
+      "url": "https://www.rbcborealis.com/"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Toronto",
+        "url": "https://www.utoronto.ca/"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Indian Institute of Technology Guwahati",
+        "url": "https://www.iitg.ac.in/"
+      }
+    ],
+    "knowsAbout": [
+      "Large Language Models",
+      "Foundation Models",
+      "Computer Vision",
+      "Quantum Information"
+    ],
+    "sameAs": [
+      "https://github.com/vinbhaskara",
+      "https://www.linkedin.com/in/vinbhaskara",
+      "https://scholar.google.com/citations?user=JBgGgnoAAAAJ&hl=en",
+      "https://openreview.net/profile?id=~Vin_Bhaskara1",
+      "https://www.kaggle.com/bvineeth007",
+      "https://bsky.app/profile/vinbhaskara.github.io"
+    ]
+  }
   </script>
-{% endif %}
-
-{% if site.social %}
+{% elsif page.date %}
   <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
-      "name" : "{{ site.social.name | default: site.name }}",
-      "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify }},
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    {% if page.last_modified_at %}"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",{% endif %}
+    "author": {
+      "@type": "Person",
+      "name": "Vin Bhaskara",
+      "url": "https://vinbhaskara.github.io"
+    },
+    "url": {{ page.url | prepend: seo_url | jsonify }},
+    "mainEntityOfPage": {{ page.url | prepend: seo_url | jsonify }}{% if seo_description %},
+    "description": {{ seo_description | jsonify }}{% endif %}{% if page.header.image %},
+    "image": {{ page.header.image | prepend: "/images/" | prepend: seo_url | jsonify }}{% endif %}
+  }
   </script>
 {% endif %}
 

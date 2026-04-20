@@ -1,0 +1,22 @@
+# Vin Bhaskara
+
+> Senior Research Engineer at Borealis AI working on Foundation Models and LLMs. Vector Scholar, IIT Silver Medalist, Kaggle Competitions Expert, and academic reviewer for NeurIPS, CVPR, ICLR, and ICML.
+
+This is the personal website and blog of Vin Bhaskara, covering research, publications, and writing on machine learning, foundation models, and LLMs.
+
+## Pages
+
+- [About](https://vinbhaskara.github.io/about/): Biography, background, and contact information.
+- [Personal](https://vinbhaskara.github.io/personal/): Personal interests and non-research activities.
+- [Sitemap](https://vinbhaskara.github.io/sitemap/): Full list of pages on the site.
+
+## Content
+
+- [Posts](https://vinbhaskara.github.io/year-archive/): Blog posts organized by year.
+- [Categories](https://vinbhaskara.github.io/category-archive/): Posts grouped by category.
+- [Tags](https://vinbhaskara.github.io/tag-archive/): Posts grouped by tag.
+
+## Feeds
+
+- [Atom feed](https://vinbhaskara.github.io/feed.xml): Site-wide feed of new posts.
+- [Sitemap XML](https://vinbhaskara.github.io/sitemap.xml): Machine-readable sitemap.
