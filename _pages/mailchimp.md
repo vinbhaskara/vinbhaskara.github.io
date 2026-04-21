@@ -7,7 +7,7 @@ redirect_from:
 ---
 
 
-Please leave your email below and I'll keep you posted of future blog posts.  
+Please leave your email below and I'll keep you posted about future blog posts.  
 
 
 Your email address will not be used for spamming or any other commercial purposes, and you may unsubscribe at any time.

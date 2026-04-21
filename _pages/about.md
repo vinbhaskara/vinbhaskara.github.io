@@ -106,7 +106,12 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 </table>
 
 
-## Publications
+<div style="display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:1em; margin-top:1.5em;">
+  <h2 id="publications" style="margin:0; border:none;">Publications</h2>
+  <span style="font-size:0.9em; color:#555;">
+    <b>10</b> papers · <b>3</b> patents <span style="color:#888;">(1 granted, 2 pending)</span> · <a href="https://scholar.google.com/citations?user=JBgGgnoAAAAJ&hl=en" target="_blank" style="color:#3b7ea1; text-decoration:none;"><b>324</b> citations</a> · <b>h-index 8</b>
+  </span>
+</div>
 <span style="font-size:0.85em; color:#666;">(<sup style="font-size:140%;top: 0.15em;">*</sup> <i> denotes equal contribution</i>)</span>
 
 <div style="margin-top:-1em;"></div>
