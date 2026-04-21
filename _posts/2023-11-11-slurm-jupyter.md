@@ -22,13 +22,13 @@ header:
 </figure>
 
 
-[Slurm](https://slurm.schedmd.com/documentation.html) is a popular choice for job scheduling and management on GPU clusters with multiple compute nodes that are ubiquitous for training large deep learning models. 
+[Slurm](https://slurm.schedmd.com/documentation.html) <a href="#ref-1" title="Slurm: job scheduler for GPU clusters. slurm.schedmd.com">[1]</a> is a popular choice for job scheduling and management on GPU clusters with multiple compute nodes that are ubiquitous for training large deep learning models. 
 
 {% include toc %}
 
 A Slurm GPU cluster consists of one or more head (or login) nodes and multiple compute nodes. Generally, the head nodes are lighter on compute resources (eg. no GPUs, low RAM, etc). It is a common practice by system admins to prevent users from logging into compute nodes directly from the head node bypassing Slurm resource allocation (see [PAM](https://slurm.schedmd.com/faq.html#pam)). 
 
-In this post, we'll set up a [Jupyter Notebook](https://jupyter.org/) server on an allocated compute node without having to directly SSH to it from the head node. To access the server locally, we'll setup port-forwarding from the compute node to the local machine via an SSH tunnel through the head node.
+In this post, we'll set up a [Jupyter Notebook](https://jupyter.org/) <a href="#ref-2" title="Jupyter: interactive notebook server. jupyter.org">[2]</a> server on an allocated compute node without having to directly SSH to it from the head node. To access the server locally, we'll setup port-forwarding from the compute node to the local machine via an SSH tunnel through the head node.
 
 
 
@@ -53,7 +53,7 @@ Here, we requested a Slurm compute node with at least one GPU and 50 GB of memor
 
 ### Run Jupyter Server
 
-To run a Jupyter Notebook server in the background that does not terminate with the Terminal shell session, use [Tmux](https://github.com/tmux/tmux/wiki) or [GNU Screen](https://www.gnu.org/software/screen/). Here we use `tmux` by creating a tab named <code style="color: #0072be; background: #f4f2f9;">jupyter_tmux</code> on the allocated compute node:
+To run a Jupyter Notebook server in the background that does not terminate with the Terminal shell session, use [Tmux](https://github.com/tmux/tmux/wiki) <a href="#ref-3" title="Tmux: terminal multiplexer. github.com/tmux/tmux/wiki">[3]</a> or [GNU Screen](https://www.gnu.org/software/screen/) <a href="#ref-4" title="GNU Screen: terminal multiplexer. gnu.org/software/screen">[4]</a>. Here we use `tmux` by creating a tab named <code style="color: #0072be; background: #f4f2f9;">jupyter_tmux</code> on the allocated compute node:
 ```sh
 tmux new -s "jupyter_tmux"
 ```
@@ -79,10 +79,13 @@ Voila! The Jupyter Notebook server should be accessible from the local machine a
 
 ### References
 
-[1] Slurm, [https://slurm.schedmd.com/](https://slurm.schedmd.com/).    
-[2] Jupyter, [https://jupyter.org/](https://jupyter.org/).  
-[3] Tmux, [https://github.com/tmux/tmux/wiki](https://github.com/tmux/tmux/wiki).  
-[4] GNU Screen, [https://www.gnu.org/software/screen/](https://www.gnu.org/software/screen/).    
+<a id="ref-1"></a>[1] Slurm, [https://slurm.schedmd.com/](https://slurm.schedmd.com/).
+
+<a id="ref-2"></a>[2] Jupyter, [https://jupyter.org/](https://jupyter.org/).
+
+<a id="ref-3"></a>[3] Tmux, [https://github.com/tmux/tmux/wiki](https://github.com/tmux/tmux/wiki).
+
+<a id="ref-4"></a>[4] GNU Screen, [https://www.gnu.org/software/screen/](https://www.gnu.org/software/screen/).
 
 
 ### Citation
