@@ -6,7 +6,11 @@
       <nav id="site-nav" class="greedy-nav">
         <button type="button" aria-label="Toggle navigation menu"><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">Home</a></li>
+          {% assign home_active = false %}
+          {% if page.url == '/' or page.url == '/index.html' or page.url contains '/about' %}
+            {% assign home_active = true %}
+          {% endif %}
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/"{% if home_active %} class="active"{% endif %}>Home</a></li>
           <li class="masthead__menu-item"><a href="https://www.linkedin.com/in/vinbhaskara/" target="_blank" rel="noopener noreferrer"><span style="color: black;"><i style="color: #000000;" aria-hidden="true"></i></span>LinkedIn</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
@@ -14,7 +18,17 @@
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign is_active = false %}
+            {% if link.title == 'Blog' %}
+              {% if page.url contains '/year-archive' or page.url contains '/posts/' or page.url contains '/tags' or page.url contains '/categories' or page.url contains '/tag-archive' or page.url contains '/category-archive' or page.url contains '/collection-archive' %}
+                {% assign is_active = true %}
+              {% endif %}
+            {% elsif link.url contains 'http' or link.url contains '.pdf' %}
+              {% comment %}External or file links never mark active{% endcomment %}
+            {% elsif page.url contains link.url and link.url != '/' %}
+              {% assign is_active = true %}
+            {% endif %}
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"{% if is_active %} class="active"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}
           <li class="masthead__menu-item"><a id="myInverter" href="#" aria-label="Toggle dark mode" title="Press 'd' to toggle dark mode" onclick="if(sessionStorage.getItem('theme') === 'dark'){sessionStorage.setItem('theme', 'light');document.querySelector('html').style.filter = 'invert(0%)';} else {sessionStorage.setItem('theme', 'dark');document.querySelector('html').style.filter = 'invert(100%) hue-rotate(180deg)';} return false;"><span style="color: black;"><i class="fas fa-fw fa-adjust" style="color: #000000;" aria-hidden="true"></i></span></a></li>
         </ul>

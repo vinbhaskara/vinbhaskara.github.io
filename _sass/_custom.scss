@@ -269,6 +269,12 @@ figure.highlight {
   height: 2px;
 }
 
+.greedy-nav .visible-links a.active::before {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 /* ==========================================================================
    SIDEBAR LINKS BUTTON — keep "pressed" color tied to .open class, not :focus
    ========================================================================== */
