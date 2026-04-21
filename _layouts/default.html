@@ -15,6 +15,16 @@ layout: compress
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
+    {% if page.url == '/' %}
+      <nav class="sub-masthead" aria-label="Section navigation">
+        <ul>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#patents">Patents</a></li>
+        </ul>
+      </nav>
+    {% endif %}
 
     {{ content }}
 

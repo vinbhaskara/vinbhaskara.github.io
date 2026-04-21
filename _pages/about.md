@@ -11,7 +11,7 @@ redirect_from:
 header:
   preview_card_image: profile_pic.jpg
 --- 
-<div class="bio-flex">
+<div id="bio" class="bio-flex">
   <div class="bio-text">
     I’m a Senior Research Engineer at <a href="https://rbcborealis.com/">Borealis AI</a> (RBC Research) in Montreal, where I work on Foundation Models and LLMs for Capital Markets and Credit Modeling within the AI Solutions team led by <a href="https://www.cs.sfu.ca/~mori/">Prof. Greg Mori</a>.<br><br>Previously, I was a Research Engineer at <a href="https://research.samsung.com/aicenter_toronto">Samsung AI Center Toronto</a>, where I worked with <a href="http://www.cs.toronto.edu/~babalex/">Dr. Alex Levinshtein</a> and <a href="https://www.cs.toronto.edu/~jepson/">Prof. Allan Jepson</a> on computer vision research, focusing on burst photography, neural implicit representations, and image enhancement and synthesis. Before that, I was a Software Engineer at <a href="https://www.broadcom.com/products/cybersecurity">Broadcom Inc.</a>, where I developed behavior-based malware classifiers for <a href="https://us.norton.com/">Norton AntiVirus</a> using machine learning.<br><br>I have over 8 years of full-time experience in applied AI and software engineering, and I serve as a reviewer for <a href="https://neurips.cc/">NeurIPS</a>, <a href="https://cvpr.thecvf.com/">CVPR</a>, <a href="https://iclr.cc/">ICLR</a>, and <a href="https://icml.cc/">ICML</a>.
   </div>
@@ -25,7 +25,7 @@ header:
 <div style="font-size: 0.85em; margin-top: 1.2em; margin-bottom: 1.6em;" class="news-flash">
   <div class="news-header">
     <strong class="news-badge">
-      <span class="star">★</span> NEWS
+      <span class="star">★</span> News
     </strong>
   </div>
 
@@ -38,7 +38,7 @@ header:
 
 **Current Research Interests**: Calibration, uncertainty estimation, and robustness of large language models (LLMs), particularly for risk-sensitive applications in healthcare and finance.
 
-**Contact**: Reach out at <code style="color: #000000; background: #ffffff;">vin [dot] bhaskara [at] gmail [dot] com</code> or <code style="color: #000000; background: #ffffff;">bhaskara [at] cs [dot] toronto [dot] edu</code>.
+**Contact**: Reach out at [vin.bhaskara@gmail.com](mailto:vin.bhaskara@gmail.com) or [bhaskara@cs.toronto.edu](mailto:bhaskara@cs.toronto.edu).
 
 
 

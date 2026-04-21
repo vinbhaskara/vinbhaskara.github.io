@@ -186,6 +186,46 @@
   });
 
   /* -------------------------------------------------------------------------
+     In-page anchor scrolling that clears the sticky masthead(s).
+     Delegated handler in capture phase pre-empts jQuery smoothScroll's
+     per-element binding (which was initialized with offset: -20 in _main.js).
+  -------------------------------------------------------------------------  */
+  document.addEventListener('click', function (e) {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+    var a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    if (a.closest('.sidebar__top')) return;
+    var hash = a.getAttribute('href');
+    if (!hash || hash === '#' || hash.length < 2) return;
+
+    // Bio link in the sub-masthead points to the top of the page (title lives
+    // in the layout above #bio), so treat it like a back-to-top action.
+    if (hash === '#bio' && a.closest('.sub-masthead')) {
+      e.preventDefault();
+      e.stopPropagation();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      history.pushState(null, '', '#bio');
+      return;
+    }
+
+    var target = document.getElementById(hash.slice(1));
+    if (!target) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    var masthead = document.querySelector('.masthead');
+    var subMasthead = document.querySelector('.sub-masthead');
+    var offset = (masthead ? masthead.offsetHeight : 0)
+               + (subMasthead ? subMasthead.offsetHeight : 0)
+               + 16; // breathing room
+
+    var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+    history.pushState(null, '', hash);
+  }, true);
+
+  /* -------------------------------------------------------------------------
      Back-to-top button — always scrolls to absolute top.
      Overrides jQuery smoothScroll which reports wrong document position for
      sticky #site-nav (offset().top = currentScrollTop, not 0).

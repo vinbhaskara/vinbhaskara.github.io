@@ -12,11 +12,119 @@ html {
   font-size: 17.5px;
   font-optical-sizing: auto;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-  scroll-padding-top: 4rem;
+  scroll-padding-top: 11rem;
 }
 
 h1, h2, h3 { letter-spacing: -0.025em; }
 h4, h5, h6 { letter-spacing: -0.01em; }
+
+:target,
+[id]:is(h1, h2, h3, h4, h5, h6, div, section, article) {
+  scroll-margin-top: 140px;
+}
+
+/* ==========================================================================
+   SUB-MASTHEAD (home page only)
+   Thin section-nav that sticks directly below the main masthead.
+   ========================================================================== */
+.sub-masthead {
+  position: sticky;
+  top: 3.2rem;
+  z-index: 99;
+  overflow: hidden;
+  padding: 0.22em 1em;
+  border-bottom: 1px solid rgba(0, 100, 170, 0.12);
+  // Near-transparent glass with a 3D "pillow" bulge:
+  //   horizontal: brighter at center, fading to clearer at the ends
+  //   vertical:   bright top highlight, soft midline, faint bottom shadow
+  background:
+    radial-gradient(ellipse 65% 140% at 50% 45%,
+      rgba(255, 255, 255, 0.45) 0%,
+      rgba(245, 250, 255, 0.28) 45%,
+      rgba(230, 240, 250, 0.10) 85%,
+      rgba(225, 235, 248, 0.04) 100%),
+    linear-gradient(180deg,
+      rgba(255, 255, 255, 0.35) 0%,
+      rgba(240, 248, 255, 0.18) 55%,
+      rgba(220, 232, 248, 0.22) 100%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+          backdrop-filter: blur(16px) saturate(180%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),   // bright top rim
+    inset 0 -1px 0 rgba(0, 50, 110, 0.05),
+    0 1px 4px rgba(0, 60, 140, 0.04);
+  font-family: $sans-serif-narrow;
+  font-size: 0.72em;
+  text-align: center;
+
+  // Subtle diagonal sweep — fades at both ends (3D taper)
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(108deg,
+        transparent 28%,
+        rgba(255, 255, 255, 0.22) 42%,
+        rgba(255, 255, 255, 0.12) 50%,
+        transparent 62%);
+    // mask fades the sweep at both horizontal ends
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+            mask-image: linear-gradient(90deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+    pointer-events: none;
+  }
+
+  // Faint color splashes — concentrated near center, dissolving at edges
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 140px 28px at 32% 55%,
+        rgba(110, 190, 230, 0.14) 0%,
+        rgba(110, 190, 230, 0.05) 55%,
+        transparent 80%),
+      radial-gradient(ellipse 110px 24px at 68% 45%,
+        rgba(230, 160, 210, 0.09) 0%,
+        rgba(255, 190, 160, 0.06) 55%,
+        transparent 80%),
+      radial-gradient(ellipse 80px 18px at 86% 30%,
+        rgba(255, 210, 150, 0.07) 0%,
+        transparent 80%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 15%, #000 85%, transparent 100%);
+            mask-image: linear-gradient(90deg, transparent 0%, #000 15%, #000 85%, transparent 100%);
+    filter: blur(3px);
+    pointer-events: none;
+  }
+
+  ul {
+    position: relative;
+    z-index: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.6em;
+  }
+
+  li { line-height: 1.4; }
+
+  a {
+    color: rgba(15, 31, 76, 0.75);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: color 0.15s ease;
+
+    &:hover { color: #0092ca; }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
 
 /* ==========================================================================
    SIDEBAR GLASSMORPHISM CARD

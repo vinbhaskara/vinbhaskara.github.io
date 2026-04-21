@@ -7,7 +7,7 @@ author_profile: true
 <div style="font-size: 0.85em;" class="news-flash">
   <div class="news-header">
     <strong class="news-badge">
-      <span class="star">★</span> NEWS
+      <span class="star">★</span> News
     </strong>
   </div>
 
