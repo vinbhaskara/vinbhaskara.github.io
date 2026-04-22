@@ -109,7 +109,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 <div style="display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:1em; margin-top:1.5em;">
   <h2 id="publications" style="margin:0; border:none;">Publications</h2>
   <span style="font-size:0.9em; color:#555;">
-    <b>10</b> papers · <b>3</b> patents <span style="color:#888;">(1 granted, 2 pending)</span> · <a href="https://scholar.google.com/citations?user=JBgGgnoAAAAJ&hl=en" target="_blank" style="color:#3b7ea1; text-decoration:none;"><b>324</b> citations</a> · <b>h-index 8</b>
+    <b>11</b> papers · <b>3</b> patents <span style="color:#888;">(1 granted, 2 pending)</span> · <a href="https://scholar.google.com/citations?user=JBgGgnoAAAAJ&hl=en" target="_blank" style="color:#3b7ea1; text-decoration:none;"><b>324</b> citations</a> · <b>h-index 8</b>
   </span>
 </div>
 <span style="font-size:0.85em; color:#666;">(<sup style="font-size:140%;top: 0.15em;">*</sup> <i> denotes equal contribution</i>)</span>
@@ -120,6 +120,28 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 
 
 <div class="pub-list">
+  <div class="pub-card">
+    <div class="pub-num"><b>7.&nbsp;&nbsp;&nbsp;</b></div>
+    <div class="pub-date"><b>Apr<br>2026</b></div>
+    <div class="pub-content">
+      <b>Curiosity-Critic: Cumulative Prediction Error Improvement as a Tractable Intrinsic Reward for World Model Training</b>
+      <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Haicheng Wang<br>
+      <i>Preprint. arXiv:2604.18701 [cs.LG]</i>
+      <br>
+      <p style="margin:0.5em;"></p>
+      <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/2604.18701" role="button" style="text-decoration:none">Arxiv</a>
+      <a class="btn btn--code2" target="_blank" href="https://github.com/vinbhaskara/Curiosity-Critic" role="button" style="text-decoration:none"><svg aria-hidden="true" focusable="false" class="octicon octicon-code hide-sm" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom;"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path></svg>&nbsp;&nbsp;Code</a>
+      <a class="btn btn--cite2" target="_blank" href="files/arxiv-ccrl-2026-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+      <br>
+    </div>
+    <div class="pub-img">
+      <a href="https://arxiv.org/abs/2604.18701"><img src="images/2026-04-21-curiosity-critic-snapshot.png" style="width:250px; height:auto; margin:0px;"></a>
+    </div>
+    <div class="pub-arrow"></div>
+    <div class="pub-summary"><b>Tl;dr</b>: <br>Curiosity-Critic grounds intrinsic reward in improvement of cumulative world-model error, reducing to per-step reducible (epistemic) error above a learned irreducible (aleatoric) baseline, recovers prior methods, beats them on stochastic gridworld.<br><br>
+    <b>Full Abstract</b>: <br>Local prediction-error-based curiosity rewards focus on the current transition without considering the world model's cumulative prediction error across all visited transitions. We introduce Curiosity-Critic, which grounds its intrinsic reward in the improvement of this cumulative objective, and show that it reduces to a tractable per-step form: the difference between the current prediction error and the asymptotic error baseline of the current state transition. We estimate this baseline online with a learned critic co-trained alongside the world model; regressing a single scalar, the critic converges well before the world model saturates, redirecting exploration toward learnable transitions without oracle knowledge of the noise floor. The reward is higher for learnable transitions and collapses toward the baseline for stochastic ones, effectively separating epistemic (reducible) from aleatoric (irreducible) prediction error online. Prior prediction-error curiosity formulations, from Schmidhuber (1991) to learned-feature-space variants, emerge as special cases corresponding to specific approximations of this baseline. Experiments on a stochastic grid world show that Curiosity-Critic outperforms prediction-error and visitation-count baselines in convergence speed and final world model accuracy.</div>
+  </div>
+
   <div class="pub-card">
     <div class="pub-num"><b>6.&nbsp;&nbsp;&nbsp;</b></div>
     <div class="pub-date"><b>Jan<br>2022</b></div>
