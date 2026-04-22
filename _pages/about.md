@@ -30,7 +30,7 @@ header:
   </div>
 
   <ul class="news-list">
-    <li><strong>Apr 2026</strong> – <a href="#ccrl-arxiv-2026">Our paper</a> on Cumulative Training Progress as Curiosity and Intrinsic Motivation is out on <a href="https://arxiv.org/abs/2604.18701">arXiv</a>!  &nbsp;🥳</li>
+    <li><strong>Apr 2026</strong> – <a href="#ccrl-arxiv-2026">Our paper</a> on Cumulative Training Progress as Curiosity is out on <a href="https://arxiv.org/abs/2604.18701">arXiv</a>! Read the <a href="{% link _posts/2026-04-21-curiosity-critic.md %}">blog</a>!  &nbsp;🥳</li>
     <li><strong>Mar 2026</strong> – <a href="#patent-rag-diverse-retrieval">Patent filed</a> for our Fast, Robust, Diverse-Retrieval Method for RAG (<i>US App. No. 19/575,161</i>) at Borealis AI.  &nbsp;🎉</li>
   </ul>
 </div>
@@ -131,7 +131,8 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <br>
       <p style="margin:0.5em;"></p>
       <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/2604.18701" role="button" style="text-decoration:none">Arxiv</a>
-      <a class="btn btn--ytvideo" target="_blank" href="https://youtu.be/Jv1n346TWbQ" role="button" style="text-decoration:none">Video</a>
+      <a class="btn btn--myblog" target="_blank" href="{% link _posts/2026-04-21-curiosity-critic.md %}" role="button" style="text-decoration:none">Blog</a>
+      <a class="btn btn--secondary" target="_blank" href="https://youtu.be/Jv1n346TWbQ" role="button" style="text-decoration:none">Video</a>
       <a class="btn btn--code2" target="_blank" href="https://github.com/vinbhaskara/Curiosity-Critic" role="button" style="text-decoration:none"><svg aria-hidden="true" focusable="false" class="octicon octicon-code hide-sm" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom;"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path></svg>&nbsp;&nbsp;Code</a>
       <a class="btn btn--cite2" target="_blank" href="files/arxiv-ccrl-2026-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
       <br>
@@ -155,10 +156,10 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <br>
       <p style="margin:0.5em;"></p>
       <a class="btn btn--primary" target="_blank" href="https://openaccess.thecvf.com/content/WACV2022/html/Bhaskara_GraN-GAN_Piecewise_Gradient_Normalization_for_Generative_Adversarial_Networks_WACV_2022_paper.html" role="button" style="text-decoration:none">Paper</a>
-      <a class="btn btn--secondary" target="_blank" href="https://arxiv.org/abs/2111.03162" role="button" style="text-decoration:none">Arxiv</a>
-      <a class="btn btn--secondary" target="_blank" href="files/wacv2022-poster.pdf" role="button" style="text-decoration:none">Poster</a>
-      <a class="btn btn--secondary" target="_blank" href="files/wacv2022-slides.pdf" role="button" style="text-decoration:none">Slides</a>
-      <a class="btn btn--ytvideo" target="_blank" href="https://www.youtube.com/watch?v=zC2q8B90DeA" role="button" style="text-decoration:none">Video</a>
+      <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/2111.03162" role="button" style="text-decoration:none">Arxiv</a>
+      <a class="btn btn--primary" target="_blank" href="files/wacv2022-poster.pdf" role="button" style="text-decoration:none">Poster</a>
+      <a class="btn btn--primary" target="_blank" href="files/wacv2022-slides.pdf" role="button" style="text-decoration:none">Slides</a>
+      <a class="btn btn--secondary" target="_blank" href="https://www.youtube.com/watch?v=zC2q8B90DeA" role="button" style="text-decoration:none">Video</a>
       <span class="btn btn--code2" style="cursor:pointer; position:relative; display:inline-block;" onclick="window.open('mailto:vin.bhaskara@gmail.com?subject=Reg%20Code%20for%20WACV%202022%20paper')" onmouseenter="this.querySelector('.wacv-tooltip').style.visibility='visible';this.querySelector('.wacv-tooltip').style.opacity='1'" onmouseleave="this.querySelector('.wacv-tooltip').style.visibility='hidden';this.querySelector('.wacv-tooltip').style.opacity='0'"><svg aria-hidden="true" focusable="false" class="octicon octicon-code hide-sm" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align: text-bottom;"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path></svg>&nbsp;&nbsp;Code<span class="wacv-tooltip" style="visibility:hidden; opacity:0; transition:opacity 0.2s; position:absolute; bottom:130%; left:50%; transform:translateX(-50%); background:#333; color:#fff; padding:6px 10px; border-radius:4px; white-space:nowrap; font-size:0.8em; z-index:1000; pointer-events:none;">Please email vin.bhaskara@gmail.com for the code.</span></span>
       <a class="btn btn--cite2" target="_blank" href="files/wacv2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
       <br>
@@ -291,7 +292,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <p style="margin:0.5em;"></p>
       <a class="btn btn--primary" target="_blank" href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.052441" role="button" style="text-decoration:none">Paper</a>
       <a class="btn btn--primary" target="_blank" href="files/pra2022-pdf.pdf" role="button" style="text-decoration:none">PDF</a>
-      <a class="btn btn--secondary" target="_blank" href="https://arxiv.org/abs/1706.01448v1" role="button" style="text-decoration:none">Arxiv</a>
+      <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1706.01448v1" role="button" style="text-decoration:none">Arxiv</a>
       <a class="btn btn--cite2" target="_blank" href="files/pra2022-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
       <br>
     </div>
@@ -313,7 +314,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
       <p style="margin:0.5em;"></p>
       <a class="btn btn--primary" target="_blank" href="https://link.springer.com/article/10.1007/s11128-017-1568-0" role="button" style="text-decoration:none">Paper</a>
       <a class="btn btn--primary" target="_blank" href="files/qinp2017-pdf.pdf" role="button" style="text-decoration:none">PDF</a>
-      <a class="btn btn--secondary" target="_blank" href="https://arxiv.org/abs/1607.00164" role="button" style="text-decoration:none">Arxiv</a>
+      <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/1607.00164" role="button" style="text-decoration:none">Arxiv</a>
       <a class="btn btn--cite2" target="_blank" href="files/qinp2017-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
       <br>
     </div>

@@ -16,8 +16,7 @@ header:
 <figure>
   <img src="./../../../../images/2023-11-11-slurm-jupyter-intro-image.jpg" alt="Photo generated with AI by Bing.">
   <figcaption>
-    <span class="caption"></span>
-    <!-- <i class="photo-credit">Photo generated with AI by Microsoft Bing.</i> -->
+    <span class="caption">Slurm is bliss. Jupyter is a blessing. But Jupyter on Slurm? That is where the trouble begins. This guide serves as a bookmark for the exact steps needed to tunnel a Jupyter server through Slurm without the headache.</span>
   </figcaption>
 </figure>
 
@@ -77,23 +76,7 @@ ssh -A -N -f -o "ProxyCommand ssh -W %h:%p -p <ssh_port> <slurm_username>@<slurm
 
 Voila! The Jupyter Notebook server should be accessible from the local machine at <code style="color: #0072be; background: #f4f2f9;">http://localhost:&lt;jupyter_port&gt;/</code>!
 
-### References
-
-<a id="ref-1"></a>[1] Slurm, [https://slurm.schedmd.com/](https://slurm.schedmd.com/).
-
-<a id="ref-2"></a>[2] Jupyter, [https://jupyter.org/](https://jupyter.org/).
-
-<a id="ref-3"></a>[3] Tmux, [https://github.com/tmux/tmux/wiki](https://github.com/tmux/tmux/wiki).
-
-<a id="ref-4"></a>[4] GNU Screen, [https://www.gnu.org/software/screen/](https://www.gnu.org/software/screen/).
-
-
 ### Citation
-
-
-If you liked this article, consider subscribing to the blog's mailing list here: <a class="btn btn--warning" target="_blank" href="/subscribe/" role="button" style="text-decoration:none">Subscribe</a> 
-
-<a href="feed://vinbhaskara.github.io/feed.xml"><i class="fas fa-rss" style="font-size: 1.6em; vertical-align: middle; color: #f26522;"></i> RSS feed</a>
 
 
 To cite this work, please use:
@@ -111,6 +94,25 @@ or,
   url     = "https://vinbhaskara.github.io/posts/2023/11/slurm-jupyter/"
 }</pre>
 
+### References
+
+<a id="ref-1"></a>[1] Slurm, [https://slurm.schedmd.com/](https://slurm.schedmd.com/).
+
+<a id="ref-2"></a>[2] Jupyter, [https://jupyter.org/](https://jupyter.org/).
+
+<a id="ref-3"></a>[3] Tmux, [https://github.com/tmux/tmux/wiki](https://github.com/tmux/tmux/wiki).
+
+<a id="ref-4"></a>[4] GNU Screen, [https://www.gnu.org/software/screen/](https://www.gnu.org/software/screen/).
 
 
+
+
+
+---
+
+If you liked this article, consider subscribing to the blog's mailing list here: <a class="btn btn--warning" target="_blank" href="/subscribe/" role="button" style="text-decoration:none">Subscribe</a> 
+
+<a href="feed://vinbhaskara.github.io/feed.xml"><i class="fas fa-rss" style="font-size: 1.6em; vertical-align: middle; color: #f26522;"></i> RSS feed</a>
+
+---
 
