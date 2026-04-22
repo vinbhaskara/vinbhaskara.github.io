@@ -30,7 +30,8 @@ header:
   </div>
 
   <ul class="news-list">
-    <li><strong>Mar 2026</strong> – <a href="#patent-rag-diverse-retrieval">Patent filed</a> for our Fast, Robust, Diverse-Retrieval Method for RAG (<i>US App. No. 19/575,161</i>) at Borealis AI  🎉</li>
+    <li><strong>Apr 2026</strong> – <a href="#ccrl-arxiv-2026">Our paper</a> on Cumulative Training Progress as Curiosity and Intrinsic Motivation is out on <a href="https://arxiv.org/abs/2604.18701">arXiv</a>!  &nbsp;🥳</li>
+    <li><strong>Mar 2026</strong> – <a href="#patent-rag-diverse-retrieval">Patent filed</a> for our Fast, Robust, Diverse-Retrieval Method for RAG (<i>US App. No. 19/575,161</i>) at Borealis AI.  &nbsp;🎉</li>
   </ul>
 </div>
 
@@ -120,7 +121,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 
 
 <div class="pub-list">
-  <div class="pub-card">
+  <div class="pub-card" id="ccrl-arxiv-2026">
     <div class="pub-num"><b>7.&nbsp;&nbsp;&nbsp;</b></div>
     <div class="pub-date"><b>Apr<br>2026</b></div>
     <div class="pub-content">
