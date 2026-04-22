@@ -91,6 +91,22 @@
     }
   }
 
+  &--ytvideo {
+    background-color: #ff0034;
+
+    &:hover {
+      background-color: mix(#000, #ff0034, 20%);
+    }
+  }
+
+  &--myblog {
+    background-color: #008080;
+
+    &:hover {
+      background-color: mix(#000, #008080, 20%);
+    }
+  }
+
   &--secondary {
     background-color: $primary-color;
 
