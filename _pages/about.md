@@ -16,9 +16,9 @@ header:
     I’m a Senior Research Engineer at <a href="https://rbcborealis.com/">Borealis AI</a> (RBC Research) in Montreal, where I work on Foundation Models and LLMs for Capital Markets and Credit Modeling within the AI Solutions team led by <a href="https://www.cs.sfu.ca/~mori/">Prof. Greg Mori</a>.<br><br>Previously, I was a Research Engineer at <a href="https://research.samsung.com/aicenter_toronto">Samsung AI Center Toronto</a>, where I worked with <a href="http://www.cs.toronto.edu/~babalex/">Dr. Alex Levinshtein</a> and <a href="https://www.cs.toronto.edu/~jepson/">Prof. Allan Jepson</a> on computer vision research, focusing on burst photography, neural implicit representations, and image enhancement and synthesis. Before that, I was a Software Engineer at <a href="https://www.broadcom.com/products/cybersecurity">Broadcom Inc.</a>, where I developed behavior-based malware classifiers for <a href="https://us.norton.com/">Norton AntiVirus</a> using machine learning.<br><br>I have over 8 years of full-time experience in applied AI and software engineering, and I serve as a reviewer for <a href="https://neurips.cc/">NeurIPS</a>, <a href="https://cvpr.thecvf.com/">CVPR</a>, <a href="https://iclr.cc/">ICLR</a>, and <a href="https://icml.cc/">ICML</a>.
   </div>
   <div class="bio-logos">
-    <a href="https://www.rbcborealis.com/"><img src="./../images/bai.png" alt="Borealis AI"></a>
-    <a href="https://research.samsung.com/aicenter_toronto"><img src="./../images/samsung_research.png" alt="Samsung AI Center Toronto"></a>
-    <a href="https://www.broadcom.com/products/cybersecurity"><img src="./../images/symc.png" alt="Broadcom / Norton"></a>
+    <a href="https://www.rbcborealis.com/"><img src="/images/bai.png" alt="Borealis AI"></a>
+    <a href="https://research.samsung.com/aicenter_toronto"><img src="/images/samsung_research.png" alt="Samsung AI Center Toronto"></a>
+    <a href="https://www.broadcom.com/products/cybersecurity"><img src="/images/symc.png" alt="Broadcom / Norton"></a>
   </div>
 </div>
 <!-- I have 8 years of full-time work experience in applied AI and software engineering. I also serve as an academic reviewer for [NeurIPS](https://neurips.cc/), [CVPR](https://cvpr.thecvf.com/), [ICLR](https://iclr.cc/) and [ICML](https://icml.cc/). -->
@@ -50,10 +50,10 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 ## Education
 
 <!--
-| MSc Applied Computing, [Department of Computer Science](https://web.cs.toronto.edu/), [University of Toronto](https://www.utoronto.ca/) | 2018 - 2020 | <img src="./../images/uoft.png" width="100" height="100" /> |  
+| MSc Applied Computing, [Department of Computer Science](https://web.cs.toronto.edu/), [University of Toronto](https://www.utoronto.ca/) | 2018 - 2020 | <img src="/images/uoft.png" width="100" height="100" /> |  
 | Grade: A+ (4.0/4.0), [Vector Institute Scholar](https://vectorinstitute.ai/2018/12/13/vector-awards-inaugural-scholarships-second-round-of-applications-to-open-in-2019/) | | |  
 | | | |  
-| B.Tech. Engineering Physics, [IIT Guwahati](https://www.iitg.ac.in/) | 2012 - 2016 | <img src="./../images/iitg.png" width="100" height="100" /> |  
+| B.Tech. Engineering Physics, [IIT Guwahati](https://www.iitg.ac.in/) | 2012 - 2016 | <img src="/images/iitg.png" width="100" height="100" /> |  
 | Department Rank 1, [Institute Silver Medalist](https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf) | | |  
 -->
 
@@ -61,7 +61,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
   <tbody>
     <tr>
       <td style="text-align: left">M.Sc. Applied Computing (Deep Learning)</td>
-      <td rowspan="4" style="text-align: center"><a href="https://www.utoronto.ca/"><img src="./../images/uoft.png" width="70" height="70"></a>&nbsp;<a href="https://vectorinstitute.ai/"><img src="./../images/vector.png" width="100" height="auto"></a></td>
+      <td rowspan="4" style="text-align: center"><a href="https://www.utoronto.ca/"><img src="/images/uoft.png" width="70" height="70"></a>&nbsp;<a href="https://vectorinstitute.ai/"><img src="/images/vector.png" width="100" height="auto"></a></td>
       <td></td>
     </tr>
     <tr>
@@ -86,7 +86,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     </tr>
     <tr>
       <td style="text-align: left">B.Tech. Engineering Physics</td>
-      <td rowspan="4" style="text-align: center"><a href="https://www.iitg.ac.in/"><img src="./../images/iitg.png" width="70" height="70"></a>&nbsp;<a href="https://uwaterloo.ca/institute-for-quantum-computing/"><img src="./../images/iqc.png" width="100" height="auto"></a></td>
+      <td rowspan="4" style="text-align: center"><a href="https://www.iitg.ac.in/"><img src="/images/iitg.png" width="70" height="70"></a>&nbsp;<a href="https://uwaterloo.ca/institute-for-quantum-computing/"><img src="/images/iqc.png" width="100" height="auto"></a></td>
       <td></td>
     </tr>
     <tr>

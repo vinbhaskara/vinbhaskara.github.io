@@ -45,21 +45,21 @@ If you are a fellow runner or if you'd like to follow my training, add me on Str
 
 
 <p align="center">
-<img src="./../images/running_pic1.jpg" width="551" height="auto">
+<img src="/images/running_pic1.jpg" width="551" height="auto">
 </p>
 
 
 
 
 <p align="center">
-<img src="./../images/running_pic2.jpg" width="551" height="auto">
+<img src="/images/running_pic2.jpg" width="551" height="auto">
 </p>
 
 
 
 ### Private: Some Links to Useful Documents and Notes
 *The PDFs are private and password-protected!* 
-1. Coding Questions Refresher based on NeetCode: [pdf](./../files/neetcode150_coding_practise-protected-shared.pdf)
+1. Coding Questions Refresher based on NeetCode: [pdf](/files/neetcode150_coding_practise-protected-shared.pdf)
 2. Company-wise list of coding interview questions on GitHub (free): [link](https://github.com/liquidslr/leetcode-company-wise-problems)
 3. Tips and coding refresher by the author of Blind75: [link](https://github.com/yangshun/tech-interview-handbook)
 

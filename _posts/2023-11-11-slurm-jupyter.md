@@ -14,7 +14,7 @@ header:
 ---
 
 <figure>
-  <img src="./../../../../images/2023-11-11-slurm-jupyter-intro-image.jpg" alt="Photo generated with AI by Bing.">
+  <img src="/images/2023-11-11-slurm-jupyter-intro-image.jpg" alt="Photo generated with AI by Bing.">
   <figcaption>
     <span class="caption">Slurm is bliss. Jupyter is a blessing. But Jupyter on Slurm? That is where the trouble begins. This guide serves as a bookmark for the exact steps needed to tunnel a Jupyter server through Slurm without the headache.</span>
   </figcaption>
