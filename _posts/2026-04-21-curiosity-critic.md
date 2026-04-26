@@ -16,7 +16,7 @@ excerpt: '<img src="/images/2026-04-21-curiosity-critic-snapshot.png" alt="">'
 ---
 
 <!-- <figure>
-  <img src="./../../../../images/2026-04-21-curiosity-critic-snapshot.png" alt="Agent trajectories at step 30,000 on a stochastic grid world." style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
+  <img src="/images/2026-04-21-curiosity-critic-snapshot.png" alt="Agent trajectories at step 30,000 on a stochastic grid world." style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
   <figcaption>
     <span class="caption">Seven methods explore a 30x30 grid world guided by curiosity. The left half (green) is learnable; the right half (grey) is pure noise. <i>[Live animation: <a href="https://youtu.be/Jv1n346TWbQ">youtu.be/Jv1n346TWbQ</a>, Code: <a href="https://github.com/vinbhaskara/Curiosity-Critic">github.com/vinbhaskara/Curiosity-Critic</a>, Paper: <a href="https://arxiv.org/abs/2604.18701">arxiv.org/abs/2604.18701</a>]</i></span>
   </figcaption>
@@ -24,10 +24,10 @@ excerpt: '<img src="/images/2026-04-21-curiosity-critic-snapshot.png" alt="">'
 
 <figure>
   <video autoplay loop muted playsinline preload="metadata"
-         poster="./../../../../images/2026-04-21-curiosity-critic-snapshot.png"
+         poster="/images/2026-04-21-curiosity-critic-snapshot.png"
          style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
-    <source src="./../../../../images/curiosity_blog_animation.mp4" type="video/mp4">
-    <img src="./../../../../images/2026-04-21-curiosity-critic-snapshot.png" alt="Agent trajectories at step 30,000 on a stochastic grid world." style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
+    <source src="/images/curiosity_blog_animation.mp4" type="video/mp4">
+    <img src="/images/2026-04-21-curiosity-critic-snapshot.png" alt="Agent trajectories at step 30,000 on a stochastic grid world." style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
   </video>
   <figcaption>
     <span class="caption">Seven methods explore a 30x30 grid world guided by curiosity. The left half (green) is learnable; the right half (grey) is pure noise. <i>[Live animation: <a href="https://youtu.be/Jv1n346TWbQ">youtu.be/Jv1n346TWbQ</a>, Code: <a href="https://github.com/vinbhaskara/Curiosity-Critic">github.com/vinbhaskara/Curiosity-Critic</a>, Paper: <a href="https://arxiv.org/abs/2604.18701">arxiv.org/abs/2604.18701</a>]</i></span>
@@ -47,7 +47,7 @@ A straightforward approach is to reward the agent for exploring unpredictable ar
 In real cats this explains their curious behaviors beautifully, but with a quiet subtlety. Put our cat in front of a television playing a erratic mouse video, a sequence of frames she has no way to anticipate, and she'll watch, amused, for a while. Eventually she gives up and walks off, because somewhere in there she figures out that no amount of watching will let her predict the next frame. 
 
 <figure style="float: right; width: 33%; margin: 0 0 10px 10px; text-align: center;">
-  <img src="./../../../../images/noisy-tv.jpeg" alt="Alt text" style="width: 100%;">
+  <img src="/images/noisy-tv.jpeg" alt="Alt text" style="width: 100%;">
 </figure>
 
 AI agents built on the unpredictability-seeking (or *surprise*-seeking) principle do not have that instinct to eventually move on from noise like a cat. Pathak et al. <a href="#ref-3" title="Pathak et al. (2017). Curiosity-driven Exploration by Self-Supervised Prediction. ICML.">[3]</a> famously showed that such an agent parked in front of a ***TV playing white noise*** will stare at them *forever*: the random pixels are the most surprising thing in the room, and nothing in its learning rule tells it that this particular kind of surprise is unlearnable. This is called the *noisy TV problem*, and it is the reason a naive definition of curiosity as surprise fails in real environments.
@@ -176,7 +176,7 @@ A self-correcting loop falls out of this for free: if the critic underestimates 
 ### Does it work?
 
 <figure>
-  <img src="./../../../../images/2026-04-21-curiosity-critic-error.png" alt="Mean world model error over training." style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
+  <img src="/images/2026-04-21-curiosity-critic-error.png" alt="Mean world model error over training." style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
   <figcaption>
     <span class="caption">Mean L2 prediction error on the deterministic (learnable) half over training, averaged over five seeds. Lower is better. Our Neural Critic converges earliest and finishes closest to the oracle that knows the true noise floor.</span>
   </figcaption>

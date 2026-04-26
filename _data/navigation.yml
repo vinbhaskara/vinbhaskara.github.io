@@ -8,7 +8,7 @@ main:
     url: /personal/
 
   - title: "Blog"
-    url: /year-archive/
+    url: /blog/
 
   - title: "Subscribe"
     url: /subscribe/
