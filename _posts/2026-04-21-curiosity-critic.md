@@ -11,10 +11,24 @@ tags:
 comments: true
 header:
   preview_card_image: 2026-04-21-curiosity-critic-snapshot.png
+  teaser: 2026-04-21-curiosity-critic-snapshot.png
+excerpt: '<img src="/images/2026-04-21-curiosity-critic-snapshot.png" alt="">'
 ---
 
-<figure>
+<!-- <figure>
   <img src="./../../../../images/2026-04-21-curiosity-critic-snapshot.png" alt="Agent trajectories at step 30,000 on a stochastic grid world." style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
+  <figcaption>
+    <span class="caption">Seven methods explore a 30x30 grid world guided by curiosity. The left half (green) is learnable; the right half (grey) is pure noise. <i>[Live animation: <a href="https://youtu.be/Jv1n346TWbQ">youtu.be/Jv1n346TWbQ</a>, Code: <a href="https://github.com/vinbhaskara/Curiosity-Critic">github.com/vinbhaskara/Curiosity-Critic</a>, Paper: <a href="https://arxiv.org/abs/2604.18701">arxiv.org/abs/2604.18701</a>]</i></span>
+  </figcaption>
+</figure> -->
+
+<figure>
+  <video autoplay loop muted playsinline preload="metadata"
+         poster="./../../../../images/2026-04-21-curiosity-critic-snapshot.png"
+         style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
+    <source src="./../../../../images/curiosity_blog_animation.mp4" type="video/mp4">
+    <img src="./../../../../images/2026-04-21-curiosity-critic-snapshot.png" alt="Agent trajectories at step 30,000 on a stochastic grid world." style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
+  </video>
   <figcaption>
     <span class="caption">Seven methods explore a 30x30 grid world guided by curiosity. The left half (green) is learnable; the right half (grey) is pure noise. <i>[Live animation: <a href="https://youtu.be/Jv1n346TWbQ">youtu.be/Jv1n346TWbQ</a>, Code: <a href="https://github.com/vinbhaskara/Curiosity-Critic">github.com/vinbhaskara/Curiosity-Critic</a>, Paper: <a href="https://arxiv.org/abs/2604.18701">arxiv.org/abs/2604.18701</a>]</i></span>
   </figcaption>
