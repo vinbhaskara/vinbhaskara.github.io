@@ -11,7 +11,6 @@ tags:
 comments: true
 header:
   preview_card_image: 2026-04-21-curiosity-critic-snapshot.png
-  teaser: 2026-04-21-curiosity-critic-snapshot.png
 excerpt: '<img src="/images/2026-04-21-curiosity-critic-snapshot.png" alt="">'
 ---
 
