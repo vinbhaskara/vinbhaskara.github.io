@@ -19,7 +19,7 @@
             {% endif %}
             {% assign is_active = false %}
             {% if link.title == 'Blog' %}
-              {% if page.url contains '/year-archive' or page.url contains '/posts/' or page.url contains '/tags' or page.url contains '/categories' or page.url contains '/tag-archive' or page.url contains '/category-archive' or page.url contains '/collection-archive' %}
+              {% if page.url contains '/year-archive' or page.url contains '/blog-posts' or page.url contains '/blogposts' or page.url contains '/blog' or page.url contains '/posts/' or page.url contains '/tags' or page.url contains '/categories' or page.url contains '/tag-archive' or page.url contains '/category-archive' or page.url contains '/collection-archive' %}
                 {% assign is_active = true %}
               {% endif %}
             {% elsif link.url contains 'http' or link.url contains '.pdf' %}
