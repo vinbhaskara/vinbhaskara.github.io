@@ -11,7 +11,6 @@
             {% assign home_active = true %}
           {% endif %}
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/"{% if home_active %} class="active"{% endif %}>Home</a></li>
-          <li class="masthead__menu-item"><a href="https://www.linkedin.com/in/vinbhaskara/" target="_blank" rel="noopener noreferrer"><span style="color: black;"><i style="color: #000000;" aria-hidden="true"></i></span>LinkedIn</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}

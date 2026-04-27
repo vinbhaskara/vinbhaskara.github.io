@@ -50,7 +50,7 @@ In real cats this explains their curious behaviors beautifully, but with a quiet
 </figure> -->
 
 <figure style="float: right; width: 33%; margin: 0 0 10px 10px; text-align: center;">
-  <video autoplay loop muted playsinline preload="metadata" src="/images/tv_static.mp4" type="video/mp4"></video>
+  <video autoplay loop muted playsinline preload="metadata" src="/images/tv_static.mp4" type="video/mp4" alt="Alt text" style="width: 100%;"></video>
 </figure>
 
 AI agents built on the unpredictability-seeking (or *surprise*-seeking) principle do not have that instinct to eventually move on from noise like a cat. Pathak et al. <a href="#ref-3" title="Pathak et al. (2017). Curiosity-driven Exploration by Self-Supervised Prediction. ICML.">[3]</a> famously showed that such an agent parked in front of a ***TV playing white noise*** will stare at them *forever*: the random pixels are the most surprising thing in the room, and nothing in its learning rule tells it that this particular kind of surprise is unlearnable. This is called the *noisy TV problem*, and it is the reason a naive definition of curiosity as surprise fails in real environments.

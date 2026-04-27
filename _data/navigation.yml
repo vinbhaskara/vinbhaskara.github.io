@@ -1,14 +1,17 @@
 # main links links
 main:
 
+  - title: "Blog"
+    url: /blog/
+
   - title: "CV"
     url: /cv/Bhaskara_Vin_CV_Mtl.pdf
 
+  - title: "LinkedIn"
+    url: https://www.linkedin.com/in/vinbhaskara/
+
   - title: "Personal"
     url: /personal/
-
-  - title: "Blog"
-    url: /blog/
 
   - title: "Subscribe"
     url: /subscribe/
