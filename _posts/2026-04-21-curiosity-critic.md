@@ -168,7 +168,7 @@ Our solution: train a small MLP (the *critic*, $\phi$) in parallel with the worl
 
 $$ \phi_{t+1}(s_t, a_t) ~\approx~ \mathbb{E}_{\mathcal{P}}\left[ e(s_t, a_t~|~\theta_\infty)\right]. $$
 
-Notice that the critic network $\phi$ predicts a single scalar. That's a much easier job than predicting a full next state, so the critic converges well before the world model itself does. Our final reward is just:
+Notice that the critic network $\phi$ predicts a single scalar error, which is arguably a simpler learning problem than predicting the next state itself: the critic only has to learn how hard a transition is for the world model to predict, not what comes next. So the critic, in practice, tends to converge well before the world model itself does. Our final reward is just:
 
 $$ r_t(s_t, a_t) = e(s_t, a_t~|~\theta_t) ~-~ \phi_{t+1}(s_t, a_t). $$
 
