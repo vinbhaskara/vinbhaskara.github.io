@@ -17,7 +17,7 @@ excerpt: '<figure><img src="/images/2026-04-21-curiosity-critic-snapshot.png" al
 <!-- <figure>
   <img src="/images/2026-04-21-curiosity-critic-snapshot.png" alt="Agent trajectories at step 30,000 on a stochastic grid world." style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
   <figcaption>
-    <span class="caption">Seven methods explore a 30x30 grid world guided by curiosity. The left half (green) is learnable; the right half (grey) is pure noise. <i>[Live animation: <a href="https://youtu.be/Jv1n346TWbQ">youtu.be/Jv1n346TWbQ</a>, Code: <a href="https://github.com/vinbhaskara/Curiosity-Critic">github.com/vinbhaskara/Curiosity-Critic</a>, Paper: <a href="https://arxiv.org/abs/2604.18701">arxiv.org/abs/2604.18701</a>]</i></span>
+    <span class="caption">Seven methods explore a 30x30 grid world guided by curiosity. The left half (green) is learnable; the right half (grey) is pure noise. <i>[Live animation: <a href="https://youtu.be/hHSvQGaO5yY">youtu.be/hHSvQGaO5yY</a>, Code: <a href="https://github.com/vinbhaskara/Curiosity-Critic">github.com/vinbhaskara/Curiosity-Critic</a>, Paper: <a href="https://arxiv.org/abs/2604.18701">arxiv.org/abs/2604.18701</a>]</i></span>
   </figcaption>
 </figure> -->
 
@@ -29,7 +29,7 @@ excerpt: '<figure><img src="/images/2026-04-21-curiosity-critic-snapshot.png" al
     <img src="/images/2026-04-21-curiosity-critic-snapshot.png" alt="Agent trajectories at step 30,000 on a stochastic grid world." style="max-width: 800px; width: 100%; display: block; margin: 0 auto;">
   </video>
   <figcaption>
-    <span class="caption">Seven methods explore a 30x30 grid world guided by curiosity. The left half (green) is learnable; the right half (grey) is pure noise. <i>[Live animation: <a href="https://youtu.be/Jv1n346TWbQ">youtu.be/Jv1n346TWbQ</a>, Code: <a href="https://github.com/vinbhaskara/Curiosity-Critic">github.com/vinbhaskara/Curiosity-Critic</a>, Paper: <a href="https://arxiv.org/abs/2604.18701">arxiv.org/abs/2604.18701</a>]</i></span>
+    <span class="caption">Seven methods explore a 30x30 grid world guided by curiosity. The left half (green) is learnable; the right half (grey) is pure noise. <i>[Live animation: <a href="https://youtu.be/hHSvQGaO5yY">youtu.be/hHSvQGaO5yY</a>, Code: <a href="https://github.com/vinbhaskara/Curiosity-Critic">github.com/vinbhaskara/Curiosity-Critic</a>, Paper: <a href="https://arxiv.org/abs/2604.18701">arxiv.org/abs/2604.18701</a>]</i></span>
   </figcaption>
 </figure>
 
@@ -189,7 +189,7 @@ We test this on a 30x30 grid world with a deterministic left half and a pure-noi
 
 The result: our agent, with *no privileged information* about which cells are noisy, learns to almost entirely avoid the noisy half of the environment on its own. It spends ~*70%* of its late-training steps in the learnable half, against ~*95%* for an oracle that is *told* the true noise floor, and *0%* for a pure surprise-seeking reward <a href="#ref-1" title="J. Schmidhuber (1991). A possibility for implementing curiosity and boredom in model-building neural controllers.">[1]</a> (which collapses into the *noisy TV* within the first few thousand steps and never comes out). Our method achieves the lowest error and the fastest training convergence for the world model. 
 
-A side-by-side animation of all seven methods exploring is at [youtu.be/Jv1n346TWbQ](https://youtu.be/Jv1n346TWbQ). Our agent is the one that walks calmly into the green half and stays there! :D
+A side-by-side animation of all nine methods, including Random Network Distillation (RND) <a href="#ref-5" title="Burda et al. (2019). Exploration by Random Network Distillation.">[5]</a>, is at [youtu.be/hHSvQGaO5yY](https://youtu.be/hHSvQGaO5yY). Our agent is the one that walks calmly into the green half and stays there! :D
 
 ### Try it yourself
 
@@ -200,7 +200,7 @@ pip install -r requirements.txt
 python run_experiment.py
 ```
 
-This runs all seven methods across five seeds on the grid world and reproduces the error curves and heatmaps above.
+This runs all nine methods across five seeds on the grid world and reproduces the error curves and heatmaps above.
 
 ### The Paper and Code
 
@@ -231,6 +231,9 @@ To cite this work, please use:
 <a id="ref-3"></a>[3] D. Pathak, P. Agrawal, A.A. Efros, T. Darrell. [Curiosity-driven Exploration by Self-Supervised Prediction](https://arxiv.org/abs/1705.05363). *International Conference on Machine Learning (ICML)*, p. 2778-2787 (2017).
 
 <a id="ref-4"></a>[4] Y. Burda, H. Edwards, D. Pathak, A. Storkey, T. Darrell, A.A. Efros. [Large-Scale Study of Curiosity-Driven Learning](https://arxiv.org/abs/1808.04355). *International Conference on Learning Representations (ICLR)* (2019).
+
+<a id="ref-5"></a>[5] Y. Burda, H. Edwards, A. Storkey, O. Klimov. [Exploration by Random Network Distillation](https://arxiv.org/abs/1810.12894). *International Conference on Learning Representations (ICLR)* (2019).
+
 
 
 ---
