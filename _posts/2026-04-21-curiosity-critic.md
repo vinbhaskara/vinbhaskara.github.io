@@ -43,7 +43,7 @@ Within a few hours she has figured out which cupboards have interesting things i
 
 A straightforward approach is to reward the agent for exploring unpredictable areas, much like a cat is drawn to rooms it hasn’t yet investigated. 
 
-In real cats this explains their curious behaviors beautifully, but with a quiet subtlety. Put our cat in front of a television playing a erratic mouse video, a sequence of frames she has no way to anticipate, and she'll watch, amused, for a while. Eventually she gives up and walks off, because somewhere in there she figures out that no amount of watching will let her predict the next frame. 
+In real cats this explains their curious behaviors beautifully, but with a quiet subtlety. Put our cat in front of a television playing an erratic mouse video, a sequence of frames she has no way to anticipate, and she'll watch, amused, for a while. Eventually she gives up and walks off, because somewhere in there she figures out that no amount of watching will let her predict the next frame. 
 
 <!-- <figure style="float: right; width: 33%; margin: 0 0 10px 10px; text-align: center;">
   <img src="/images/tv-static.gif" alt="Alt text" style="width: 100%;">
@@ -53,7 +53,7 @@ In real cats this explains their curious behaviors beautifully, but with a quiet
   <video autoplay loop muted playsinline preload="metadata" src="/images/tv_static.mp4" type="video/mp4" alt="Alt text" style="width: 100%;"></video>
 </figure>
 
-AI agents built on the unpredictability-seeking (or *surprise*-seeking) principle do not have that instinct to eventually move on from noise like a cat. Pathak et al. <a href="#ref-3" title="Pathak et al. (2017). Curiosity-driven Exploration by Self-Supervised Prediction. ICML.">[3]</a> famously showed that such an agent parked in front of a ***TV playing white noise*** will stare at them *forever*: the random pixels are the most surprising thing in the room, and nothing in its learning rule tells it that this particular kind of surprise is unlearnable. This is called the *noisy TV problem*, and it is the reason a naive definition of curiosity as surprise fails in real environments.
+AI agents built on the unpredictability-seeking (or *surprise*-seeking) principle do not have that instinct to eventually move on from noise like a cat. Burda et al. <a href="#ref-4" title="Burda et al. (2019). Large-Scale Study of Curiosity-Driven Learning. ICLR.">[4]</a> famously showed that such an agent parked in front of a ***TV playing white noise*** will stare at it *forever*: the random pixels are the most surprising thing in the room, and nothing in its learning rule tells it that this particular kind of surprise is unlearnable. This is called the *noisy TV problem*, and it is the reason a naive definition of curiosity as surprise fails in real environments.
 
 Our new paper, ***[Curiosity-Critic (arXiv:2604.18701)](https://arxiv.org/abs/2604.18701)***, is about giving AI agents the cat's instinct: *the one that eventually makes her walk away*.
 
@@ -93,7 +93,7 @@ The classic choice, proposed by Schmidhuber in Feb 1991 <a href="#ref-1" title="
 
 $$ r_t = e(s_t, a_t ~|~ \theta_t). $$
 
-Here $\theta_t$ is the world model at time $t$ and $e(\cdot)$ is how wrong it was about what just happened. High error means "there's something here my model doesn't understand, I'm surprised! Let's come back". Low error means "there is no surprise here, I should move on." 
+Here $\theta_t$ is the world model at time $t$ and $e(\cdot)$ is how wrong it was about what just happened. High error means "there's something here my model doesn't understand, I'm surprised! Let's come back." Low error means "there is no surprise here, I should move on." 
 
 So, a naive conclusion may probably be that *Surprise **is** Curiosity.* Simple, intuitive, and in many settings it works.
 
@@ -113,7 +113,7 @@ Schmidhuber's own fix in Nov 1991 <a href="#ref-2" title="J. Schmidhuber (1991).
 
 $$ r_t = e(s_{t}, a_{t}~|~\theta_t) ~-~ e(s_{t}, a_{t}~|~\theta_{t+1}). $$
 
-This helps, but the signal is weak in practice. Importantly, both <a href="#ref-1" title="J. Schmidhuber (1991). A possibility for implementing curiosity and boredom in model-building neural controllers.">[1]</a> and <a href="#ref-2" title="J. Schmidhuber (1991). Curious Model-Building Control Systems. IJCNN Singapore.">[2]</a> look *only at the single most recently visited transition*. Neither of them cares what the world model's error looks like on the other thousand transitions the agent visited earlier.
+This helps, but the signal is noisy: it relies on a single-sample estimate of how much that one transition's error dropped after one update, and its accuracy as a noise-floor estimate is by construction tied to the world model's own convergence. Importantly, both <a href="#ref-1" title="J. Schmidhuber (1991). A possibility for implementing curiosity and boredom in model-building neural controllers.">[1]</a> and <a href="#ref-2" title="J. Schmidhuber (1991). Curious Model-Building Control Systems. IJCNN Singapore.">[2]</a> look *only at the single most recently visited transition*. Neither of them cares what the world model's error looks like on the other thousand transitions the agent visited earlier.
 
 They reward local learning, not global learning.
 
@@ -131,11 +131,11 @@ There's one problem: Computing this looks hopeless! You would have to re-evaluat
 
 ### The Telescoping Trick
 
-Here's the nice part. Sum this reward across the whole training run of $T$ time steps, which is the so-called *cumulative future reward* $C(T)$ in RL:
+Here's the nice part. Sum this reward across the whole training run of $T$ time steps, which is the so-called *cumulative future reward* $C(T)$ in RL (here $\gamma \in [0, 1]$ is the standard RL discount factor):
 
 $$ C(T) = \sum_{t=0}^{T} \gamma^t \sum_{(s_{t'}, a_{t'}) \in \mathcal{D}_t} \Big[ e(s_{t'}, a_{t'}~|~\theta_t) ~-~ e(s_{t'}, a_{t'}~|~\theta_{t+1}) \Big], $$
 
-and reorder the summation (see our [paper](https://arxiv.org/abs/2604.18701) for more details). 
+and the algebra simplifies dramatically.
 
 The core idea behind the full derivation in the [paper](https://arxiv.org/abs/2604.18701) is that when a sum has the pattern
 
@@ -143,7 +143,7 @@ $$ (x_0 - x_1) + (x_1 - x_2) + (x_2 - x_3) + \dots + (x_{T-1} - x_T), $$
 
 the middle terms cancel out pairwise. All that survives is $x_0 - x_T$, the very first evaluation minus the very last.
 
-We show that this trick lets the whole intractable cumulative objective collapse into a clean per-step reward:
+Applying this to $C(T)$ in the $\gamma \to 1$ limit collapses the whole double sum to a per-step difference: the model's error on a transition at the time of visit, minus its error on that same transition at the end of training. The result is a clean per-step reward:
 
 $$ r^{\text{eff}}_t(s_t,a_t) = e(s_t, a_t~|~\theta_t) ~-~ \mathbb{E}_{\mathcal{P}}\left[ e(s_t, a_t~|~\theta_\infty) \right]. $$
 
@@ -151,14 +151,14 @@ The second term is the *asymptotic error floor*: the error a perfectly trained w
 
 We call this the *Critic* because it critiques the *Surprise* signal by subtracting from the unpredictability-seeking reward (first term). It is akin to *the instinct* that tells a cat to eventually move on from unpredictable events. 
 
-This is the quantity the paper is about:
+Two simple cases show what the critic term is doing:
 
 - For a deterministic transition, a perfect model gets it right every time, so the critic term is zero.
 - For a pure-noise transition like our noisy TV, a perfect model can only predict the average of the random pixels, and the critic term measures the intrinsic (aleatoric) noise.
 
 Subtracting the critic term from the *surprise* term leaves only the part of the error that is *still learnable* (epistemic). With our method, the reward for staring at a noisy TV is zero. The kitchen cupboard's contribution to the reward is high until the model figures the cupboard out, then drops. Exactly the signal we wanted.
 
-**An insight**: set the critic term to zero and this formula collapses to Schmidhuber's surprise-seeking reward of Feb 1991 <a href="#ref-1" title="J. Schmidhuber (1991). A possibility for implementing curiosity and boredom in model-building neural controllers.">[1]</a>. Approximate the critic term by a single one-step post-update error and it collapses to Schmidhuber's reward of Nov 1991 <a href="#ref-2" title="J. Schmidhuber (1991). Curious Model-Building Control Systems. IJCNN Singapore.">[2]</a> that measures the change in local prediction error. Both (<a href="#ref-1" title="J. Schmidhuber (1991). A possibility for implementing curiosity and boredom in model-building neural controllers.">[1]</a>, <a href="#ref-2" title="J. Schmidhuber (1991). Curious Model-Building Control Systems. IJCNN Singapore.">[2]</a>)  turn out to be special cases of the same cumulative objective, each using a cruder approximation of the *critic* signal.
+**An insight**: set the critic term to zero and this formula collapses to Schmidhuber's surprise-seeking reward of Feb 1991 <a href="#ref-1" title="J. Schmidhuber (1991). A possibility for implementing curiosity and boredom in model-building neural controllers.">[1]</a>. Approximate the critic term by a single one-step post-update error and it collapses to Schmidhuber's reward of Nov 1991 <a href="#ref-2" title="J. Schmidhuber (1991). Curious Model-Building Control Systems. IJCNN Singapore.">[2]</a> that measures the change in local prediction error. Both turn out to be special cases of the same cumulative objective, each using a cruder approximation of the *critic* signal.
 
 ### Estimating the noise floor online with a Neural Critic
 
