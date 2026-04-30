@@ -56,12 +56,21 @@ If you are a fellow runner or if you'd like to follow my training, add me on Str
 </p>
 
 
+<br>
+<br>
 
-### Private: Some Links to Useful Documents and Notes
-*The PDFs are private and password-protected!* 
-1. Coding Questions Refresher based on NeetCode: [pdf](/files/neetcode150_coding_practise-protected-shared.pdf)
-2. Company-wise list of coding interview questions on GitHub (free): [link](https://github.com/liquidslr/leetcode-company-wise-problems)
-3. Tips and coding refresher by the author of Blind75: [link](https://github.com/yangshun/tech-interview-handbook)
+<details markdown="1">
+<summary><strong>Coding interview prep — a small collection</strong></summary>
+
+<br>
+The first link is a personal PDF (password-protected); the others are public.
+
+1. NeetCode-based coding questions refresher — [pdf](/files/neetcode150_coding_practise-protected-shared.pdf)
+2. Company-wise coding interview questions — [GitHub](https://github.com/liquidslr/leetcode-company-wise-problems)
+3. Tips by the author of Blind75 — [GitHub](https://github.com/yangshun/tech-interview-handbook)
+4. NeetCode - [https://neetcode.io/](https://neetcode.io/)
+
+</details>
 
 
 
