@@ -9,6 +9,7 @@ tags:
   - World Models
   - 2026
 comments: true
+includes_math_equations: true
 header:
   preview_card_image: 2026-04-21-curiosity-critic-snapshot.png
 excerpt: '<figure><img src="/images/2026-04-21-curiosity-critic-snapshot.png" alt="Agent trajectories at step 30,000 on a stochastic grid world."><figcaption><span class="caption">What is <i>Curiosity</i>?! Seven methods explore a 30x30 grid world guided by curiosity. The left half (green) is learnable; the right half (grey) is pure noise.</span></figcaption></figure>'
