@@ -43,5 +43,5 @@ Your email address will not be used for spamming or any other commercial purpose
 <br>
 <br>
 
-Or subscribe via  <a href="feed://vinbhaskara.github.io/feed.xml"><i class="fas fa-rss" style="font-size: 1.6em; vertical-align: middle; color: #f26522;"></i> RSS feed</a>.
+Or subscribe via  <a href="https://vinbhaskara.github.io/feed.xml"><i class="fas fa-rss" style="font-size: 1.6em; vertical-align: middle; color: #f26522;"></i> RSS feed</a>.
 
