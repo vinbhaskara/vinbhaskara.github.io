@@ -33,7 +33,19 @@ My best 42.2 km marathon finish time to date is 3:56:49 hrs.
 I am planning to run my first (and likely the last!) 50 km ultra-marathon soon sometime in 2026! 
 
 
-If you are a fellow runner or if you'd like to follow my training, add me on Strava!  
+**Some inspiration.** When I lived in Toronto, I used to run through Mount Pleasant Cemetery, where [Frederick Banting](https://en.wikipedia.org/wiki/Frederick_Banting) is buried. Banting and Best discovered insulin at the University of Toronto in 1921 and sold the patent for one dollar. That decision is still keeping people alive every day, and it will keep doing that as long as there's medicine. [Real science is wilder than anything any crazy religious fanatic can ever dream up](https://youtu.be/z9Fz96Mr4bM?t=1868). It's one of the places I think about when I need to remember what makes a life worth living...
+
+<figure style="text-align: center;">
+  <img src="/images/banting.jpeg" style="width: 100%; height: auto;">
+  <figcaption style="font-size: 0.9em; color: #666; margin-top: 8px; font-style: italic;">
+    Frederick Banting's grave, Mount Pleasant Cemetery, Toronto. Shot on my iPhone! (May 10, 2026)
+  </figcaption>
+</figure>
+
+
+**If you are a fellow runner** or if you'd like to follow my training, add me on Strava!  
+
+
 <a style="display:inline-block;background-color:#FC5200;color:#fff;padding:5px 10px 5px 30px;font-size:11px;font-family:Helvetica, Arial, sans-serif;white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url('https://badges.strava.com/logo-strava-echelon.png')" href='https://strava.com/athletes/51884474' target="_clean">
   Follow me on
   <img src='https://badges.strava.com/logo-strava.png' alt='Strava' style='margin-left:2px;vertical-align:text-bottom' height=13 width=51 />
@@ -60,12 +72,11 @@ If you are a fellow runner or if you'd like to follow my training, add me on Str
 <br>
 
 <details markdown="1">
-<summary><strong>Coding interview prep — a small collection</strong></summary>
+<summary><strong>A random list of useful links and documents</strong></summary>
 
 <br>
-The first link is a personal PDF (password-protected); the others are public.
 
-1. NeetCode-based coding questions refresher — [pdf](/files/neetcode150_coding_practise-protected-shared.pdf)
+1. NeetCode-based coding questions refresher (password-protected) — [pdf](/files/neetcode150_coding_practise-protected-shared.pdf)
 2. Company-wise coding interview questions — [GitHub](https://github.com/liquidslr/leetcode-company-wise-problems)
 3. Tips by the author of Blind75 — [GitHub](https://github.com/yangshun/tech-interview-handbook)
 4. NeetCode - [https://neetcode.io/](https://neetcode.io/)
