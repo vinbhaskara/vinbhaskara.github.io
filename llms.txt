@@ -6,15 +6,14 @@ This is the personal website and blog of Vin Bhaskara, covering research, public
 
 ## Pages
 
-- [About](https://vinbhaskara.github.io/about/): Biography, background, and contact information.
+- [About](https://vinbhaskara.github.io/): Biography, background, and contact information.
 - [Personal](https://vinbhaskara.github.io/personal/): Personal interests and non-research activities.
 - [Sitemap](https://vinbhaskara.github.io/sitemap/): Full list of pages on the site.
 
 ## Content
 
-- [Posts](https://vinbhaskara.github.io/year-archive/): Blog posts organized by year.
-- [Categories](https://vinbhaskara.github.io/category-archive/): Posts grouped by category.
-- [Tags](https://vinbhaskara.github.io/tag-archive/): Posts grouped by tag.
+- [Posts](https://vinbhaskara.github.io/blog/): Blog posts organized by year.
+- [Tags](https://vinbhaskara.github.io/tags/): Posts grouped by tag.
 
 ## Feeds
 

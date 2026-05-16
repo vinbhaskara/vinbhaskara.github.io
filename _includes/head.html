@@ -33,7 +33,8 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 
-<!-- MathJax v3: LaTeX rendering for blog posts -->
+{% if page.includes_math_equations %}
+<!-- MathJax v3: LaTeX rendering, loaded only on posts that need it -->
 <script>
   MathJax = {
     tex: {
@@ -46,6 +47,7 @@
   };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+{% endif %}
 
 <script>
   let theme = sessionStorage.getItem('theme');
