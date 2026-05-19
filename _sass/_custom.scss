@@ -341,6 +341,17 @@ figure.highlight {
   font-size: 0.82em;
 }
 
+/* Optional Paper link on the Published line — only present when
+   `paper_url` is set in front matter; default posts render the plain
+   `.page__date` exactly as before. The Paper span simply continues
+   inline after "Published: <date> (<venue>)" with a small gap (a few
+   spaces' worth). No font/colour overrides — inherits default
+   `.page__date` styling so it matches "Published:". */
+.page__paper-inline {
+  margin-left: 2em;          /* ~ a few spaces after the date/venue */
+  white-space: nowrap;       /* keep "Paper: <url>" intact as one unit */
+}
+
 /* ==========================================================================
    CITATION BLOCK — BibTeX / plain-text citations
    No code-box chrome; just clean monospace with a subtle left accent.
@@ -405,6 +416,13 @@ figure.highlight {
 
 .news-list li {
   margin-bottom: 0.3rem;
+}
+
+/* Fixed-width date so the en-dash lines up across entries
+   (3-letter months render at different widths in a proportional font). */
+.news-list li > strong:first-child {
+  display: inline-block;
+  min-width: 5em;
 }
 
 /* PUBLICATION CARDS */

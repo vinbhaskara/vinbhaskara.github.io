@@ -1,8 +1,10 @@
 ---
 title: 'Curiosity-Critic: Rewarding Cumulative Progress'
-date: 2026-04-21
+date: 2026-05-18
 permalink: /posts/2026/04/curiosity-critic/
 layout: single
+paper_url: https://arXiv.org/abs/2604.18701
+paper_venue: 
 tags:
   - Research
   - Reinforcement Learning
@@ -12,7 +14,7 @@ comments: true
 includes_math_equations: true
 header:
   preview_card_image: 2026-04-21-curiosity-critic-snapshot.png
-excerpt: '<figure><img src="/images/2026-04-21-curiosity-critic-snapshot.png" alt="Agent trajectories at step 30,000 on a stochastic grid world."><figcaption><span class="caption">What is <i>Curiosity</i>?! Seven methods explore a 30x30 grid world guided by curiosity. The left half (green) is learnable; the right half (grey) is pure noise.</span></figcaption></figure>'
+excerpt: '<figure><img src="/images/2026-04-21-curiosity-critic-snapshot.png" alt="Agent trajectories at step 30,000 on a stochastic grid world."><figcaption><span class="caption">Accepted to EIML @ ICML 2026. What is <i>Curiosity</i>?! Our work <i>Curiosity-Critic</i> separates reducible from irreducible prediction error to train world models without getting trapped by noisy-TV dynamics.</span></figcaption></figure>'
 ---
 
 <!-- <figure>
@@ -33,6 +35,18 @@ excerpt: '<figure><img src="/images/2026-04-21-curiosity-critic-snapshot.png" al
     <span class="caption">Seven methods explore a 30x30 grid world guided by curiosity. The left half (green) is learnable; the right half (grey) is pure noise. <i>[Live animation: <a href="https://youtu.be/hHSvQGaO5yY">youtu.be/hHSvQGaO5yY</a>, Code: <a href="https://github.com/vinbhaskara/Curiosity-Critic">github.com/vinbhaskara/Curiosity-Critic</a>, Paper: <a href="https://arxiv.org/abs/2604.18701">arxiv.org/abs/2604.18701</a>]</i></span>
   </figcaption>
 </figure>
+
+<div style="font-size: 0.85em; margin-top: 1.2em; margin-bottom: 1.6em;" class="news-flash">
+  <div class="news-header">
+    <strong style="color: #b30000;">
+      <span class="star">★</span> News
+    </strong>
+  </div>
+
+  <ul class="news-list">
+    <li><strong>May 2026</strong> – <i>Curiosity-Critic</i> has been accepted to the <a href="https://sites.google.com/view/eimlicml2026/home">EIML Workshop @ ICML 2026</a>!  &nbsp;🎉 &nbsp;[<a href="https://arxiv.org/abs/2604.18701">Paper</a> · <a href="https://github.com/vinbhaskara/Curiosity-Critic">Code</a> · <a href="https://youtu.be/hHSvQGaO5yY">Video</a>]</li>
+  </ul>
+</div>
 
 ### What is Curiosity?
 
@@ -60,7 +74,7 @@ Our new paper, ***[Curiosity-Critic (arXiv:2604.18701)](https://arxiv.org/abs/26
 
 More cat-like anything can only be good for the world, it's purrfect! 😀
 
-<div style="font-size: 0.85em; margin-top: 1.2em; margin-bottom: 1.6em;" class="news-flash" id="insta">
+<div style="font-size: 0.85em; margin-top: 1.2em; margin-bottom: 1.6em; background: #f0e6ff; border-color: #b39ddb;" class="news-flash" id="insta">
 Since we’re talking cats, follow my duo, Luna 🐈‍⬛ and Skye 🐈, over at 📸 <a href="https://www.instagram.com/luna.et.skye">@luna.et.skye</a> for all their <i>curious explorations</i> 🐁!
 </div>
 
@@ -198,7 +212,7 @@ A side-by-side animation of all nine methods, including Random Network Distillat
 git clone https://github.com/vinbhaskara/Curiosity-Critic.git
 cd Curiosity-Critic
 pip install -r requirements.txt
-python run_experiment.py
+chmod +x run.sh && ./run.sh
 ```
 
 This runs all nine methods across five seeds on the grid world and reproduces the error curves and heatmaps above.
@@ -216,10 +230,8 @@ To cite this work, please use:
 <pre class="citation-block">@misc{bhaskara2026curiositycriticcumulativepredictionerror,
       title={Curiosity-Critic: Cumulative Prediction Error Improvement as a Tractable Intrinsic Reward for World Model Training}, 
       author={Vin Bhaskara and Haicheng Wang},
+      booktitle={ICML 2026 Workshop: Epistemic Intelligence in Machine Learning},
       year={2026},
-      eprint={2604.18701},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
       url={https://arxiv.org/abs/2604.18701}, 
 }</pre>
 

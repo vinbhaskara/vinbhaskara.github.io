@@ -27,11 +27,15 @@ header:
     <strong class="news-badge">
       <span class="star">★</span> News
     </strong>
+    <!-- <strong style="color: #b30000;">
+      <span class="star">★</span> News
+    </strong> -->
   </div>
 
   <ul class="news-list">
-    <li><strong>Apr 2026</strong> – <a href="#ccrl-arxiv-2026">Our paper</a> on Cumulative Training Progress as Curiosity is out on <a href="https://arxiv.org/abs/2604.18701">arXiv</a>! Read the <a href="{% link _posts/2026-04-21-curiosity-critic.md %}">blog</a>!  &nbsp;🥳</li>
-    <li><strong>Mar 2026</strong> – <a href="#patent-rag-diverse-retrieval">Patent filed</a> for our Fast, Robust, Diverse-Retrieval Method for RAG (<i>US App. No. 19/575,161</i>) at Borealis AI.  &nbsp;🎉</li>
+    <li><strong>May 2026</strong> – &nbsp;Our <a href="{% link _posts/2026-04-21-curiosity-critic.md %}"><i>Curiosity-Critic</i></a> work has been accepted to the <a href="https://sites.google.com/view/eimlicml2026/home">EIML Workshop @ ICML 2026</a>!  &nbsp;🎉</li>
+    <li><strong>Apr 2026</strong> – &nbsp;<a href="#ccrl-arxiv-2026">Our paper</a> on Cumulative Training Progress as Curiosity is out on <a href="https://arxiv.org/abs/2604.18701">arXiv</a>! Read the <a href="{% link _posts/2026-04-21-curiosity-critic.md %}">blog</a>!  &nbsp;🥳</li>
+    <li><strong>Mar 2026</strong> – &nbsp;<a href="#patent-rag-diverse-retrieval">Patent filed</a> for our Fast, Robust, Diverse-Retrieval Method for RAG (<i>US App. No. 19/575,161</i>) at Borealis AI.  &nbsp;🎉</li>
   </ul>
 </div>
 
@@ -127,7 +131,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     <div class="pub-content">
       <b>Curiosity-Critic: Cumulative Prediction Error Improvement as a Tractable Intrinsic Reward for World Model Training</b>
       <br><span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Haicheng Wang<br>
-      <i>Preprint. arXiv:2604.18701 [cs.LG]</i>
+      <i><a href="https://sites.google.com/view/eimlicml2026/home?authuser=0">ICML 2026 Workshop</a> on Epistemic Intelligence in Machine Learning <br>arXiv:2604.18701 [cs.LG]</i>
       <br>
       <p style="margin:0.5em;"></p>
       <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/2604.18701" role="button" style="text-decoration:none">Arxiv</a>
