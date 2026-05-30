@@ -3,7 +3,7 @@ title: 'Curiosity-Critic: Rewarding Cumulative Progress'
 date: 2026-05-18
 permalink: /posts/2026/04/curiosity-critic/
 layout: single
-paper_url: https://arXiv.org/abs/2604.18701
+paper_url: https://arxiv.org/abs/2604.18701
 paper_venue: 
 tags:
   - Research
