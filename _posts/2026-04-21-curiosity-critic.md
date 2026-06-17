@@ -227,12 +227,13 @@ Code to reproduce our results is available on GitHub here: [github.com/vinbhaska
 
 To cite this work, please use:
 
-<pre class="citation-block">@misc{bhaskara2026curiositycriticcumulativepredictionerror,
-      title={Curiosity-Critic: Cumulative Prediction Error Improvement as a Tractable Intrinsic Reward for World Model Training}, 
-      author={Vin Bhaskara and Haicheng Wang},
-      booktitle={ICML 2026 Workshop: Epistemic Intelligence in Machine Learning},
-      year={2026},
-      url={https://arxiv.org/abs/2604.18701}, 
+<pre class="citation-block">@inproceedings{
+bhaskara2026curiositycritic,
+title={Curiosity-Critic: Cumulative Prediction Error Improvement as a Tractable Intrinsic Reward for World Model Training},
+author={Vin Bhaskara and Haicheng Wang},
+booktitle={ICML 2026 Workshop: Epistemic Intelligence in Machine Learning},
+year={2026},
+url={https://arxiv.org/abs/2604.18701}
 }</pre>
 
 ### References
