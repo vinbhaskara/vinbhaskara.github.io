@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>50K Fuel Timer</title>
+<style>
+  :root{
+    --ink:#0E1116; --surface:#171C24; --surface2:#1F2731; --line:#2A323D;
+    --text:#EDF0F3; --muted:#8A94A2;
+    --accent:#FF7A1A; --caf:#FFD24B; --cool:#34D1CB; --done:#57D98A;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html,body{margin:0;}
+  body{
+    background:var(--ink); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    min-height:100dvh; padding:env(safe-area-inset-top) 16px calc(96px + env(safe-area-inset-bottom));
+    max-width:560px; margin:0 auto;
+  }
+  body.flash{animation:flashbg .55s ease-out 2;}
+  @keyframes flashbg{0%{background:var(--accent);}100%{background:var(--ink);}}
+  .eyebrow{font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); font-weight:700;}
+
+  #pre{padding-top:28px;}
+  #pre h1{font-size:30px; line-height:1.05; margin:6px 0 2px; font-weight:800; letter-spacing:-.01em;}
+  #pre .sub{color:var(--muted); font-size:14px; margin-bottom:22px;}
+  .checklist{list-style:none; padding:0; margin:0 0 22px;}
+  .checklist li{display:flex; gap:12px; align-items:flex-start; padding:14px; margin-bottom:10px;
+    background:var(--surface); border:1px solid var(--line); border-radius:14px;}
+  .checklist .when{font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:3px;}
+  .checklist .what{font-size:15px; line-height:1.35;}
+  .dot{width:9px;height:9px;border-radius:50%;margin-top:6px;flex:0 0 auto;background:var(--accent);}
+  .dot.cool{background:var(--cool);} .dot.caf{background:var(--caf);}
+
+  .btn-start{width:100%; border:none; border-radius:16px; padding:20px; font-size:21px; font-weight:800;
+    background:var(--accent); color:#1A0E03; letter-spacing:.02em; cursor:pointer;}
+  .btn-start:active{transform:translateY(1px);}
+  .note{color:var(--muted); font-size:12.5px; line-height:1.5; margin-top:16px;}
+  .legend{margin-top:22px; padding-top:16px; border-top:1px solid var(--line); font-size:12.5px; line-height:1.55; color:var(--muted);}
+  .legend h2{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); font-weight:700; margin:0 0 10px;}
+  .legend p{margin:0 0 9px;}
+  .legend b{color:var(--text); font-weight:700;}
+  .legend .c-caf{color:var(--caf);} .legend .c-cool{color:var(--cool);}
+
+  #run{display:none;}
+  .clockwrap{padding-top:18px; text-align:center;}
+  .clock{font-size:clamp(58px,19vw,96px); font-weight:800; letter-spacing:-.02em; line-height:.95;
+    font-variant-numeric:tabular-nums; font-feature-settings:"tnum"; margin:2px 0;}
+  .hourchip{display:inline-block; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:700;}
+  .caftot{color:var(--caf);}
+  .track{position:relative; height:12px; background:var(--surface2); border-radius:8px; margin:18px 2px 4px; overflow:visible;}
+  .fill{position:absolute; left:0; top:0; bottom:0; background:var(--accent); border-radius:8px; width:0;}
+  .tick{position:absolute; top:-3px; width:2px; height:18px; background:var(--line); transform:translateX(-1px); border-radius:2px;}
+  .tick.caf{background:var(--caf);} .tick.cool{background:var(--cool);} .tick.finish{background:var(--done);}
+  .trackends{display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin:4px 2px 0;}
+
+  .nowcard{margin:18px 0 12px; border-radius:16px; background:var(--surface);
+    border:1px solid var(--line); border-left:5px solid var(--accent); padding:16px; cursor:pointer;}
+  .nowcard.active{border-color:var(--accent); background:#241a12; animation:pulse 1.1s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,122,26,0);}50%{box-shadow:0 0 0 5px rgba(255,122,26,.18);}}
+  .curline{font-size:13px; color:var(--muted); margin-bottom:9px; padding-left:10px; border-left:3px solid var(--done);}
+  .curline b{color:var(--text);}
+  .nowcard .lab{font-size:11px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:var(--accent);}
+  .nowcard .act{font-size:23px; font-weight:800; line-height:1.18; margin-top:5px; letter-spacing:-.01em;}
+  .nowcard .then{color:var(--muted); font-size:13px; margin-top:9px;}
+  .donebtn{margin-top:12px; display:none; border:1px solid var(--accent); background:transparent; color:var(--accent);
+    font-weight:700; font-size:14px; padding:9px 14px; border-radius:10px;}
+  .nowcard.active .donebtn{display:inline-block;}
+
+  .controls{display:flex; gap:10px; margin:6px 0 18px;}
+  .controls button{flex:1; border:1px solid var(--line); background:var(--surface); color:var(--text);
+    font-weight:700; font-size:14px; padding:12px; border-radius:12px; cursor:pointer;}
+  .controls button:active{transform:translateY(1px);}
+  #resetBtn{border-color:#5a2a2a; color:#ff8f8f;}
+
+  .tlhead{font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); font-weight:700; margin:6px 2px 8px;}
+  .timeline{list-style:none; padding:0; margin:0;}
+  .timeline li{display:flex; gap:12px; align-items:baseline; padding:11px 4px; border-bottom:1px solid var(--line);}
+  .timeline .t{font-variant-numeric:tabular-nums; font-feature-settings:"tnum"; font-weight:700; font-size:14px; width:46px; flex:0 0 auto; color:var(--muted);}
+  .timeline .x{font-size:15px; line-height:1.3;}
+  .timeline li.kcaf .t{color:var(--caf);} .timeline li.kcool .t{color:var(--cool);} .timeline li.kfinish .t{color:var(--done);}
+  .timeline li.done{opacity:.4;}
+  .timeline li.done .x::before{content:"\2713 "; color:var(--done); font-weight:800;}
+  .timeline li.cur{background:var(--surface); border-radius:10px; padding-left:10px; padding-right:10px; border-bottom-color:transparent; outline:1px solid var(--accent);}
+
+  .sipbar{position:fixed; left:0; right:0; bottom:0; background:var(--surface2); border-top:1px solid var(--line);
+    padding:12px 16px calc(12px + env(safe-area-inset-bottom)); text-align:center; font-size:13px; color:var(--text);
+    max-width:560px; margin:0 auto;}
+  .sipbar b{color:var(--cool);}
+  @media (prefers-reduced-motion: reduce){ body.flash{animation:none;} .nowcard.active{animation:none;} }
+</style>
+</head>
+<body>
+  <section id="pre">
+    <div class="eyebrow">Niagara 50K &middot; ~7 hr plan</div>
+    <h1>Fuel &amp; Biofreeze timer</h1>
+    <div class="sub">Do the pre-race steps, then tap Start at the gun. It counts down to every gel, chew, refill, and spray.</div>
+    <ul class="checklist">
+      <li><span class="dot"></span><div><div class="when">Night before</div><div class="what">Carb-heavy dinner + a carby snack before bed &mdash; your real fuel load.</div></div></li>
+      <li><span class="dot"></span><div><div class="when">Wake &middot; ~60 min before</div><div class="what">Banana + coffee. Sip ~300&ndash;400 mL water (&frac12; tab optional).</div></div></li>
+      <li><span class="dot caf"></span><div><div class="when">15 min before</div><div class="what">1 <b>caf</b> gel &middot; fill bottle + 1 tab.</div></div></li>
+      <li><span class="dot cool"></span><div><div class="when">15 min before</div><div class="what">Light Biofreeze &mdash; calves, shins, knees.</div></div></li>
+    </ul>
+    <button class="btn-start" id="startBtn">Start at the gun &#9654;</button>
+    <div class="note">One self-contained file, works fully offline. Keep this tab open with the screen on. If your phone sleeps or you reopen the page, it jumps straight to your current step using the time you hit Start.</div>
+    <div class="legend">
+      <h2>What the steps mean</h2>
+      <p><b>Gel</b> = Maurten Gel 100 (100&nbsp;cal, 25&nbsp;g carb). A <b>caf gel</b> is the caffeinated version, Maurten Gel 100 Caf 100 (+100&nbsp;mg caffeine).</p>
+      <p><b>Bloks</b> = Clif Bloks energy chews (3 chews &asymp; 24&nbsp;g carb). <b class="c-caf">Black Cherry</b> = caffeinated (~50&nbsp;mg per 3 chews); <b>Salted Watermelon</b> = caffeine-free, with extra sodium.</p>
+      <p><b>Tab</b> = one <b>XACT Electrolytes</b> hydration tablet &mdash; an effervescent tab giving about 500&nbsp;mg sodium and 100&nbsp;mg potassium, plus magnesium, iron and vitamin&nbsp;C, and caffeine-free. Dissolve <b>one tab in a 500&nbsp;mL bottle of water</b>. <b>Refill</b> = refill that bottle and drop in a fresh tab.</p>
+      <p><b>Potatoes</b> = boiled baby potatoes, lightly salted. The amounts shown (e.g. 50&ndash;75&nbsp;g) are <b>cooked / boiled weight, not raw</b>.</p>
+      <p><b class="c-cool">Biofreeze</b> = menthol cooling <b>spray</b> &mdash; spray it onto the skin of the listed areas only (external use; avoid broken or chafed skin).</p>
+    </div>
+  </section>
+
+  <section id="run">
+    <div class="clockwrap">
+      <div class="hourchip" id="hourChip">Hour 1 of 7</div>
+      <div class="clock" id="clock">0:00</div>
+      <div class="hourchip">Caffeine so far: <span class="caftot" id="cafTot">100 mg</span></div>
+      <div class="track" id="track"><div class="fill" id="fill"></div></div>
+      <div class="trackends"><span>Start</span><span>Finish ~7:00</span></div>
+    </div>
+    <div class="nowcard" id="nowCard">
+      <div class="curline" id="curLine" style="display:none;"></div>
+      <div class="lab" id="nowLab">Next in</div>
+      <div class="act" id="nowAct">&mdash;</div>
+      <div class="then" id="nowThen"></div>
+      <button class="donebtn" id="doneBtn">Got it &#10003;</button>
+    </div>
+    <div class="controls">
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+    <div class="tlhead">Full schedule</div>
+    <ul class="timeline" id="timeline"></ul>
+  </section>
+
+  <div class="sipbar" id="sipbar" style="display:none;">
+    <b>Sip 3&ndash;4 gulps every ~15 min</b> &middot; 1 tab per refill &middot; drink to thirst
+  </div>
+
+<script>
+(function(){
+  "use strict";
+  var EVENTS = [
+    {t:0,   kind:"start", x:"Go! Start sipping (your pre-race caf gel is kicking in)"},
+    {t:20,  kind:"caf",   x:"3 Black Cherry Bloks (caf)", caf:50},
+    {t:40,  kind:"fuel",  x:"50-75 g salted potatoes"},
+    {t:60,  kind:"caf",   x:"Refill + 1 tab + 1 CAF gel", caf:100},
+    {t:80,  kind:"fuel",  x:"3 Salted Watermelon Bloks"},
+    {t:100, kind:"fuel",  x:"50-75 g potatoes"},
+    {t:120, kind:"fuel",  x:"Refill + 1 tab + 1 plain gel"},
+    {t:140, kind:"caf",   x:"3 Black Cherry Bloks (caf)", caf:50},
+    {t:160, kind:"fuel",  x:"Potatoes"},
+    {t:180, kind:"fuel",  x:"Refill + 1 tab + 1 plain gel"},
+    {t:200, kind:"fuel",  x:"3 Salted Watermelon Bloks"},
+    {t:220, kind:"fuel",  x:"Potatoes"},
+    {t:235, kind:"cool",  x:"Biofreeze: calves + shins"},
+    {t:240, kind:"caf",   x:"Refill + 1 tab + 1 CAF gel", caf:100},
+    {t:260, kind:"fuel",  x:"3 Salted Watermelon Bloks"},
+    {t:280, kind:"fuel",  x:"Potatoes (if you want them)"},
+    {t:300, kind:"fuel",  x:"Refill + 1 tab + 1 plain gel"},
+    {t:320, kind:"fuel",  x:"3 Salted Watermelon Bloks"},
+    {t:340, kind:"fuel",  x:"Potatoes (skip if chewing is hard)"},
+    {t:355, kind:"cool",  x:"Biofreeze: calves + knees"},
+    {t:360, kind:"fuel",  x:"Refill + 1 tab + 1 plain gel (caf gel if fading)"},
+    {t:380, kind:"fuel",  x:"3 Bloks"},
+    {t:400, kind:"drink", x:"Sip to thirst + gel if you need it"},
+    {t:420, kind:"finish",x:"Finish! Recovery: carbs + protein + fluids + 1 tab + Biofreeze"}
+  ];
+  var TOTAL_SEC = 420*60;
+  var STORE_KEY = "niagara50k_timer_v2";
+  var PRE_CAF = 100;
+  var MAX_AGE_MS = 12*3600*1000;
+
+  var startEpoch=null, pausedAccum=0, pauseStart=null;
+  var firedIdx=-1, dismissedIdx=-1;
+  var audioCtx=null, wakeLock=null, ticker=null;
+
+  var $=function(id){return document.getElementById(id);};
+  var pre=$("pre"), run=$("run"), sipbar=$("sipbar");
+  var clockEl=$("clock"), hourChip=$("hourChip"), cafTotEl=$("cafTot");
+  var fill=$("fill"), track=$("track");
+  var nowCard=$("nowCard"), curLine=$("curLine"), nowLab=$("nowLab"), nowAct=$("nowAct"), nowThen=$("nowThen"), doneBtn=$("doneBtn"), pauseBtn=$("pauseBtn");
+  var timeline=$("timeline");
+
+  function save(){
+    try{ localStorage.setItem(STORE_KEY, JSON.stringify({s:startEpoch,p:pausedAccum,ps:pauseStart})); }catch(e){}
+  }
+  function clearStore(){ try{ localStorage.removeItem(STORE_KEY); }catch(e){} }
+  function loadStored(){
+    try{
+      var raw=localStorage.getItem(STORE_KEY);
+      if(!raw) return false;
+      var d=JSON.parse(raw);
+      if(!d||!d.s) return false;
+      if(Date.now()-d.s > MAX_AGE_MS){ clearStore(); return false; }
+      startEpoch=d.s; pausedAccum=d.p||0; pauseStart=d.ps||null;
+      return true;
+    }catch(e){ return false; }
+  }
+
+  function elapsedSec(){
+    if(startEpoch==null) return 0;
+    var ref = (pauseStart!=null) ? pauseStart : Date.now();
+    return Math.max(0, Math.floor((ref - startEpoch - pausedAccum)/1000));
+  }
+  function fmt(sec){
+    sec=Math.max(0,Math.floor(sec));
+    var h=Math.floor(sec/3600), m=Math.floor((sec%3600)/60), s=sec%60;
+    var mm=(h>0? String(m).padStart(2,"0"):String(m));
+    return {h:h, m:mm, s:String(s).padStart(2,"0")};
+  }
+  function clockStr(sec){ var f=fmt(sec); return f.h>0 ? (f.h+":"+f.m+":"+f.s) : (f.m+":"+f.s); }
+  function schedStr(min){ var f=fmt(min*60); return f.h+":"+f.m; }
+
+  function ensureAudio(){
+    try{
+      if(!audioCtx){ var AC=window.AudioContext||window.webkitAudioContext; if(AC) audioCtx=new AC(); }
+      if(audioCtx && audioCtx.state==="suspended") audioCtx.resume();
+    }catch(e){}
+  }
+  function beep(){
+    try{
+      if(!audioCtx) return;
+      var now=audioCtx.currentTime;
+      [0,0.18].forEach(function(off){
+        var o=audioCtx.createOscillator(), g=audioCtx.createGain();
+        o.type="square"; o.frequency.value= off===0?880:1175;
+        o.connect(g); g.connect(audioCtx.destination);
+        g.gain.setValueAtTime(0.0001, now+off);
+        g.gain.exponentialRampToValueAtTime(0.35, now+off+0.02);
+        g.gain.exponentialRampToValueAtTime(0.0001, now+off+0.16);
+        o.start(now+off); o.stop(now+off+0.18);
+      });
+    }catch(e){}
+  }
+  function fireAlert(){
+    beep();
+    try{ if(navigator.vibrate) navigator.vibrate([220,90,220]); }catch(e){}
+    try{ document.body.classList.remove("flash"); void document.body.offsetWidth; document.body.classList.add("flash"); }catch(e){}
+  }
+
+  function requestWake(){
+    try{ if("wakeLock" in navigator){ navigator.wakeLock.request("screen").then(function(w){ wakeLock=w; }).catch(function(){}); } }catch(e){}
+  }
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="visible" && startEpoch!=null && pauseStart==null){ requestWake(); render(); }
+  });
+
+  function kindClass(k){ return k==="caf"?"kcaf":k==="cool"?"kcool":k==="finish"?"kfinish":""; }
+  function buildTimeline(){
+    timeline.innerHTML="";
+    EVENTS.forEach(function(e,i){
+      var li=document.createElement("li");
+      li.className=kindClass(e.kind); li.dataset.i=i;
+      li.innerHTML='<span class="t">'+schedStr(e.t)+'</span><span class="x">'+e.x+'</span>';
+      timeline.appendChild(li);
+    });
+    track.querySelectorAll(".tick").forEach(function(n){n.remove();});
+    EVENTS.forEach(function(e){
+      if(e.t===0) return;
+      var d=document.createElement("div");
+      d.className="tick "+(e.kind==="caf"?"caf":e.kind==="cool"?"cool":e.kind==="finish"?"finish":"");
+      d.style.left=Math.min(100,(e.t*60)/TOTAL_SEC*100)+"%";
+      track.appendChild(d);
+    });
+  }
+
+  function cafSoFar(es){ var mg=PRE_CAF; for(var i=0;i<EVENTS.length;i++){ if(EVENTS[i].t*60<=es && EVENTS[i].caf) mg+=EVENTS[i].caf; } return mg; }
+
+  function render(){
+    var es=elapsedSec();
+    clockEl.textContent = clockStr(es);
+    var hr=Math.min(7,Math.floor(es/3600)+1);
+    hourChip.textContent = es>=TOTAL_SEC ? "Finished" : ("Hour "+hr+" of 7");
+    cafTotEl.textContent = cafSoFar(es)+" mg";
+    fill.style.width = Math.min(100, es/TOTAL_SEC*100)+"%";
+
+    var nextIdx=-1;
+    for(var i=0;i<EVENTS.length;i++){ if(EVENTS[i].t*60>es){ nextIdx=i; break; } }
+    var curIdx = (nextIdx===-1)? EVENTS.length-1 : nextIdx-1;
+
+    var dueIdx=-1;
+    for(var j=0;j<EVENTS.length;j++){ if(EVENTS[j].t*60<=es) dueIdx=j; }
+    if(dueIdx>firedIdx && startEpoch!=null && pauseStart==null){ firedIdx=dueIdx; fireAlert(); }
+
+    var active = (curIdx>=0 && curIdx>dismissedIdx);
+    if(active){
+      nowCard.classList.add("active");
+      curLine.style.display="none";
+      nowLab.textContent="Do now";
+      nowAct.textContent=EVENTS[curIdx].x;
+      nowThen.textContent = (nextIdx!==-1) ? ("Then "+schedStr(EVENTS[nextIdx].t)+" - "+EVENTS[nextIdx].x) : "";
+    } else {
+      nowCard.classList.remove("active");
+      if(curIdx>=0){
+        curLine.style.display="block";
+        curLine.innerHTML = "You are on (since "+schedStr(EVENTS[curIdx].t)+"): <b>"+EVENTS[curIdx].x+"</b>";
+      } else { curLine.style.display="none"; }
+      if(nextIdx!==-1){
+        nowLab.textContent="Next in "+clockStr(EVENTS[nextIdx].t*60 - es);
+        nowAct.textContent=EVENTS[nextIdx].x;
+        var after=EVENTS[nextIdx+1];
+        nowThen.textContent= after ? ("Then "+schedStr(after.t)+" - "+after.x) : "";
+      } else {
+        nowLab.textContent="Done"; nowAct.textContent="Race complete - nice work."; nowThen.textContent="";
+      }
+    }
+
+    var rows=timeline.children;
+    for(var k=0;k<rows.length;k++){
+      var idx=+rows[k].dataset.i;
+      rows[k].classList.toggle("done", EVENTS[idx].t*60<=es);
+      rows[k].classList.toggle("cur", idx===curIdx && es<TOTAL_SEC);
+    }
+  }
+
+  function startTick(){ if(ticker) clearInterval(ticker); ticker=setInterval(render,250); render(); }
+
+  function beginRun(){
+    pre.style.display="none"; run.style.display="block"; sipbar.style.display="block";
+    buildTimeline();
+    var es=elapsedSec(); firedIdx=-1;
+    for(var j=0;j<EVENTS.length;j++){ if(EVENTS[j].t*60<=es) firedIdx=j; }
+    dismissedIdx=firedIdx;
+    pauseBtn.textContent = (pauseStart!=null) ? "Resume" : "Pause";
+    if(pauseStart==null) requestWake();
+    startTick();
+  }
+
+  $("startBtn").addEventListener("click", function(){
+    ensureAudio();
+    startEpoch=Date.now(); pausedAccum=0; pauseStart=null;
+    save(); beginRun();
+  });
+
+  pauseBtn.addEventListener("click", function(){
+    if(pauseStart==null){
+      pauseStart=Date.now(); pauseBtn.textContent="Resume";
+      try{ if(wakeLock){ wakeLock.release(); wakeLock=null; } }catch(e){}
+    } else {
+      pausedAccum += Date.now()-pauseStart; pauseStart=null; pauseBtn.textContent="Pause";
+      requestWake();
+    }
+    save(); render();
+  });
+
+  $("resetBtn").addEventListener("click", function(){
+    if(!confirm("Reset the timer back to the start?")) return;
+    startEpoch=null; pausedAccum=0; pauseStart=null; firedIdx=-1; dismissedIdx=-1;
+    clearStore();
+    if(ticker){ clearInterval(ticker); ticker=null; }
+    try{ if(wakeLock){ wakeLock.release(); wakeLock=null; } }catch(e){}
+    pauseBtn.textContent="Pause";
+    run.style.display="none"; sipbar.style.display="none"; pre.style.display="block";
+  });
+
+  function dismiss(){
+    var es=elapsedSec(), dueIdx=-1;
+    for(var j=0;j<EVENTS.length;j++){ if(EVENTS[j].t*60<=es) dueIdx=j; }
+    dismissedIdx=Math.max(dismissedIdx,dueIdx);
+    document.body.classList.remove("flash");
+    render();
+  }
+  nowCard.addEventListener("click", dismiss);
+  doneBtn.addEventListener("click", function(ev){ ev.stopPropagation(); dismiss(); });
+
+  if(loadStored()){ beginRun(); }
+  setInterval(function(){ if(startEpoch!=null) save(); }, 15000);
+})();

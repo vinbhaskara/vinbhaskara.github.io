@@ -16,3 +16,6 @@ main:
   - title: "Subscribe"
     url: /subscribe/
 
+  - title: "🏃 Fuel Timer"
+    url: /run-fuel-timer/
+
