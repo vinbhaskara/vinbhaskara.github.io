@@ -12,7 +12,7 @@ author_profile: true
   </div>
 
   <ul class="news-list">
-    <li><strong>Jun 2026</strong> - Vibe coded a <a href="/run-fuel-timer/">Running Fuel Timer</a> I'd be using for my 50k Niagara Ultra race. Check it out!</li>
+    <li><strong>Jun 2026</strong> – Vibe coded a <a href="/run-fuel-timer/">Running Fuel Timer</a> I'd be using for my 50k Niagara Ultra race. Check it out!</li>
     <li><strong>Feb 2026</strong> – Signed up for my first 50 km ultra-marathon at the <a href="https://www.niagaraultra.ca/">Niagara Ultra</a> in June 2026! 🎉</li>
   </ul>
 </div>
