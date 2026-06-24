@@ -12,13 +12,14 @@ author_profile: true
   </div>
 
   <ul class="news-list">
-    <li><strong>Jun 2026</strong> – Vibe coded a <a href="/run-fuel-timer/">Running Fuel Timer</a> I'd be using for my 50k Niagara Ultra race. Check it out!</li>
+    <li><strong>Jun 2026</strong> – Vibe coded a <a href="/run-fuel-timer/">Running Fuel Timer</a> I used to fuel my 50K Niagara Ultra (finished in 6:40:48). Check it out!</li>
     <li><strong>Feb 2026</strong> – Signed up for my first 50 km ultra-marathon at the <a href="https://www.niagaraultra.ca/">Niagara Ultra</a> in June 2026! 🎉</li>
   </ul>
 </div>
 
 Since the COVID-19 pandemic, I've been into long-distance running! It's had the greatest influence on my mental health and social life. My first race was the 2020 Lululemon Half-marathon in Toronto which I completed in 2:00:33 hrs. Here are all the races in reverse chronological order I've run since! :-)  
 
+2026 - [Niagara 50k Ultramarathon Run](https://www.niagaraultra.ca/) (Moving Time: 6:40:48)   
 2025 - [Montreal Beneva Marathon 42.2k](https://couronsmtl.com/en/marathon-beneva/home/) (5:23:24)  
 2023 - [21k de Mtl Half-marathon](https://mtlmarathon.com/en/) (1:56:10)  
 2022 - [Chicago Marathon](https://www.chicagomarathon.com/) (3:58:45)  
