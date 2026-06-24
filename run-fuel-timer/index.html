@@ -103,7 +103,7 @@
       <li><span class="dot cool"></span><div><div class="when">15 min before</div><div class="what">Light Biofreeze &mdash; calves, shins, knees.</div></div></li>
     </ul>
     <button class="btn-start" id="startBtn">Start at the gun &#9654;</button>
-    <div class="note">One self-contained file, works fully offline. Keep this tab open with the screen on. If your phone sleeps or you reopen the page, it jumps straight to your current step using the time you hit Start.</div>
+    <div class="note">Keep this open with the screen on while you run. Tap a card to silence its alert.</div>
     <div class="legend">
       <h2>What the steps mean</h2>
       <p><b>Gel</b> = Maurten Gel 100 (100&nbsp;cal, 25&nbsp;g carb). A <b>caf gel</b> is the caffeinated version, Maurten Gel 100 Caf 100 (+100&nbsp;mg caffeine).</p>
@@ -171,9 +171,7 @@
     {t:420, kind:"finish",x:"Finish! Recovery: carbs + protein + fluids + 1 tab + Biofreeze"}
   ];
   var TOTAL_SEC = 420*60;
-  var STORE_KEY = "niagara50k_timer_v2";
   var PRE_CAF = 100;
-  var MAX_AGE_MS = 12*3600*1000;
 
   var startEpoch=null, pausedAccum=0, pauseStart=null;
   var firedIdx=-1, dismissedIdx=-1;
@@ -185,22 +183,6 @@
   var fill=$("fill"), track=$("track");
   var nowCard=$("nowCard"), curLine=$("curLine"), nowLab=$("nowLab"), nowAct=$("nowAct"), nowThen=$("nowThen"), doneBtn=$("doneBtn"), pauseBtn=$("pauseBtn");
   var timeline=$("timeline");
-
-  function save(){
-    try{ localStorage.setItem(STORE_KEY, JSON.stringify({s:startEpoch,p:pausedAccum,ps:pauseStart})); }catch(e){}
-  }
-  function clearStore(){ try{ localStorage.removeItem(STORE_KEY); }catch(e){} }
-  function loadStored(){
-    try{
-      var raw=localStorage.getItem(STORE_KEY);
-      if(!raw) return false;
-      var d=JSON.parse(raw);
-      if(!d||!d.s) return false;
-      if(Date.now()-d.s > MAX_AGE_MS){ clearStore(); return false; }
-      startEpoch=d.s; pausedAccum=d.p||0; pauseStart=d.ps||null;
-      return true;
-    }catch(e){ return false; }
-  }
 
   function elapsedSec(){
     if(startEpoch==null) return 0;
@@ -259,7 +241,8 @@
       li.innerHTML='<span class="t">'+schedStr(e.t)+'</span><span class="x">'+e.x+'</span>';
       timeline.appendChild(li);
     });
-    track.querySelectorAll(".tick").forEach(function(n){n.remove();});
+    var ticks=track.querySelectorAll(".tick");
+    for(var n=0;n<ticks.length;n++){ ticks[n].parentNode.removeChild(ticks[n]); }
     EVENTS.forEach(function(e){
       if(e.t===0) return;
       var d=document.createElement("div");
@@ -334,7 +317,7 @@
   $("startBtn").addEventListener("click", function(){
     ensureAudio();
     startEpoch=Date.now(); pausedAccum=0; pauseStart=null;
-    save(); beginRun();
+    beginRun();
   });
 
   pauseBtn.addEventListener("click", function(){
@@ -345,13 +328,12 @@
       pausedAccum += Date.now()-pauseStart; pauseStart=null; pauseBtn.textContent="Pause";
       requestWake();
     }
-    save(); render();
+    render();
   });
 
   $("resetBtn").addEventListener("click", function(){
     if(!confirm("Reset the timer back to the start?")) return;
     startEpoch=null; pausedAccum=0; pauseStart=null; firedIdx=-1; dismissedIdx=-1;
-    clearStore();
     if(ticker){ clearInterval(ticker); ticker=null; }
     try{ if(wakeLock){ wakeLock.release(); wakeLock=null; } }catch(e){}
     pauseBtn.textContent="Pause";
@@ -367,7 +349,7 @@
   }
   nowCard.addEventListener("click", dismiss);
   doneBtn.addEventListener("click", function(ev){ ev.stopPropagation(); dismiss(); });
-
-  if(loadStored()){ beginRun(); }
-  setInterval(function(){ if(startEpoch!=null) save(); }, 15000);
 })();
+</script>
+</body>
+</html>
