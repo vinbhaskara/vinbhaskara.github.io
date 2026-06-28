@@ -19,6 +19,7 @@ author_profile: true
 
 Since the COVID-19 pandemic, I've been into long-distance running! It's had the greatest influence on my mental health and social life. My first race was the 2020 Lululemon Half-marathon in Toronto which I completed in 2:00:33 hrs. Here are all the races in reverse chronological order I've run since! :-)  
 
+2026 - [Trail du Parc 10k Trail Run](https://nomadesduparc.com/en/pages/trail-du-parc-1) (My first Trail Race! 1:46:57)  
 2026 - [Niagara 50k Ultramarathon Run](https://www.niagaraultra.ca/) (Moving Time: 6:40:48)   
 2025 - [Montreal Beneva Marathon 42.2k](https://couronsmtl.com/en/marathon-beneva/home/) (5:23:24)  
 2023 - [21k de Mtl Half-marathon](https://mtlmarathon.com/en/) (1:56:10)  
