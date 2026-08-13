@@ -1,13 +1,30 @@
 /* ==========================================================================
    RESPONSIVE GLOBAL SCALE
    Uses CSS zoom to uniformly scale fonts, images, layout, and spacing.
-   Calibrated per viewport width:
-     < 768px   — mobile, no zoom
-     768–1599  — laptop / MacBook Air 13", compact feel
-     1600–1919 — large laptop / external monitor, natural scale
-     1920–2559 — 27"+ desktop, scale up
-     2560+     — 32"+ / 4K, scale up further
+
+   >>> $global-zoom below is THE top-level knob for the whole site. <<<
+   1.0 = browser default. 0.75 renders like browser zoom at 75%.
+   Change that one number to rescale everything; the per-bracket factors
+   are relative multipliers on top of it.
+
+   Calibrated per screen width:
+     < 768px   — mobile, never zoomed (would be unreadable)
+     768–1599  — laptop / MacBook Air 13"
+     1600–1919 — large laptop / external monitor
+     1920–2559 — 27"+ desktop
+     2560+     — 32"+ / 4K
+
+   NOTE: these CSS rules are only the instant, pre-JS approximation.
+   GLOBAL_ZOOM in assets/js/custom.js sets an inline style that overrides
+   them once the script runs — keep the two values in sync.
    ========================================================================== */
+$global-zoom : 0.75;
+
+$zoom-laptop  : 1.0; // 768–1599
+$zoom-desktop : 1.0; // 1600–1919
+$zoom-large   : 1.0; // 1920–2559
+$zoom-xlarge  : 1.0; // 2560+
+
 html {
   font-size: 17.5px;
   font-optical-sizing: auto;
@@ -151,17 +168,18 @@ h4, h5, h6 { letter-spacing: -0.01em; }
   }
 }
 
+/* Global scale — driven by $global-zoom at the top of this file. */
 @media (min-width: 768px) {
-  html { zoom: 0.90; }
+  html { zoom: $global-zoom * $zoom-laptop; }
 }
 @media (min-width: 1600px) {
-  html { zoom: 1.0; }
+  html { zoom: $global-zoom * $zoom-desktop; }
 }
 @media (min-width: 1920px) {
-  html { zoom: 1.0; }
+  html { zoom: $global-zoom * $zoom-large; }
 }
 @media (min-width: 2560px) {
-  html { zoom: 1.0; }
+  html { zoom: $global-zoom * $zoom-xlarge; }
 }
 
 /* Widen the content column on large screens to use more of the viewport.

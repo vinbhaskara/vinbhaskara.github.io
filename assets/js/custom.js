@@ -16,12 +16,17 @@
      overrides them with the correct value once the script runs.
   -------------------------------------------------------------------------  */
   (function () {
+    // >>> Top-level scale for the whole site. <<<
+    // 1.0 = browser default; 0.75 renders like browser zoom at 75%.
+    // Keep in sync with $global-zoom in _sass/_custom.scss.
+    var GLOBAL_ZOOM = 0.75;
+
     var sw = window.screen.width;
-    var zoom = sw < 768  ? null    // mobile — no zoom
-             : sw < 1600 ? '0.9'  // laptop / MacBook Air
-             :             '1.0'; // large monitors and above
-    if (zoom !== null) {
-      document.documentElement.style.zoom = zoom;
+    var factor = sw < 768  ? null  // mobile — no zoom
+               : sw < 1600 ? 1.0   // laptop / MacBook Air
+               :             1.0;  // large monitors and above
+    if (factor !== null) {
+      document.documentElement.style.zoom = String(GLOBAL_ZOOM * factor);
     }
   }());
 
