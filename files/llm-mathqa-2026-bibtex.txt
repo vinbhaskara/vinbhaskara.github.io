@@ -1,0 +1,8 @@
+@inproceedings{
+ma2026from,
+title={From token probabilities to calibrated confidence: An empirical study of mathematical question answering},
+author={Avery Ma and Lorne Schell and Vin Bhaskara and Leila Pishdad},
+booktitle={ICML 2026 Workshop on Structured Probabilistic Inference {\&} Generative Modeling},
+year={2026},
+url={https://openreview.net/forum?id=UoHjQf0umi}
+}

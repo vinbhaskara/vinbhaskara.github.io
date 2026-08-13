@@ -114,7 +114,7 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 <div style="display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:1em; margin-top:1.5em;">
   <h2 id="publications" style="margin:0; border:none;">Publications</h2>
   <span style="font-size:0.9em; color:#555;">
-    <b>11</b> papers · <b>3</b> patents <span style="color:#888;">(1 granted, 2 pending)</span> · <a href="https://scholar.google.com/citations?user=JBgGgnoAAAAJ&hl=en" target="_blank" style="color:#3b7ea1; text-decoration:none;"><b>324</b> citations</a> · <b>h-index 8</b>
+    <b>12</b> papers · <b>3</b> patents <span style="color:#888;">(1 granted, 2 pending)</span> · <a href="https://scholar.google.com/citations?user=JBgGgnoAAAAJ&hl=en" target="_blank" style="color:#3b7ea1; text-decoration:none;"><b>348</b> citations</a> · <b>h-index 8</b>
   </span>
 </div>
 <span style="font-size:0.85em; color:#666;">(<sup style="font-size:140%;top: 0.15em;">*</sup> <i> denotes equal contribution</i>)</span>
@@ -125,6 +125,27 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 
 
 <div class="pub-list">
+  <div class="pub-card" id="llmcalibmathqa-arxiv-2026">
+    <div class="pub-num"><b>8.&nbsp;&nbsp;&nbsp;</b></div>
+    <div class="pub-date"><b>May<br>2026</b></div>
+    <div class="pub-content">
+      <b>From token probabilities to calibrated confidence: An empirical study of mathematical question answering</b>
+      <br>Avery Ma, Lorne Schell, <span style="color:#3b7ea1"><b>Vin Bhaskara</b></span>, Leila Pishdad<br>
+      <i><a href="https://spigmworkshop2026.github.io/">ICML 2026 Workshop</a> on Structured Probabilistic Inference & Generative Modeling <br>arXiv:2608.07827 [cs.LG]</i>
+      <br>
+      <p style="margin:0.5em;"></p>
+      <a class="btn btn--primary" target="_blank" href="https://openreview.net/forum?id=UoHjQf0umi" role="button" style="text-decoration:none">Paper</a>
+      <a class="btn btn--primary" target="_blank" href="https://arxiv.org/abs/2608.07827" role="button" style="text-decoration:none">Arxiv</a>
+      <a class="btn btn--cite2" target="_blank" href="files/llm-mathqa-2026-bibtex.txt" role="button" style="text-decoration:none">Cite</a>
+      <br>
+    </div>
+    <div class="pub-img">
+      <a href="https://openreview.net/forum?id=UoHjQf0umi"><img src="images/mathqa_calib.png" style="width:250px; height:auto; margin:0px;"></a>
+    </div>
+    <div class="pub-arrow"></div>
+    <div class="pub-summary"><b>Tl;dr</b>: <br>Across 5 open LLMs × 3 math datasets, confidence is better inferred from weak probability signals accumulated across the entire reasoning trajectory than from the final-answer tokens alone; MC-dropout can improve uncertainty estimates but costs ~5× inference and needs dataset/model-specific tuning, while in-situ self-verification gets roughly standard p(True) performance with ~88% less token-processing overhead. Simple post-hoc calibration—especially isotonic regression—can turn even badly overconfident scores into useful probabilities with surprisingly little labeled data (~50 examples), but calibration is strongly model/difficulty-dependent and can fail or worsen when transferred to another model or dataset.<br><br>
+    <b>Full Abstract</b>: <br>Confidence estimation for large language models (LLMs) aims to estimate the probability that a generated answer is correct, while calibration aligns these estimates with empirical accuracy. Prior work has shown that token probabilities are often overconfident, we investigate whether these readily available signals can nevertheless provide well-calibrated confidence estimation for mathematical question answering. We compare single-pass estimators, which reuse token probabilities from the original generation, with multi-pass estimators, which obtain additional confidence signals through verification or stochastic forward passes. While individual token probabilities can be highly saturated, we find that aggregating token probabilities over the full sequence captures small but consistent differences between correct and incorrect generations, yielding more informative confidence estimates. Multi-pass methods can yield calibrated confidence estimates. We study two such approaches: self-verification through re-prompting, including a lower-cost in-situ variant, and Monte Carlo Dropout, which derives confidence from variation across stochastic forward passes. We further evaluate two post-hoc calibration methods, Platt scaling and isotonic regression, both of which substantially reduce in-domain calibration error. However, their data efficiency varies with dataset difficulty, and the calibration mappings often transfer asymmetrically across datasets and models.</div>
+  </div>
   <div class="pub-card" id="ccrl-arxiv-2026">
     <div class="pub-num"><b>7.&nbsp;&nbsp;&nbsp;</b></div>
     <div class="pub-date"><b>Apr<br>2026</b></div>
@@ -148,7 +169,6 @@ I graduated with a Master's from the Department of Computer Science at the Unive
     <div class="pub-summary"><b>Tl;dr</b>: <br>Curiosity-Critic grounds intrinsic reward in improvement of cumulative world-model error, reducing to per-step reducible (epistemic) error above a learned irreducible (aleatoric) baseline, recovers prior methods, beats them on stochastic gridworld.<br><br>
     <b>Full Abstract</b>: <br>Local prediction-error-based curiosity rewards focus on the current transition without considering the world model's cumulative prediction error across all visited transitions. We introduce Curiosity-Critic, which grounds its intrinsic reward in the improvement of this cumulative objective, and show that it admits a tractable per-step surrogate: the difference between the current prediction error and the asymptotic error baseline of the current state transition. We estimate this error baseline online with a learned critic co-trained alongside the world model; regressing a single scalar, the critic converges well before the world model saturates, redirecting exploration toward learnable transitions without oracle knowledge of the noise floor. The reward is higher for learnable transitions and collapses toward the error baseline for stochastic ones, effectively separating epistemic (reducible) from aleatoric (irreducible) prediction error online. Prior prediction-error curiosity formulations, from Schmidhuber (1991) to learned-feature-space variants, emerge as special cases corresponding to specific approximations of this error baseline. Experiments on a stochastic grid world show that Curiosity-Critic outperforms prediction-error, visitation-count, and Random Network Distillation methods in training speed and final world model accuracy.</div>
   </div>
-
   <div class="pub-card">
     <div class="pub-num"><b>6.&nbsp;&nbsp;&nbsp;</b></div>
     <div class="pub-date"><b>Jan<br>2022</b></div>
