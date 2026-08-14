@@ -16,18 +16,33 @@
      overrides them with the correct value once the script runs.
   -------------------------------------------------------------------------  */
   (function () {
-    // >>> Top-level scale for the whole site. <<<
-    // 1.0 = browser default; 0.75 renders like browser zoom at 75%.
-    // Keep in sync with $global-zoom in _sass/_custom.scss.
-    var GLOBAL_ZOOM = 0.75;
+    // >>> KEEP IN SYNC WITH _sass/_custom.scss <<<
+    // Every constant below is the twin of a variable in the "RESPONSIVE
+    // GLOBAL SCALE" block at the top of _sass/_custom.scss:
+    //   GLOBAL_ZOOM  <->  $global-zoom
+    //   ZOOM_MOBILE  <->  $zoom-mobile   (and so on for the rest)
+    // If you change a value here, change its twin there — a mismatch makes
+    // the page visibly jump from the CSS value to the JS value on load.
+    //
+    // 1.0 = browser default; 0.825 renders like browser zoom at 82.5%.
+    var GLOBAL_ZOOM = 0.825;
+
+    // Every bracket is a relative multiplier applied on top of GLOBAL_ZOOM —
+    // no exceptions, mobile included. 1.0 means "exactly GLOBAL_ZOOM".
+    var ZOOM_MOBILE  = 1.0;  // < 768
+    var ZOOM_LAPTOP  = 1.0;  // 768–1599
+    var ZOOM_DESKTOP = 1.0;  // 1600–1919
+    var ZOOM_LARGE   = 1.0;  // 1920–2559
+    var ZOOM_XLARGE  = 1.0;  // 2560+
 
     var sw = window.screen.width;
-    var factor = sw < 768  ? null  // mobile — no zoom
-               : sw < 1600 ? 1.0   // laptop / MacBook Air
-               :             1.0;  // large monitors and above
-    if (factor !== null) {
-      document.documentElement.style.zoom = String(GLOBAL_ZOOM * factor);
-    }
+    var factor = sw < 768  ? ZOOM_MOBILE   // mobile
+               : sw < 1600 ? ZOOM_LAPTOP   // laptop / MacBook Air
+               : sw < 1920 ? ZOOM_DESKTOP  // large laptop / external monitor
+               : sw < 2560 ? ZOOM_LARGE    // 27"+ desktop
+               :             ZOOM_XLARGE;  // 32"+ / 4K
+
+    document.documentElement.style.zoom = String(GLOBAL_ZOOM * factor);
   }());
 
   /* -------------------------------------------------------------------------

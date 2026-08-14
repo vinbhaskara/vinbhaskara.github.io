@@ -3,23 +3,30 @@
    Uses CSS zoom to uniformly scale fonts, images, layout, and spacing.
 
    >>> $global-zoom below is THE top-level knob for the whole site. <<<
-   1.0 = browser default. 0.75 renders like browser zoom at 75%.
+   1.0 = browser default. 0.825 renders like browser zoom at 82.5%.
    Change that one number to rescale everything; the per-bracket factors
    are relative multipliers on top of it.
 
    Calibrated per screen width:
-     < 768px   — mobile, never zoomed (would be unreadable)
+     < 768px   — mobile
      768–1599  — laptop / MacBook Air 13"
      1600–1919 — large laptop / external monitor
      1920–2559 — 27"+ desktop
      2560+     — 32"+ / 4K
 
-   NOTE: these CSS rules are only the instant, pre-JS approximation.
-   GLOBAL_ZOOM in assets/js/custom.js sets an inline style that overrides
-   them once the script runs — keep the two values in sync.
+   >>> KEEP IN SYNC WITH assets/js/custom.js <<<
+   These CSS rules are only the instant, pre-JS approximation. The
+   "Screen-resolution-based zoom" block at the top of assets/js/custom.js
+   duplicates these same numbers (GLOBAL_ZOOM + the ZOOM_* constants) and
+   sets an inline style that overrides them once the script runs. If you
+   change a value here, change its twin there — a mismatch makes the page
+   visibly jump from the CSS value to the JS value on load.
    ========================================================================== */
-$global-zoom : 0.75;
+$global-zoom : 0.825;
 
+// Every bracket is a RELATIVE multiplier applied on top of $global-zoom —
+// no exceptions, mobile included. 1.0 means "exactly $global-zoom".
+$zoom-mobile  : 1.0; // < 768
 $zoom-laptop  : 1.0; // 768–1599
 $zoom-desktop : 1.0; // 1600–1919
 $zoom-large   : 1.0; // 1920–2559
@@ -168,7 +175,13 @@ h4, h5, h6 { letter-spacing: -0.01em; }
   }
 }
 
-/* Global scale — driven by $global-zoom at the top of this file. */
+/* Global scale — driven by $global-zoom at the top of this file.
+   Mobile-first cascade: the bare rule below covers every width under the
+   first breakpoint, and each min-width block overrides it upward. Written
+   as a base rule rather than `max-width: 767px` so there is no uncovered
+   gap at fractional viewport widths (e.g. 767.5px under browser zoom). */
+html { zoom: $global-zoom * $zoom-mobile; }
+
 @media (min-width: 768px) {
   html { zoom: $global-zoom * $zoom-laptop; }
 }
