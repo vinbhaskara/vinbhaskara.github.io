@@ -48,15 +48,76 @@ h4, h5, h6 { letter-spacing: -0.01em; }
 }
 
 /* ==========================================================================
+   MASTHEAD DENSITY
+   The masthead has no explicit height — it is the sum of the inner-wrap's
+   vertical padding, the nav links' vertical padding, and their line box.
+   The sub-masthead below sticks at that exact height, so all four values
+   are derived from the knobs here rather than hand-tuned separately.
+
+   Overrides `.masthead__inner-wrap` in _sass/_masthead.scss and
+   `.greedy-nav a` in _sass/_navigation.scss — this file is imported last,
+   so these win. Scoped to `.visible-links` so the collapsed overflow menu
+   keeps its roomier tap targets.
+
+   All three resolve against the same 17.5px root font size (body sets no
+   font-size), so em and rem are interchangeable here and the height is
+   just the sum below.
+   ========================================================================== */
+// The text is what gets centred, not text+underline. $masthead-link-pad-y is
+// even on both sides of the text, so keeping top and bottom equal here puts
+// the text dead centre in the masthead — that equality is the whole trick,
+// so change both together or centring breaks.
+//
+// The hover/active underline is an ::before pinned to the link's bottom edge,
+// which leaves it sitting below the optical centre. That is deliberate: it
+// has enough clearance below not to read as cramped, and a centred label at
+// rest matters more than a perfectly centred label+underline on hover.
+$masthead-pad-top          : 0.40rem; // was 0.4em
+$masthead-pad-bottom       : 0.40rem; // keep equal to $masthead-pad-top
+$masthead-link-pad-y       : 0.25rem; // was 0.5rem; also the text-to-underline gap
+$masthead-link-line-height : 1.35;    // was 1.5 (inherited from body)
+
+// 0.40rem + 0.40rem + 0.50rem + 1.35rem = 2.65rem (~46px), down from 3.3rem (~57.8px)
+$masthead-height : $masthead-pad-top
+                 + $masthead-pad-bottom
+                 + ($masthead-link-pad-y * 2)
+                 + ($masthead-link-line-height * 1rem);
+
+// The sub-masthead sits this far *above* the masthead's full height, so its
+// top edge tucks behind the masthead (z-index 99 vs 100) instead of leaving
+// a hairline seam. Same 0.1rem overlap the old 3.2rem/3.3rem pair had.
+$masthead-tuck : 0.1rem;
+
+.masthead__inner-wrap {
+  padding-top: $masthead-pad-top;
+  padding-bottom: $masthead-pad-bottom;
+}
+
+.masthead .greedy-nav .visible-links a {
+  padding-top: $masthead-link-pad-y;
+  padding-bottom: $masthead-link-pad-y;
+  line-height: $masthead-link-line-height;
+}
+
+/* ==========================================================================
    SUB-MASTHEAD (home page only)
    Thin section-nav that sticks directly below the main masthead.
    ========================================================================== */
+
+// Visible breathing room above and below the strip's text. Once scrolled,
+// the strip's top $masthead-tuck is hidden behind the masthead (that overlap
+// is what keeps the two seamless), so the top padding has to carry the tuck
+// on top of this value or the text ends up ~1.8px nearer the masthead's
+// bottom edge than it looks in the source. Bottom padding needs no such
+// correction, hence the asymmetry below.
+$sub-masthead-pad-y : 0.25rem;
+
 .sub-masthead {
   position: sticky;
-  top: 3.2rem;
+  top: $masthead-height - $masthead-tuck;
   z-index: 99;
   overflow: hidden;
-  padding: 0.22em 1em;
+  padding: ($sub-masthead-pad-y + $masthead-tuck) 1em $sub-masthead-pad-y;
   border-bottom: 1px solid rgba(0, 100, 170, 0.12);
   // Near-transparent glass with a 3D "pillow" bulge:
   //   horizontal: brighter at center, fading to clearer at the ends
@@ -146,7 +207,7 @@ h4, h5, h6 { letter-spacing: -0.01em; }
   }
 
   @media (max-width: 768px) {
-    padding: 0.22em 0.5em;
+    padding: ($sub-masthead-pad-y + $masthead-tuck) 0.5em $sub-masthead-pad-y;
     font-size: 0.66em;
 
     ul { gap: 1em; }
