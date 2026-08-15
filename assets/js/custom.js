@@ -29,7 +29,7 @@
 
     // Every bracket is a relative multiplier applied on top of GLOBAL_ZOOM —
     // no exceptions, mobile included. 1.0 means "exactly GLOBAL_ZOOM".
-    var ZOOM_MOBILE  = 1.0;  // < 768
+    var ZOOM_MOBILE  = 0.6;  // < 768
     var ZOOM_LAPTOP  = 1.0;  // 768–1599
     var ZOOM_DESKTOP = 1.0;  // 1600–1919
     var ZOOM_LARGE   = 1.0;  // 1920–2559
