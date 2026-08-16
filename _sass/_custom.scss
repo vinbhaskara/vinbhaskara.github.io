@@ -1,67 +1,90 @@
 /* ==========================================================================
    RESPONSIVE GLOBAL SCALE
-   Uses CSS zoom to uniformly scale fonts, images, layout, and spacing.
 
-   >>> $global-zoom below is THE top-level knob for the whole site. <<<
-   1.0 = browser default. 0.825 renders like browser zoom at 82.5%.
-   Change that one number to rescale everything; the per-bracket factors
-   are relative multipliers on top of it.
+   TWO KNOBS, in two different files, because phones and desktops need two
+   different mechanisms:
 
-   Calibrated per screen width:
-     < 768px   — mobile
+     $global-zoom        — desktop/laptop (>= 768px), below in this file. CSS
+                           `zoom`, which scales fonts, images, layout and
+                           spacing uniformly. 1.0 = browser default; 0.825
+                           renders like browser zoom at 82.5%.
+     $PHONE_LAYOUT_WIDTH — phones, in the viewport <script> in
+                           _includes/head.html. A declared layout width that
+                           the OS then scales to fit the screen.
+
+   >>> Why phones do not use `zoom` <<<
+   `zoom` is not interoperable below 1.0. On iOS (Safari, and Chrome/Brave/
+   Firefox on iOS too — they are all WebKit), a root `zoom` under 1 shrinks
+   the *boxes* but WebKit then cancels the zoom back out of every font size,
+   so text renders at its full unscaled size inside half-size boxes. Measured
+   on an iPhone-class simulator at zoom 0.495: body text computed to 35.35px
+   instead of 17.5px (exactly 17.5 / 0.495) and the masthead grew from its
+   designed 47px to 73px. `-webkit-text-size-adjust: none` does not turn this
+   off. Chromium and Gecko scale text along with everything else, which is why
+   a device preview in Polypane/DevTools looked nothing like a real iPhone.
+
+   At zoom 1 every engine agrees exactly — fonts land on their specified sizes
+   and the masthead measures its designed height — so phones stay at zoom 1 and
+   get their scaling from the viewport meta tag instead.
+
+   A root font-size is NOT a substitute for either: it moves only the lengths
+   written in em/rem, and this theme's layout CSS is roughly two-thirds px
+   (111 px vs 74 em/rem in this file alone), so shrinking the root font shrinks
+   the type while card padding, avatars, thumbnails and gutters stay put.
+
+   Brackets (viewport width, matching the CSS media queries below):
+     < 768px   — phone
      768–1599  — laptop / MacBook Air 13"
      1600–1919 — large laptop / external monitor
      1920–2559 — 27"+ desktop
      2560+     — 32"+ / 4K
 
-   >>> KEEP IN SYNC WITH assets/js/custom.js <<<
-   These CSS rules are only the instant, pre-JS approximation. The
-   "Screen-resolution-based zoom" block at the top of assets/js/custom.js
-   duplicates these same numbers (GLOBAL_ZOOM + the ZOOM_* constants) and
-   sets an inline style that overrides them once the script runs. If you
-   change a value here, change its twin there — a mismatch makes the page
-   visibly jump from the CSS value to the JS value on load.
+   Viewport width — not screen resolution — is what selects the bracket, so a
+   device preview at 393px wide renders exactly what a 393px phone renders.
    ========================================================================== */
 $global-zoom : 0.825;
 
-// Every bracket is a RELATIVE multiplier applied on top of $global-zoom —
-// no exceptions, mobile included. 1.0 means "exactly $global-zoom".
-$zoom-mobile  : 0.6; // < 768
+// Every bracket is a RELATIVE multiplier applied on top of $global-zoom.
+// 1.0 means "exactly $global-zoom". Phones are deliberately absent: see above.
 $zoom-laptop  : 1.0; // 768–1599
 $zoom-desktop : 1.0; // 1600–1919
 $zoom-large   : 1.0; // 1920–2559
 $zoom-xlarge  : 1.0; // 2560+
 
+$root-font-size    : 17.5px;
+
 html {
-  font-size: 17.5px;
+  // One size at every width. Phones do not need their own value: the viewport
+  // meta in _includes/head.html scales the finished page down as a whole, so
+  // the type is specified at full size and arrives on screen shrunk along with
+  // everything around it.
+  font-size: $root-font-size;
   font-optical-sizing: auto;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-  scroll-padding-top: 11rem;
+
+  // Distance every anchor-link landing keeps from the top of the viewport, so
+  // the target never ends up hidden behind the sticky header. --header-h is
+  // measured and published by assets/js/custom.js; the fallback covers the
+  // moment before that script runs.
+  scroll-padding-top: calc(var(--header-h, 4.5rem) + 0.75rem);
 }
 
 h1, h2, h3 { letter-spacing: -0.025em; }
 h4, h5, h6 { letter-spacing: -0.01em; }
 
-:target,
-[id]:is(h1, h2, h3, h4, h5, h6, div, section, article) {
-  scroll-margin-top: 140px;
-}
-
 /* ==========================================================================
    MASTHEAD DENSITY
    The masthead has no explicit height — it is the sum of the inner-wrap's
    vertical padding, the nav links' vertical padding, and their line box.
-   The sub-masthead below sticks at that exact height, so all four values
-   are derived from the knobs here rather than hand-tuned separately.
+   Nothing else needs to know that total: the sub-masthead simply follows in
+   normal flow inside `.site-header`, and JS measures the finished header for
+   scroll offsets. So these are free to change without a matching edit
+   elsewhere.
 
    Overrides `.masthead__inner-wrap` in _sass/_masthead.scss and
    `.greedy-nav a` in _sass/_navigation.scss — this file is imported last,
    so these win. Scoped to `.visible-links` so the collapsed overflow menu
    keeps its roomier tap targets.
-
-   All three resolve against the same 17.5px root font size (body sets no
-   font-size), so em and rem are interchangeable here and the height is
-   just the sum below.
    ========================================================================== */
 // The text is what gets centred, not text+underline. $masthead-link-pad-y is
 // even on both sides of the text, so keeping top and bottom equal here puts
@@ -77,17 +100,6 @@ $masthead-pad-bottom       : 0.40rem; // keep equal to $masthead-pad-top
 $masthead-link-pad-y       : 0.25rem; // was 0.5rem; also the text-to-underline gap
 $masthead-link-line-height : 1.35;    // was 1.5 (inherited from body)
 
-// 0.40rem + 0.40rem + 0.50rem + 1.35rem = 2.65rem (~46px), down from 3.3rem (~57.8px)
-$masthead-height : $masthead-pad-top
-                 + $masthead-pad-bottom
-                 + ($masthead-link-pad-y * 2)
-                 + ($masthead-link-line-height * 1rem);
-
-// The sub-masthead sits this far *above* the masthead's full height, so its
-// top edge tucks behind the masthead (z-index 99 vs 100) instead of leaving
-// a hairline seam. Same 0.1rem overlap the old 3.2rem/3.3rem pair had.
-$masthead-tuck : 0.1rem;
-
 .masthead__inner-wrap {
   padding-top: $masthead-pad-top;
   padding-bottom: $masthead-pad-bottom;
@@ -99,25 +111,63 @@ $masthead-tuck : 0.1rem;
   line-height: $masthead-link-line-height;
 }
 
+// Keep the last visible link out from under the overflow (hamburger) button.
+//
+// _masthead.scss centres the link row (`.greedy-nav { justify-content: center }`)
+// while jquery.greedy-navigation.js pins the button to the row's right edge and
+// decides what fits with `navWidth - buttonWidth`. That subtraction only works
+// for a LEFT-aligned row: centring hands half the reserved space back to the
+// left, so a row that "fits" by that measure can still run under the button —
+// which is what puts the button on top of the last link at some widths.
+//
+// Reserving the button's width on both sides restores the assumption: the
+// centred row is measured against a region that is symmetric about the centre
+// and already excludes the button. Scoped with :has() so the reservation only
+// applies while the button is actually on screen, leaving wide viewports (where
+// every link fits and the button is hidden) with the full width to play with.
+$nav-overflow-btn-width: calc(#{$navicon-width} + 1rem); // navicon + its 0.5rem side padding
+
+.masthead .greedy-nav:has(> button:not(.hidden)) {
+  padding-left: $nav-overflow-btn-width;
+  padding-right: $nav-overflow-btn-width;
+}
+
+/* ==========================================================================
+   STICKY HEADER STACK
+   The masthead and the sub-masthead pin to the top of the viewport together.
+
+   One sticky wrapper holds both, rather than each element sticking on its
+   own. The earlier arrangement had the strip stick at `top: <masthead
+   height>`, which meant a hard-coded height had to stay equal to the
+   masthead's real rendered height — and it did not, the moment anything
+   changed the masthead's line box (a different root font size, a web font
+   loading late, a browser scaling text on its own). Whenever the real
+   masthead was taller than that constant, the strip pinned too high and slid
+   underneath it on scroll. In normal flow inside a wrapper the strip cannot
+   land anywhere but directly below the masthead, at any height, in any
+   engine, and there is no constant to keep in sync.
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 /* ==========================================================================
    SUB-MASTHEAD (home page only)
-   Thin section-nav that sticks directly below the main masthead.
+   Thin section-nav directly below the main masthead.
    ========================================================================== */
 
-// Visible breathing room above and below the strip's text. Once scrolled,
-// the strip's top $masthead-tuck is hidden behind the masthead (that overlap
-// is what keeps the two seamless), so the top padding has to carry the tuck
-// on top of this value or the text ends up ~1.8px nearer the masthead's
-// bottom edge than it looks in the source. Bottom padding needs no such
-// correction, hence the asymmetry below.
+// Visible breathing room above and below the strip's text.
 $sub-masthead-pad-y : 0.25rem;
 
 .sub-masthead {
-  position: sticky;
-  top: $masthead-height - $masthead-tuck;
+  // Positioned (not sticky — see .site-header above) so the ::before/::after
+  // glass layers anchor to it; z-index keeps it under the masthead's edge.
+  position: relative;
   z-index: 99;
   overflow: hidden;
-  padding: ($sub-masthead-pad-y + $masthead-tuck) 1em $sub-masthead-pad-y;
+  padding: $sub-masthead-pad-y 1em;
   border-bottom: 1px solid rgba(0, 100, 170, 0.12);
   // Near-transparent glass with a 3D "pillow" bulge:
   //   horizontal: brighter at center, fading to clearer at the ends
@@ -207,7 +257,7 @@ $sub-masthead-pad-y : 0.25rem;
   }
 
   @media (max-width: 768px) {
-    padding: ($sub-masthead-pad-y + $masthead-tuck) 0.5em $sub-masthead-pad-y;
+    padding: $sub-masthead-pad-y 0.5em;
     font-size: 0.66em;
 
     ul { gap: 1em; }
@@ -240,20 +290,31 @@ $sub-masthead-pad-y : 0.25rem;
    Mobile-first cascade: the bare rule below covers every width under the
    first breakpoint, and each min-width block overrides it upward. Written
    as a base rule rather than `max-width: 767px` so there is no uncovered
-   gap at fractional viewport widths (e.g. 767.5px under browser zoom). */
-html { zoom: $global-zoom * $zoom-mobile; }
+   gap at fractional viewport widths (e.g. 767.5px under browser zoom).
+
+   Phones stay at zoom 1 — the only value every engine renders identically.
+   The viewport meta in _includes/head.html is their size knob instead. See
+   the long note at the top of this file.
+
+   `:not(.phone)` keeps `zoom` off phones in every orientation. The class is
+   set by the viewport script in _includes/head.html from the device's own
+   dimensions, so it holds in landscape too — where the viewport is wide
+   enough to reach these brackets on its own, and would otherwise pick up a
+   zoom that WebKit renders incorrectly. It doubles as the guard against the
+   two scaling mechanisms stacking if the layout width is raised past 768. */
+html { zoom: 1; }
 
 @media (min-width: 768px) {
-  html { zoom: $global-zoom * $zoom-laptop; }
+  html:not(.phone) { zoom: $global-zoom * $zoom-laptop; }
 }
 @media (min-width: 1600px) {
-  html { zoom: $global-zoom * $zoom-desktop; }
+  html:not(.phone) { zoom: $global-zoom * $zoom-desktop; }
 }
 @media (min-width: 1920px) {
-  html { zoom: $global-zoom * $zoom-large; }
+  html:not(.phone) { zoom: $global-zoom * $zoom-large; }
 }
 @media (min-width: 2560px) {
-  html { zoom: $global-zoom * $zoom-xlarge; }
+  html:not(.phone) { zoom: $global-zoom * $zoom-xlarge; }
 }
 
 /* Widen the content column on large screens to use more of the viewport.

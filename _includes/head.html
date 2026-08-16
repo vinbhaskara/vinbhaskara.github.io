@@ -12,6 +12,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
+  /* ======================================================================
+     PHONE SCALE — >>> $PHONE_LAYOUT_WIDTH below is THE phone-size knob. <<<
+
+     Declaring a layout width hands the scaling to the OS: the phone lays the
+     page out at this many CSS pixels and scales the whole rendered result to
+     fit the screen — text, boxes, padding, images, borders, gutters, all by
+     the same factor. That uniformity is the point. A root font-size only
+     moves lengths written in em/rem (this theme's layout CSS is roughly
+     two-thirds px, so text shrank while the boxes did not), and CSS `zoom`
+     is not an option because WebKit cancels it back out of every font size.
+     See the long note in _sass/_custom.scss.
+
+     Bigger number = smaller page. The resulting scale is deviceWidth / this:
+       767 -> 0.51 on a 393pt iPhone (15/16 Pro), 0.52 on a 402pt (17 Pro)
+       600 -> 0.66                    | 500 -> 0.79 | 393 -> 1.0 (no shrink)
+
+     Keep it under 768 unless you mean to: at 768+ the page also crosses into
+     the desktop CSS bracket. The `phone` class this sets keeps the desktop
+     `zoom` off there (see _sass/_custom.scss) so the two mechanisms can never
+     stack, but the rest of the >=768 styles would apply.
+
+     screen.* rather than innerWidth: this only ever has an effect on real
+     mobile browsers (desktop browsers ignore the viewport meta entirely), and
+     it must keep reading the true device size after the meta has changed what
+     innerWidth reports.
+     ====================================================================== */
+  (function () {
+    var PHONE_LAYOUT_WIDTH = 767;
+
+    var vp = document.querySelector('meta[name=viewport]');
+    var de = document.documentElement;
+    if (!vp || !window.screen) return;
+
+    function apply() {
+      var w = screen.width, h = screen.height;
+      var phone = Math.min(w, h) < 768;
+
+      // The class tracks the DEVICE, not the orientation. CSS `zoom` is
+      // unusable on any WebKit phone, and a phone in landscape is wide enough
+      // to reach the >=768 desktop bracket on its own — so without this it
+      // would pick up `zoom: 0.825` there and render text at full size inside
+      // 0.825-scale boxes, the same defect the portrait path exists to avoid.
+      de.classList.toggle('phone', phone);
+
+      // The layout width, by contrast, is portrait-only: in landscape the
+      // screen is already wider than PHONE_LAYOUT_WIDTH, and forcing it would
+      // magnify the page rather than shrink it.
+      vp.setAttribute('content',
+        phone && w <= h ? 'width=' + PHONE_LAYOUT_WIDTH
+                        : 'width=device-width, initial-scale=1.0');
+    }
+
+    apply();
+    window.addEventListener('orientationchange', apply);
+  }());
+</script>
+
+<script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
   // Suppress intro animations when navigating within the site (not a fresh external load)
   try {

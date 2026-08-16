@@ -14,17 +14,27 @@ layout: compress
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
 
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
-    {% if page.url == '/' %}
-      <nav class="sub-masthead" aria-label="Section navigation">
-        <ul>
-          <li><a href="#bio">Bio</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#patents">Patents</a></li>
-        </ul>
-      </nav>
-    {% endif %}
+    {% comment %}
+      The masthead and the sub-masthead stick to the top of the viewport as a
+      single unit. They are wrapped in one sticky container rather than each
+      being sticky on its own, so the strip's resting position is "immediately
+      after the masthead in normal flow" instead of a hard-coded `top` offset
+      that has to be kept equal to the masthead's real height. See
+      `.site-header` in _sass/_custom.scss.
+    {% endcomment %}
+    <div class="site-header">
+      {% include masthead.html %}
+      {% if page.url == '/' %}
+        <nav class="sub-masthead" aria-label="Section navigation">
+          <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#patents">Patents</a></li>
+          </ul>
+        </nav>
+      {% endif %}
+    </div>
 
     {{ content }}
 

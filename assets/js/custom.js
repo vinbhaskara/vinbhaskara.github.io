@@ -7,75 +7,63 @@
   'use strict';
 
   /* -------------------------------------------------------------------------
-     Screen-resolution-based zoom
-     CSS media queries use viewport width, which shrinks when the user manually
-     browser-zooms, causing the wrong breakpoint to fire. window.screen.width
-     always reflects the actual physical screen resolution regardless of browser
-     zoom, giving a stable, user-zoom-independent baseline.
-     CSS zoom rules above serve as an instant visual approximation; this
-     overrides them with the correct value once the script runs.
+     Sticky header height -> --header-h
+
+     Anything that has to clear the sticky header (currently `scroll-padding-top`
+     on <html>, which offsets every anchor-link landing) reads this variable, so
+     no stylesheet has to hard-code a height that changes with the viewport, the
+     root font size, whether the sub-masthead is on the page, or a web font
+     landing after first paint.
+
+     Measured with offsetHeight, which is the one box metric that means the same
+     thing in every engine when CSS zoom is in play: it reports layout pixels,
+     with zoom not applied, in both Chromium and WebKit. getBoundingClientRect()
+     does NOT — Chromium scales it by zoom and WebKit does not — so it is never
+     used for layout math here.
   -------------------------------------------------------------------------  */
-  (function () {
-    // >>> KEEP IN SYNC WITH _sass/_custom.scss <<<
-    // Every constant below is the twin of a variable in the "RESPONSIVE
-    // GLOBAL SCALE" block at the top of _sass/_custom.scss:
-    //   GLOBAL_ZOOM  <->  $global-zoom
-    //   ZOOM_MOBILE  <->  $zoom-mobile   (and so on for the rest)
-    // If you change a value here, change its twin there — a mismatch makes
-    // the page visibly jump from the CSS value to the JS value on load.
-    //
-    // 1.0 = browser default; 0.825 renders like browser zoom at 82.5%.
-    var GLOBAL_ZOOM = 0.825;
+  var header = document.querySelector('.site-header');
 
-    // Every bracket is a relative multiplier applied on top of GLOBAL_ZOOM —
-    // no exceptions, mobile included. 1.0 means "exactly GLOBAL_ZOOM".
-    var ZOOM_MOBILE  = 0.6;  // < 768
-    var ZOOM_LAPTOP  = 1.0;  // 768–1599
-    var ZOOM_DESKTOP = 1.0;  // 1600–1919
-    var ZOOM_LARGE   = 1.0;  // 1920–2559
-    var ZOOM_XLARGE  = 1.0;  // 2560+
+  function publishHeaderHeight() {
+    if (!header) return;
+    document.documentElement.style.setProperty('--header-h', header.offsetHeight + 'px');
+  }
 
-    var sw = window.screen.width;
-    var factor = sw < 768  ? ZOOM_MOBILE   // mobile
-               : sw < 1600 ? ZOOM_LAPTOP   // laptop / MacBook Air
-               : sw < 1920 ? ZOOM_DESKTOP  // large laptop / external monitor
-               : sw < 2560 ? ZOOM_LARGE    // 27"+ desktop
-               :             ZOOM_XLARGE;  // 32"+ / 4K
+  publishHeaderHeight();
+  $(window).on('resize.header orientationchange.header', publishHeaderHeight);
 
-    document.documentElement.style.zoom = String(GLOBAL_ZOOM * factor);
-  }());
+  /* Web fonts land after first paint and change the nav's metrics, so re-measure
+     once they do. The resize event is for greedy nav (jquery.greedy-navigation.js),
+     which sizes the visible link list once at parse time and afterwards only on
+     resize: Inter is wider than the fallback it measured against, so without a
+     nudge the last link it kept ends up underneath the overflow button. */
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () {
+      publishHeaderHeight();
+      $(window).trigger('resize');
+    }).catch(function () {});
+  }
 
   /* -------------------------------------------------------------------------
      Reading Progress Bar
+
+     documentElement's scrollHeight/clientHeight and window.pageYOffset are all
+     reported in the same (visual) pixel space in both Chromium and WebKit, with
+     or without CSS zoom, so this needs no zoom correction. jQuery's
+     $(document).height() does not share that space — it maxes in body metrics,
+     which are layout pixels — which is what the previous zoom fudge here was
+     compensating for.
   -------------------------------------------------------------------------  */
   var $bar = $('<div id="reading-progress"></div>');
   $('body').prepend($bar);
 
-  // function updateProgress() {
-  //   var scrollTop = $(window).scrollTop();
-  //   var docH = $(document).height() - $(window).height();
-  //   var pct = docH > 0 ? (scrollTop / docH) * 100 : 0;
-  //   $bar.css('width', Math.min(pct, 100) + '%');
-  // }
   function updateProgress() {
-    var zoomValue = window.getComputedStyle(document.documentElement).getPropertyValue('zoom');
-    var zoomFactor = (zoomValue && !isNaN(parseFloat(zoomValue))) ? parseFloat(zoomValue) : 1;
-
-    // zoom < 1: scrollTop is in the compressed zoomed coordinate space while
-    //           scrollHeight is unscaled → multiply docHeight by zoom to match.
-    // zoom >= 1: both scrollTop and scrollHeight are in the same coordinate space
-    //            → standard formula, no correction needed.
-    var scrollTop = Math.ceil($(window).scrollTop());
-    var docH = zoomFactor < 1
-      ? ($(document).height() * zoomFactor) - $(window).height()
-      : $(document).height() - $(window).height();
-
-    var pct = docH > 0 ? (scrollTop / docH) * 100 : 0;
-    $bar.css('width', Math.min(pct, 100) + '%');
+    var de = document.documentElement;
+    var scrollable = de.scrollHeight - de.clientHeight;
+    var pct = scrollable > 0 ? (window.pageYOffset / scrollable) * 100 : 0;
+    $bar.css('width', Math.max(0, Math.min(pct, 100)) + '%');
   }
 
-
-  $(window).on('scroll.progress', updateProgress);
+  $(window).on('scroll.progress resize.progress', updateProgress);
   updateProgress();
 
   /* -------------------------------------------------------------------------
@@ -206,9 +194,20 @@
   });
 
   /* -------------------------------------------------------------------------
-     In-page anchor scrolling that clears the sticky masthead(s).
+     In-page anchor scrolling that clears the sticky header.
      Delegated handler in capture phase pre-empts jQuery smoothScroll's
      per-element binding (which was initialized with offset: -20 in _main.js).
+
+     The clearance itself is `scroll-padding-top` on <html> (see
+     _sass/_custom.scss), applied by the browser's own scrolling machinery —
+     this handler does no coordinate arithmetic at all. That is deliberate: the
+     obvious formula, `target.getBoundingClientRect().top + window.pageYOffset`,
+     is wrong under CSS zoom in WebKit, because getBoundingClientRect() returns
+     layout pixels there while pageYOffset and scrollTo() are in visual pixels.
+     Measured on the home page at zoom 0.825, that mismatch sent an #education
+     click ~21% too far down the page, and it got worse the further the target
+     sat from the top — matching the Safari-only overshoot this replaces.
+     Chromium scales rects by zoom, which is why the same code behaved there.
   -------------------------------------------------------------------------  */
   document.addEventListener('click', function (e) {
     if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
@@ -234,14 +233,8 @@
     e.preventDefault();
     e.stopPropagation();
 
-    var masthead = document.querySelector('.masthead');
-    var subMasthead = document.querySelector('.sub-masthead');
-    var offset = (masthead ? masthead.offsetHeight : 0)
-               + (subMasthead ? subMasthead.offsetHeight : 0)
-               + 16; // breathing room
-
-    var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-    window.scrollTo({ top: top, behavior: 'smooth' });
+    publishHeaderHeight(); // in case a resize/font load beat the listeners
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     history.pushState(null, '', hash);
   }, true);
 

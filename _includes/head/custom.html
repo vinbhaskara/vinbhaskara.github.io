@@ -2,14 +2,11 @@
 
 <!-- start custom head snippets -->
 
-<link rel="apple-touch-icon" sizes="57x57" href="{{ base_path }}/images/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="{{ base_path }}/images/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="{{ base_path }}/images/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="{{ base_path }}/images/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="{{ base_path }}/images/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="{{ base_path }}/images/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="{{ base_path }}/images/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="{{ base_path }}/images/apple-touch-icon-152x152.png">
+<!-- Only the 180x180 icon is shipped in images/. The eight smaller sizes this
+     template also used to link (57/60/72/76/114/120/144/152) were never added
+     to the repo, so every page load fired eight 404s. They are for iOS 6 and
+     earlier; iOS 7+ scales this one down, so the links are simply dropped
+     rather than the files backfilled. -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="{{ base_path }}/images/android-chrome-192x192.png" sizes="192x192">
