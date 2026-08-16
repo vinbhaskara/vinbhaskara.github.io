@@ -25,13 +25,17 @@
      See the long note in _sass/_custom.scss.
 
      Bigger number = smaller page. The resulting scale is deviceWidth / this:
-       767 -> 0.51 on a 393pt iPhone (15/16 Pro), 0.52 on a 402pt (17 Pro)
-       600 -> 0.66                    | 500 -> 0.79 | 393 -> 1.0 (no shrink)
+       794 -> 0.495 on a 393pt iPhone (15/16 Pro), i.e. the factor the old
+              `$zoom-mobile: 0.6` x `$global-zoom: 0.825` was aiming for
+       767 -> 0.51  | 600 -> 0.66 | 500 -> 0.79 | 393 -> 1.0 (no shrink)
 
-     Keep it under 768 unless you mean to: at 768+ the page also crosses into
-     the desktop CSS bracket. The `phone` class this sets keeps the desktop
-     `zoom` off there (see _sass/_custom.scss) so the two mechanisms can never
-     stack, but the rest of the >=768 styles would apply.
+     794 is deliberately past 768, so phones render the DESKTOP layout shrunk
+     rather than the mobile one: the bio logos sit in their side column instead
+     of stacking, the section strip takes its wider desktop spacing, and blog
+     archives lay out as a grid. Drop below 768 to get the mobile layout back.
+     Crossing that line cannot double-shrink the page — the `phone` class this
+     sets keeps the desktop `zoom` off (see _sass/_custom.scss) — but it does
+     decide which layout you get.
 
      screen.* rather than innerWidth: this only ever has an effect on real
      mobile browsers (desktop browsers ignore the viewport meta entirely), and
@@ -39,7 +43,7 @@
      innerWidth reports.
      ====================================================================== */
   (function () {
-    var PHONE_LAYOUT_WIDTH = 767;
+    var PHONE_LAYOUT_WIDTH = 794;
 
     var vp = document.querySelector('meta[name=viewport]');
     var de = document.documentElement;
@@ -47,7 +51,11 @@
 
     function apply() {
       var w = screen.width, h = screen.height;
-      var phone = Math.min(w, h) < 768;
+      // Any device narrower than the design width, not just phones: a screen
+      // that cannot show 794px at 1:1 gets the page scaled to fit instead of a
+      // reflowed layout. A device sitting exactly at 794 scales by 1.0, so the
+      // boundary costs nothing.
+      var phone = Math.min(w, h) <= PHONE_LAYOUT_WIDTH;
 
       // The class tracks the DEVICE, not the orientation. CSS `zoom` is
       // unusable on any WebKit phone, and a phone in landscape is wide enough
