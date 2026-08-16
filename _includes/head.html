@@ -1,5 +1,22 @@
 {% include base_path %}
 
+{% comment %}
+  >>> INLINE SCRIPTS IN THIS FILE MUST USE /* */ COMMENTS, NEVER // <<<
+
+  `_layouts/compress.html` collapses the whole page onto one line, and
+  `compress_html.ignore.envs: development` in _config.yml means it only does so
+  when JEKYLL_ENV is NOT development. `jekyll serve` sets development; GitHub
+  Pages builds as production. So a `//` comment costs nothing locally and, once
+  deployed, comments out every statement after it for the rest of the script —
+  which is one line by then, i.e. all of it. The script dies with a syntax
+  error and the browser falls back to whatever the un-run code was meant to set.
+
+  That is not hypothetical: it silently disabled the phone viewport scaling and
+  the `no-intro` class on the live site while both worked perfectly under
+  `bundle exec jekyll serve`. External files (assets/js/custom.js) are not
+  compressed and may use // freely.
+{% endcomment %}
+
 <meta charset="utf-8">
 
 {% include seo.html %}
@@ -51,22 +68,22 @@
 
     function apply() {
       var w = screen.width, h = screen.height;
-      // Any device narrower than the design width, not just phones: a screen
-      // that cannot show 794px at 1:1 gets the page scaled to fit instead of a
-      // reflowed layout. A device sitting exactly at 794 scales by 1.0, so the
-      // boundary costs nothing.
+      /* Any device narrower than the design width, not just phones: a screen
+         that cannot show 794px at 1:1 gets the page scaled to fit instead of a
+         reflowed layout. A device sitting exactly at 794 scales by 1.0, so the
+         boundary costs nothing. */
       var phone = Math.min(w, h) <= PHONE_LAYOUT_WIDTH;
 
-      // The class tracks the DEVICE, not the orientation. CSS `zoom` is
-      // unusable on any WebKit phone, and a phone in landscape is wide enough
-      // to reach the >=768 desktop bracket on its own — so without this it
-      // would pick up `zoom: 0.825` there and render text at full size inside
-      // 0.825-scale boxes, the same defect the portrait path exists to avoid.
+      /* The class tracks the DEVICE, not the orientation. CSS `zoom` is
+         unusable on any WebKit phone, and a phone in landscape is wide enough
+         to reach the >=768 desktop bracket on its own — so without this it
+         would pick up `zoom: 0.825` there and render text at full size inside
+         0.825-scale boxes, the same defect the portrait path exists to avoid. */
       de.classList.toggle('phone', phone);
 
-      // The layout width, by contrast, is portrait-only: in landscape the
-      // screen is already wider than PHONE_LAYOUT_WIDTH, and forcing it would
-      // magnify the page rather than shrink it.
+      /* The layout width, by contrast, is portrait-only: in landscape the
+         screen is already wider than PHONE_LAYOUT_WIDTH, and forcing it would
+         magnify the page rather than shrink it. */
       vp.setAttribute('content',
         phone && w <= h ? 'width=' + PHONE_LAYOUT_WIDTH
                         : 'width=device-width, initial-scale=1.0');
@@ -79,7 +96,7 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-  // Suppress intro animations when navigating within the site (not a fresh external load)
+  /* Suppress intro animations when navigating within the site (not a fresh external load) */
   try {
     if (new URL(document.referrer).host === location.host) {
       document.documentElement.classList.add('no-intro');
