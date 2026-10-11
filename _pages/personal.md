@@ -19,6 +19,7 @@ author_profile: true
 
 Since the COVID-19 pandemic, I've been into long-distance running! It's had the greatest influence on my mental health and social life. My first race was the 2020 Lululemon Half-marathon in Toronto which I completed in 2:00:33 hrs. Here are all the races in reverse chronological order I've run since! :-)  
 
+2026 - [Granby Marathon 42.2k](https://coursesthematiques.com/en/events/sun-life-granby-marathon/) (3:59:10 - Sub-4hr *VIN BACK BABY!!!*  🥳)     
 2026 - [Trail du Parc 10k Trail Run](https://nomadesduparc.com/en/pages/trail-du-parc-1) (My first Trail Race! 1:46:57)  
 2026 - [Niagara 50k Ultramarathon Run](https://www.niagaraultra.ca/) (Moving Time: 6:40:48)   
 2025 - [Montreal Beneva Marathon 42.2k](https://couronsmtl.com/en/marathon-beneva/home/) (5:23:24)  
@@ -33,7 +34,7 @@ Since the COVID-19 pandemic, I've been into long-distance running! It's had the 
 
 
 My best 42.2 km marathon finish time to date is 3:56:49 hrs.  
-I am planning to run my first (and likely the last!) 50 km ultra-marathon soon sometime in 2026! 
+~~I am planning to run my first (and likely the last!) 50 km ultra-marathon soon sometime in 2026!~~ 
 
 
 **Some inspiration.** When I lived in Toronto, I used to run through Mount Pleasant Cemetery, where [Frederick Banting](https://en.wikipedia.org/wiki/Frederick_Banting) is buried. Banting and Best discovered insulin at the University of Toronto in 1921 and sold the patent for one dollar. That decision is still keeping people alive every day, and it will keep doing that as long as there's medicine. [Real science is wilder than anything any crazy religious fanatic can ever dream up](https://youtu.be/z9Fz96Mr4bM?t=1868). It's one of the places I think about when I need to remember what makes a life worth living...
