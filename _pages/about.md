@@ -61,54 +61,34 @@ I graduated with a Master's from the Department of Computer Science at the Unive
 | Department Rank 1, [Institute Silver Medalist](https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf) | | |  
 -->
 
-<table>
-  <tbody>
-    <tr>
-      <td style="text-align: left">M.Sc. Applied Computing (Deep Learning)</td>
-      <td rowspan="4" style="text-align: center"><a href="https://www.utoronto.ca/"><img src="/images/uoft.png" width="70" height="70"></a>&nbsp;<a href="https://vectorinstitute.ai/"><img src="/images/vector.png" width="100" height="auto"></a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><a href="https://web.cs.toronto.edu/">Department of Computer Science</a>, <a href="https://www.utoronto.ca/" >University of Toronto</a></td>
-      <td>&nbsp;</td>
-      <td style="text-align: right">2018 - 2020</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Grade: A+ [4.0/4.0], <a href="https://vectorinstitute.ai/2018/12/13/vector-awards-inaugural-scholarships-second-round-of-applications-to-open-in-2019/">Vector Scholar in AI</a></td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Research Topic: Robust Single-Shot Object Detection for Computer Vision</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">B.Tech. Engineering Physics</td>
-      <td rowspan="4" style="text-align: center"><a href="https://www.iitg.ac.in/"><img src="/images/iitg.png" width="70" height="70"></a>&nbsp;<a href="https://uwaterloo.ca/institute-for-quantum-computing/"><img src="/images/iqc.png" width="100" height="auto"></a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Indian Institute of Technology Guwahati (<a href="https://www.iitg.ac.in/">IIT Guwahati</a>)</td>
-      <td>&nbsp;</td>
-      <td style="text-align: right">2012 - 2016</td>
-    </tr>
-    <tr>
-      <td style="text-align: left"><a href="https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf">Institute Silver Medalist</a>, <a href="https://uwaterloo.ca/institute-for-quantum-computing/sites/default/files/uploads/files/iqc0227_annualreport2016_eng_aoda.pdf">IQC Research Visitor</a></td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <!-- <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr> -->
-  </tbody>
-</table>
+<div class="edu-list">
+  <div class="edu-card">
+    <div class="edu-text">
+      <div>M.Sc. Applied Computing (Deep Learning)</div>
+      <div><a href="https://web.cs.toronto.edu/">Department of Computer Science</a>, <a href="https://www.utoronto.ca/">University of Toronto</a></div>
+      <div>Grade: A+ [4.0/4.0], <a href="https://vectorinstitute.ai/2018/12/13/vector-awards-inaugural-scholarships-second-round-of-applications-to-open-in-2019/">Vector Scholar in AI</a></div>
+      <div>Research Topic: Robust Single-Shot Object Detection for Computer Vision</div>
+    </div>
+    <div class="edu-logos">
+      <a href="https://www.utoronto.ca/"><img src="/images/uoft.png" alt="University of Toronto" width="154" height="200"></a>
+      <a href="https://vectorinstitute.ai/"><img class="edu-logo--wide" src="/images/vector.png" alt="Vector Institute" width="218" height="88"></a>
+    </div>
+    <div class="edu-date">2018 - 2020</div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-text">
+      <div>B.Tech. Engineering Physics</div>
+      <div>Indian Institute of Technology Guwahati (<a href="https://www.iitg.ac.in/">IIT Guwahati</a>)</div>
+      <div><a href="https://www.iitg.ac.in/report/docs/convocation/18th_Convo_Booklet.pdf">Institute Silver Medalist</a>, <a href="https://uwaterloo.ca/institute-for-quantum-computing/sites/default/files/uploads/files/iqc0227_annualreport2016_eng_aoda.pdf">IQC Research Visitor</a></div>
+    </div>
+    <div class="edu-logos">
+      <a href="https://www.iitg.ac.in/"><img src="/images/iitg.png" alt="IIT Guwahati" width="200" height="200"></a>
+      <a href="https://uwaterloo.ca/institute-for-quantum-computing/"><img class="edu-logo--wide" src="/images/iqc.png" alt="Institute for Quantum Computing, University of Waterloo" width="640" height="271"></a>
+    </div>
+    <div class="edu-date">2012 - 2016</div>
+  </div>
+</div>
 
 
 <div style="display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:1em; margin-top:1.5em;">

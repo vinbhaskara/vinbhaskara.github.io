@@ -578,6 +578,116 @@ figure.highlight {
   min-width: 5em;
 }
 
+/* ==========================================================================
+   EDUCATION CARDS
+
+   Same flex-card structure as the publication list below — one `.edu-card`
+   per degree, three flex children (text / logos / date) — replacing the
+   3-column table this used to be.
+
+   The table looked right only because auto table layout happened to hand the
+   columns sensible widths at desktop width. Column widths are shared by every
+   row, so the moment the viewport narrowed the logo column dropped below
+   70 + 100px and the two logos stacked, the date column fell under the width
+   of "2018 - 2020" and wrapped mid-range, and the `rowspan` logo cell stretched
+   the text rows to uneven heights. Phones hit all three at once (they render
+   the 794px layout — see $PHONE_LAYOUT_WIDTH in _includes/head.html).
+
+   Flex has no shared column widths: the logo group and the date are sized by
+   their own content and never shrink, and the text column alone absorbs the
+   difference by wrapping — exactly how `.pub-card` behaves at the same widths.
+
+   The desktop metrics below are the ones the table produced at the 981px
+   content column, so the rendered result is unchanged there:
+     logo group  70px + 0.28em + 100px, vertically centred on the text block
+     date        right-aligned to the content edge, nowrap
+     gaps        1.2em text->logos, 1.5em logos->date  (table gave 18.3 / 23.5px)
+     entries     1.5em apart (the table's empty spacer row)
+   ========================================================================== */
+.edu-list {
+  width: 100%;
+  font-family: $global-font-family;
+  font-size: 0.888888em;
+}
+
+.edu-card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & + & {
+    margin-top: 1.5em; // the spacer row the table used between degrees
+  }
+
+  // `flex: 1` (basis 0), same as `.pub-content`, and the basis matters: with
+  // `flex-wrap` on, a flex line is broken up BEFORE anything is allowed to
+  // shrink, so an auto basis here makes the date drop onto a second row at
+  // narrow widths instead of the text column simply getting narrower. A zero
+  // basis keeps all three on one line and hands the text whatever is left.
+  .edu-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .edu-logos {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.28em;        // the width of the `&nbsp;` that used to separate them
+    margin-left: 1.2em;
+
+    a {
+      flex: 0 0 auto;
+      display: block;
+    }
+
+    // width/height attributes carry each file's intrinsic size, so `height:
+    // auto` keeps the aspect ratio and the box is reserved before load.
+    img {
+      display: block;
+      width: 70px;      // square crests (U of T, IIT Guwahati)
+      height: auto;
+    }
+
+    img.edu-logo--wide {
+      width: 100px;     // landscape wordmarks (Vector, IQC)
+    }
+  }
+
+  // A fixed date column rather than a shrink-wrapped one: the table's auto
+  // layout gave this column 7em even though "2018 - 2020" only needs 5.8em,
+  // and that surplus is what sets the logo group's resting position. Pinning
+  // the width keeps the logos where they were, and keeps the two dates
+  // aligned with each other if one ever reads "2018 - Present".
+  .edu-date {
+    flex: 0 0 auto;
+    min-width: 7em;
+    margin-left: 1.5em;
+    text-align: right;
+    white-space: nowrap;
+  }
+}
+
+/* Narrow windows: text takes the full width and the logos/date share a second
+   row. Phones do not reach this (their layout width is 794px) — it is for a
+   desktop window dragged under 768px, and for any device where the viewport
+   script in _includes/head.html does not run. */
+@media (max-width: 767px) {
+  .edu-card {
+    .edu-text { flex-basis: 100%; }
+
+    .edu-logos {
+      margin-left: 0;
+      margin-top: 0.75em;
+    }
+
+    .edu-date {
+      margin-left: auto; // pushes the date to the right end of the second row
+      margin-top: 0.75em;
+    }
+  }
+}
+
 /* PUBLICATION CARDS */
 .pub-list {
   width: 100%;
